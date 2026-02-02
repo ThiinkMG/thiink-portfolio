@@ -1,0 +1,317 @@
+@import "tailwindcss";
+
+@theme {
+  /* ─── DARK MODE: "The Archive" ─── */
+  --color-museum: #050505;        /* Vantablack - hero immersion */
+  --color-obsidian: #0A0A0A;      /* Primary dark background */
+  --color-slate: #1A1A1A;         /* Cards, elevated surfaces */
+  --color-shark: #242528;         /* Text on gold buttons */
+  --color-stone: #1A2B42;         /* CTA bands, Big Stone */
+
+  /* ─── LIGHT MODE: "The Reading Room" ─── */
+  --color-parchment: #E3DCCB;     /* Case study backgrounds */
+  --color-cream: #F5E6D3;         /* Warm light mode */
+
+  /* ─── TEXT COLORS ─── */
+  --color-marble: #F0EFE9;        /* Primary text on dark */
+  --color-ivory: #F5F5F0;         /* Headings on dark */
+  --color-platinum: #9CA3AF;      /* Secondary text, captions */
+  --color-ink: #1F1A17;           /* Text on parchment */
+
+  /* ─── ACCENT COLORS ─── */
+  --color-gold-foil: #D4AF37;     /* Primary gold accent */
+  --color-gold: #D4A855;          /* Brand gold, CTAs (Marigold) */
+  --color-bronze: #C9A050;        /* Hover states */
+  --color-gold-dim: #B8944A;      /* Aged gold */
+  --color-oxblood: #4A0404;       /* Error states (sparse) */
+
+  /* ─── TYPOGRAPHY ─── */
+  --font-cinzel: var(--font-cinzel);
+  --font-garamond: var(--font-garamond);
+  --font-cormorant-sc: var(--font-cormorant-sc);
+  --font-outfit: var(--font-outfit);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+
+    to {
+      height: 0;
+    }
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(100%);
+    }
+
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+
+:root {
+  /* ─── SPACING (8px base) ─── */
+  --space-1: 0.25rem;
+  /* 4px */
+  --space-2: 0.5rem;
+  /* 8px */
+  --space-3: 0.75rem;
+  /* 12px */
+  --space-4: 1rem;
+  /* 16px */
+  --space-6: 1.5rem;
+  /* 24px */
+  --space-8: 2rem;
+  /* 32px */
+  --space-12: 3rem;
+  /* 48px */
+  --space-16: 4rem;
+  /* 64px */
+  --space-20: 5rem;
+  /* 80px */
+  --space-24: 6rem;
+  /* 96px */
+
+  /* ─── BORDER RADIUS ─── */
+  --radius-none: 0;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+
+  /* ─── SHADOWS ─── */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.6);
+  --shadow-gold: 0 0 20px rgba(212, 168, 85, 0.3);
+
+  /* ─── TRANSITIONS ─── */
+  --ease-apple: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --duration-fast: 150ms;
+  --duration-base: 200ms;
+  --duration-slow: 400ms;
+  --duration-page: 600ms;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-museum text-marble antialiased;
+    font-family: var(--font-garamond), Georgia, 'Times New Roman', serif;
+    font-feature-settings: "pnum" 1, "onum" 1;
+  }
+
+  /* Global noise texture overlay - "de-digitize" the screen */
+  body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.03;
+    background-image: url('/textures/noise-grain.webp');
+    background-repeat: repeat;
+    mix-blend-mode: overlay;
+  }
+
+  /* Display & Headlines - Cinzel (Roman carved aesthetic) */
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-cinzel), 'Times New Roman', serif;
+    @apply font-semibold tracking-tight;
+    letter-spacing: -0.02em;
+  }
+
+  /* Subheadings - slightly lighter treatment */
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-cinzel), 'Times New Roman', serif;
+    @apply font-medium tracking-tight;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* ─── GLASSMORPHISM ─── */
+  .glass-panel {
+    @apply bg-shark/80 backdrop-blur-md border border-ivory/5;
+  }
+
+  .glass-amber {
+    @apply backdrop-blur-md border border-gold/10;
+    background: linear-gradient(
+      135deg,
+      rgba(212, 168, 85, 0.03) 0%,
+      rgba(10, 10, 10, 0.8) 100%
+    );
+  }
+
+  /* ─── TEXTURE OVERLAYS ─── */
+  .textured-slate {
+    position: relative;
+  }
+  .textured-slate::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.04;
+    background-image: url('/textures/slate-grain.webp');
+    background-repeat: repeat;
+    mix-blend-mode: overlay;
+    border-radius: inherit;
+  }
+
+  .textured-paper {
+    position: relative;
+  }
+  .textured-paper::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.05;
+    background-image: url('/textures/paper-fiber.webp');
+    background-repeat: repeat;
+    mix-blend-mode: multiply;
+    border-radius: inherit;
+  }
+
+  /* ─── FONT UTILITIES ─── */
+  .font-cinzel {
+    font-family: var(--font-cinzel), 'Times New Roman', serif;
+  }
+
+  .font-garamond {
+    font-family: var(--font-garamond), Georgia, serif;
+  }
+
+  .font-cormorant-sc {
+    font-family: var(--font-cormorant-sc), 'Times New Roman', serif;
+    font-variant: small-caps;
+  }
+
+  .font-outfit {
+    font-family: var(--font-outfit), system-ui, sans-serif;
+  }
+
+  /* ─── TYPOGRAPHY STYLES ─── */
+  .label-museum {
+    @apply font-cormorant-sc text-sm tracking-[0.2em] uppercase;
+    color: var(--color-gold);
+    opacity: 0.8;
+  }
+
+  .headline-doubled {
+    position: relative;
+  }
+  .headline-doubled::before {
+    content: attr(data-text);
+    position: absolute;
+    top: -0.125rem;
+    left: -0.0625rem;
+    color: var(--color-gold);
+    opacity: 0.1;
+    z-index: -1;
+  }
+
+  /* ─── ANIMATIONS ─── */
+  .animate-marquee {
+    animation: marquee 25s linear infinite;
+  }
+
+  .animate-marquee2 {
+    animation: marquee2 25s linear infinite;
+  }
+
+  /* ─── BUTTON STATES ─── */
+  .btn-gold {
+    @apply bg-gold text-shark font-outfit font-semibold uppercase tracking-wider;
+    @apply transition-all duration-150;
+  }
+  .btn-gold:hover {
+    @apply bg-bronze;
+    box-shadow: 0 0 20px rgba(212, 168, 85, 0.3);
+  }
+  .btn-gold:focus-visible {
+    @apply outline-none ring-2 ring-gold ring-offset-2 ring-offset-museum;
+  }
+
+  /* ─── CARD STATES ─── */
+  .card-artifact {
+    @apply bg-slate border-2 border-platinum/10 transition-all duration-300;
+  }
+  .card-artifact:hover {
+    @apply border-gold/30 scale-[1.02];
+    box-shadow: 0 0 30px rgba(212, 168, 85, 0.15);
+  }
+
+  /* ─── ACCESSIBILITY: Screen Reader Only ─── */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  /* Focus visible utility for keyboard navigation */
+  .focus-visible-ring:focus-visible {
+    @apply outline-none ring-2 ring-gold ring-offset-2 ring-offset-museum;
+  }
+}
+
+/* ─── REDUCED MOTION - Respect user preferences (WCAG 2.3.3) ─── */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-marquee,
+  .animate-marquee2 {
+    animation: none !important;
+  }
+}

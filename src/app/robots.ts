@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
         rules: {
             userAgent: "*",
             allow: "/",
-            disallow: ["/api/", "/_design_references/"],
+            disallow: ["/api/"],
         },
         sitemap: "https://www.thiinkmediagraphics.com/sitemap.xml",
     };

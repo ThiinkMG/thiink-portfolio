@@ -18,7 +18,7 @@ const FEATURED_PROJECT = {
     year: "2024",
     category: "Brand Identity",
     description: "A comprehensive brand identity system for a visionary lifestyle brand. From logo design to full brand guidelines, we crafted an identity that commands attention and inspires devotion.",
-    image: "/_design_references/Design Assets/Clients/KNGDM/Final logo inspiration/Mockups/KNGDM - Brand Identity Mockup 1.png",
+    image: "/images/work/kngdm/hero.png",
     href: "/work/kngdm",
 };
 
@@ -29,7 +29,7 @@ const PROJECTS = [
         client: "Neo Sophia",
         year: "2024",
         category: "App Design",
-        image: "/_design_references/Design Assets/Clients/Neo Sophia/Case Study/NS App Homescreen Mockup 1 Transparent.png",
+        image: "/images/work/neo-sophia/hero.png",
         href: "/work/neo-sophia",
     },
     {
@@ -37,7 +37,7 @@ const PROJECTS = [
         client: "AIFF",
         year: "2024",
         category: "Event Branding",
-        image: "/_design_references/Design Assets/Clients/Atlanta Indian Film Festival/Case Study/AIFF Retractable 2 Banner Mockup 1.2 - w BG.png",
+        image: "/images/work/aiff/hero.png",
         href: "/work/aiff",
     },
     {
@@ -45,7 +45,7 @@ const PROJECTS = [
         client: "Dionta Goodson",
         year: "2023",
         category: "Album Art",
-        image: "/_design_references/Design Assets/Clients/Dionta Goodson (Later You'll Understand)/Case Study/Later Youll Understand Album Cover Art Mockup 2 w BG.png",
+        image: "/images/work/later-youll-understand/hero.png",
         href: "/work/later-youll-understand",
     },
     {
@@ -53,7 +53,7 @@ const PROJECTS = [
         client: "Jack Hoagalino",
         year: "2024",
         category: "Entertainment",
-        image: "/_design_references/Design Assets/Clients/Jack Hoagalino/Case Study/Corrected - Jack Hoagalino TV Show Poster - Widescreen.png",
+        image: "/images/work/jack-hoagalino/hero.png",
         href: "/work/jack-hoagalino",
     },
     {
@@ -61,7 +61,7 @@ const PROJECTS = [
         client: "Alex Sofranos",
         year: "2024",
         category: "Podcast Branding",
-        image: "/_design_references/Design Assets/Clients/Alex Sofranos (Ai x Automation Podcast)/Case Study/COA - Alex Sofronas - Ai x Automation Podcast Cover Art Mockup 1 - Batch 2.png",
+        image: "/images/work/ai-automation-podcast/hero.png",
         href: "/work/ai-automation",
     },
     {
@@ -69,7 +69,7 @@ const PROJECTS = [
         client: "My College Finance",
         year: "2023",
         category: "Mascot Design",
-        image: "/_design_references/Design Assets/Clients/My College Finance/Case Study/My College Finance - Mascot Holding Banner.png",
+        image: "/images/work/my-college-finance/hero.png",
         href: "/work/my-college-finance",
     },
 ];

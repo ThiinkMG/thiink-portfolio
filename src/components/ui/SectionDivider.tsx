@@ -58,8 +58,8 @@ export function SectionDivider({
 
     // Select the correct monogram based on color
     const monogramSrc = color === 'gold'
-        ? '/_design_references/Design Assets/Thiink MG Brand Assets/Logos/Monogram Logo - Gold.png'
-        : '/_design_references/Design Assets/Thiink MG Brand Assets/Logos/Monogram Logo - White.png';
+        ? '/images/brand/logos/monogram-gold.png'
+        : '/images/brand/logos/monogram-white.png';
 
     const Container = animate ? motion.div : 'div';
     const animationProps = animate ? {

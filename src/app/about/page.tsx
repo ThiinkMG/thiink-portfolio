@@ -22,7 +22,7 @@ export default function AboutPage() {
             <section className="relative min-h-[60vh] flex items-center justify-center bg-museum overflow-hidden">
                 {/* Background Image with Parallax */}
                 <ParallaxBackground
-                    src="/_design_references/Design Assets/Thiink MG Brand Assets/TMG - Roman Philosophers on gold bg.png"
+                    src="/images/brand/backgrounds/philosophers.png"
                     speed={0.15}
                     opacity={0.3}
                 />

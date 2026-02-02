@@ -153,7 +153,7 @@ export function ProcessTimeline() {
         <section id="services" className="relative py-24 md:py-32 bg-obsidian overflow-hidden">
             {/* Background Image - Philosophers with Parallax */}
             <ParallaxBackground
-                src="/_design_references/Design Assets/Thiink MG Brand Assets/Thiink V3 BG - Philosophers Edited 1.png"
+                src="/images/brand/backgrounds/philosophers.png"
                 speed={0.12}
                 opacity={0.1}
             />

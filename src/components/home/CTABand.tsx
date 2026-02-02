@@ -17,7 +17,7 @@ export function CTABand() {
         <section className="relative py-24 md:py-32 overflow-hidden">
             {/* Background Image - Blue Linen Cool with Parallax */}
             <ParallaxBackground
-                src="/_design_references/Design Assets/Thiink MG Brand Assets/Blue Linen Cool BG.png"
+                src="/images/brand/backgrounds/blue-linen.png"
                 speed={0.1}
                 opacity={1}
             />

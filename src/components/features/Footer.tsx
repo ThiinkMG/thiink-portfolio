@@ -24,7 +24,7 @@ export function Footer() {
                             className="hover:opacity-80 transition-opacity duration-200"
                         >
                             <Image
-                                src="/_design_references/Design Assets/Thiink MG Brand Assets/Logos/Full Logo - White.png"
+                                src="/images/brand/logos/full-logo-white.png"
                                 alt="Thiink Media Graphics"
                                 width={180}
                                 height={45}

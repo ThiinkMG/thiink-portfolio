@@ -61,8 +61,8 @@ export const PROJECTS: Project[] = [
         client: "KNGDM",
         year: "2024",
         duration: "8 weeks",
-        heroImage: "/_design_references/Design Assets/Clients/KNGDM/Final logo inspiration/Mockups/KNGDM - Brand Identity Mockup 1.png",
-        thumbnailImage: "/_design_references/Design Assets/Clients/KNGDM/Final logo inspiration/Mockups/KNGDM - Brand Identity Mockup 1.png",
+        heroImage: "/images/work/kngdm/hero.png",
+        thumbnailImage: "/images/work/kngdm/hero.png",
         description: "A comprehensive brand identity system for a visionary lifestyle brand. From strategic positioning to visual execution, we crafted an identity that commands attention and inspires devotion.",
         situation: "KNGDM approached us at a pivotal moment in their growth. As a lifestyle brand with ambitious goals, they needed a visual identity that could scale from boutique exclusivity to global recognition while maintaining their core ethos of empowerment and community.",
         task: "Design a complete brand identity system that communicates authority, aspiration, and belonging. The visual language needed to work across digital platforms, physical products, and experiential touchpoints—from social media to luxury packaging.",
@@ -95,19 +95,9 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/_design_references/Design Assets/Clients/KNGDM/Final logo inspiration/Mockups/KNGDM - Brand Identity Mockup 1.png",
+                src: "/images/work/kngdm/hero.png",
                 alt: "KNGDM Brand Identity Mockup",
                 caption: "Fig. 1 — Primary brand identity presentation",
-            },
-            {
-                src: "/_design_references/Design Assets/Clients/KNGDM/Final logo inspiration/Mockups/Favs/KNGDM - Full Black 2 Mockup.png",
-                alt: "KNGDM Logo on Black",
-                caption: "Fig. 2 — Logo application on dark backgrounds",
-            },
-            {
-                src: "/_design_references/Design Assets/Clients/KNGDM/Case Study/KNGDM - Design Showcase 1.png",
-                alt: "KNGDM Design Showcase",
-                caption: "Fig. 3 — Brand system overview",
             },
         ],
         metrics: [
@@ -126,8 +116,8 @@ export const PROJECTS: Project[] = [
         client: "Neo Sophia",
         year: "2024",
         duration: "12 weeks",
-        heroImage: "/_design_references/Design Assets/Clients/Neo Sophia/Case Study/NS App Homescreen Mockup 1 Transparent.png",
-        thumbnailImage: "/_design_references/Design Assets/Clients/Neo Sophia/Case Study/NS App Homescreen Mockup 1 Transparent.png",
+        heroImage: "/images/work/neo-sophia/hero.png",
+        thumbnailImage: "/images/work/neo-sophia/hero.png",
         description: "UI/UX design for an AI-driven educational platform that makes philosophy and wisdom traditions accessible to modern learners through engaging character interactions.",
         situation: "Neo Sophia had developed groundbreaking AI technology for philosophical education but lacked the visual design to match their innovative approach. Their existing interface was functional but failed to convey the warmth and wisdom of their content.",
         task: "Create an app experience that feels both intellectually rigorous and emotionally inviting. The design needed to make ancient wisdom feel relevant to digital-native learners while maintaining the gravitas these traditions deserve.",
@@ -158,21 +148,9 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/_design_references/Design Assets/Clients/Neo Sophia/Case Study/NS App Homescreen Mockup 1 Transparent.png",
+                src: "/images/work/neo-sophia/hero.png",
                 alt: "Neo Sophia App Homescreen",
                 caption: "Fig. 1 — Main homescreen design",
-            },
-            {
-                src: "/_design_references/Design Assets/Clients/Neo Sophia/Case Study/NS App Screens Mockup 1 Transparent.png",
-                alt: "Neo Sophia App Screens",
-                caption: "Fig. 2 — Key screen designs",
-            },
-        ],
-        videos: [
-            {
-                src: "/_design_references/Design Assets/Clients/Neo Sophia/Final/Neo Sophia - How to Tutorial Draft 2 - Done.mp4",
-                title: "App Tutorial",
-                description: "Onboarding walkthrough showcasing the app's key features and user flow.",
             },
         ],
         metrics: [
@@ -191,8 +169,8 @@ export const PROJECTS: Project[] = [
         client: "AIFF",
         year: "2024",
         duration: "6 weeks",
-        heroImage: "/_design_references/Design Assets/Clients/Atlanta Indian Film Festival/Case Study/AIFF Retractable 2 Banner Mockup 1.2 - w BG.png",
-        thumbnailImage: "/_design_references/Design Assets/Clients/Atlanta Indian Film Festival/Case Study/AIFF Retractable 2 Banner Mockup 1.2 - w BG.png",
+        heroImage: "/images/work/aiff/hero.png",
+        thumbnailImage: "/images/work/aiff/hero.png",
         description: "Vibrant event branding for Atlanta's premier celebration of Indian cinema, bridging cultural heritage with contemporary design sensibilities.",
         situation: "The Atlanta Indian Film Festival needed branding that would honor the rich tradition of Indian cinema while appealing to Atlanta's diverse, cosmopolitan audience. Previous years had relied on generic festival templates that failed to capture the event's unique character.",
         task: "Develop a distinctive visual identity that celebrates Indian cinematic heritage, attracts both Indian diaspora and mainstream audiences, and scales effectively from digital marketing to large-format event signage.",
@@ -222,7 +200,7 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/_design_references/Design Assets/Clients/Atlanta Indian Film Festival/Case Study/AIFF Retractable 2 Banner Mockup 1.2 - w BG.png",
+                src: "/images/work/aiff/hero.png",
                 alt: "AIFF Banner Mockup",
                 caption: "Fig. 1 — Retractable banner design",
             },
@@ -243,8 +221,8 @@ export const PROJECTS: Project[] = [
         client: "Jack Hoagalino",
         year: "2024",
         duration: "4 weeks",
-        heroImage: "/_design_references/Design Assets/Clients/Jack Hoagalino/Case Study/Corrected - Jack Hoagalino TV Show Poster - Widescreen.png",
-        thumbnailImage: "/_design_references/Design Assets/Clients/Jack Hoagalino/Case Study/Corrected - Jack Hoagalino TV Show Poster - Widescreen.png",
+        heroImage: "/images/work/jack-hoagalino/hero.png",
+        thumbnailImage: "/images/work/jack-hoagalino/hero.png",
         description: "Cinematic poster design and visual identity for an emerging entertainment personality, blending dramatic storytelling with personal brand positioning.",
         situation: "Jack Hoagalino, an emerging figure in entertainment, needed promotional materials that would establish credibility and intrigue before formal project announcements. The challenge was creating buzz without revealing specifics.",
         task: "Design teaser materials that create cinematic anticipation, establish Jack's visual brand identity, and generate industry interest—all while maintaining strategic ambiguity about upcoming projects.",
@@ -268,16 +246,9 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/_design_references/Design Assets/Clients/Jack Hoagalino/Case Study/Corrected - Jack Hoagalino TV Show Poster - Widescreen.png",
+                src: "/images/work/jack-hoagalino/hero.png",
                 alt: "Jack Hoagalino Poster",
                 caption: "Fig. 1 — Primary promotional poster",
-            },
-        ],
-        videos: [
-            {
-                src: "/_design_references/Design Assets/Clients/Jack Hoagalino/Jack Hoagalino - Blood Ties (Animation) - Final Draft 6.mp4",
-                title: "Blood Ties Teaser",
-                description: "Animated title sequence and teaser trailer for the upcoming series.",
             },
         ],
         colors: ["#1A1A1A", "#D4A855", "#FFFFFF"],
@@ -291,8 +262,8 @@ export const PROJECTS: Project[] = [
         client: "Alex Sofranos",
         year: "2024",
         duration: "3 weeks",
-        heroImage: "/_design_references/Design Assets/Clients/Alex Sofranos (Ai x Automation Podcast)/Case Study/COA - Alex Sofronas - Ai x Automation Podcast Cover Art Mockup 1 - Batch 2.png",
-        thumbnailImage: "/_design_references/Design Assets/Clients/Alex Sofranos (Ai x Automation Podcast)/Case Study/COA - Alex Sofronas - Ai x Automation Podcast Cover Art Mockup 1 - Batch 2.png",
+        heroImage: "/images/work/ai-automation-podcast/hero.png",
+        thumbnailImage: "/images/work/ai-automation-podcast/hero.png",
         description: "Retro-futuristic podcast branding that captures the wonder and possibility of artificial intelligence through vintage sci-fi magazine aesthetics.",
         situation: "Alex Sofranos was launching a podcast exploring AI and automation topics but found existing tech podcast aesthetics either too sterile or too chaotic. He wanted something that captured the genuine wonder of technological possibility.",
         task: "Create podcast branding that stands out in crowded directories, communicates both optimism and thoughtfulness about AI, and establishes a distinctive visual voice for the show's long-term growth.",
@@ -316,7 +287,7 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/_design_references/Design Assets/Clients/Alex Sofranos (Ai x Automation Podcast)/Case Study/COA - Alex Sofronas - Ai x Automation Podcast Cover Art Mockup 1 - Batch 2.png",
+                src: "/images/work/ai-automation-podcast/hero.png",
                 alt: "Ai x Automation Podcast Cover",
                 caption: "Fig. 1 — Primary podcast cover art",
             },
@@ -332,8 +303,8 @@ export const PROJECTS: Project[] = [
         client: "Dionta Goodson",
         year: "2024",
         duration: "4 weeks",
-        heroImage: "/_design_references/Design Assets/Clients/Dionta Goodson (Later You'll Understand)/Final/Later Youll Understand Album Cover Art Mockup 2 w BG.png",
-        thumbnailImage: "/_design_references/Design Assets/Clients/Dionta Goodson (Later You'll Understand)/Final/Later Youll Understand Album Cover Art Mockup 1 with BG.png",
+        heroImage: "/images/work/later-youll-understand/hero.png",
+        thumbnailImage: "/images/work/later-youll-understand/hero.png",
         description: "Complete album packaging design for an underground hip-hop project, featuring motion-blur photography and lo-fi nostalgic aesthetics that capture the introspective nature of the music.",
         situation: "Dionta Goodson, an emerging hip-hop artist, was preparing to release 'Later You'll Understand Vol. 1'—a deeply personal project exploring growth, reflection, and the wisdom that comes with time. He needed artwork that would stand apart from the polished mainstream aesthetic.",
         task: "Create album packaging that visually translates the project's introspective themes, appeals to underground hip-hop audiences, and works across both digital platforms and physical formats including CD and vinyl.",
@@ -364,19 +335,9 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/_design_references/Design Assets/Clients/Dionta Goodson (Later You'll Understand)/Final/Later Youll Understand Album Cover Art Mockup 1 with BG.png",
-                alt: "Later You'll Understand CD Mockup",
-                caption: "Fig. 1 — CD jewel case presentation",
-            },
-            {
-                src: "/_design_references/Design Assets/Clients/Dionta Goodson (Later You'll Understand)/Final/Later Youll Understand Album Cover Art Mockup 2 w BG.png",
-                alt: "Later You'll Understand Vinyl Mockup",
-                caption: "Fig. 2 — Vinyl sleeve design",
-            },
-            {
-                src: "/_design_references/Design Assets/Clients/Dionta Goodson (Later You'll Understand)/Final/Later Youll Understand Album Cover Art Mockup 3 w BG.png",
-                alt: "Later You'll Understand Gatefold",
-                caption: "Fig. 3 — Gatefold packaging spread",
+                src: "/images/work/later-youll-understand/hero.png",
+                alt: "Later You'll Understand Album Mockup",
+                caption: "Fig. 1 — Album cover presentation",
             },
         ],
         metrics: [
@@ -395,8 +356,8 @@ export const PROJECTS: Project[] = [
         client: "Fem Flow",
         year: "2024",
         duration: "10 weeks",
-        heroImage: "/_design_references/Design Assets/Clients/Fem Flow/Extras/FemFlow Logo in Meditative Harmony.png",
-        thumbnailImage: "/_design_references/Design Assets/Clients/Fem Flow/Extras/FemFlow Logo in Meditative Harmony.png",
+        heroImage: "/images/work/fem-flow/hero.png",
+        thumbnailImage: "/images/work/fem-flow/hero.png",
         description: "A holistic brand identity for a women's wellness platform, merging meditation aesthetics with modern lifestyle branding to create a warm, inviting presence.",
         situation: "Fem Flow was launching as a women's wellness platform focused on meditation, movement, and community. The founders wanted to differentiate from the sterile, minimalist wellness brands dominating the market—they envisioned something warmer and more human.",
         task: "Develop a complete brand identity that communicates calm and empowerment simultaneously. The visual system needed to work across digital products, social media, video content, and potential physical merchandise.",
@@ -428,26 +389,9 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/_design_references/Design Assets/Clients/Fem Flow/Extras/FemFlow Logo in Meditative Harmony.png",
+                src: "/images/work/fem-flow/hero.png",
                 alt: "Fem Flow Primary Logo",
                 caption: "Fig. 1 — Primary logo with figure mark",
-            },
-            {
-                src: "/_design_references/Design Assets/Clients/Fem Flow/Extras/FF - Scene 5 - Image 1.png",
-                alt: "Fem Flow Outdoor Yoga Scene",
-                caption: "Fig. 2 — Lifestyle photography direction",
-            },
-            {
-                src: "/_design_references/Design Assets/Clients/Fem Flow/Extras/FF - Scene 8 - Image 1.png",
-                alt: "Fem Flow Community Gathering",
-                caption: "Fig. 3 — Community-focused imagery",
-            },
-        ],
-        videos: [
-            {
-                src: "/_design_references/Design Assets/Clients/Fem Flow/Final/FemFlow Promo - Final Draft 1.mp4",
-                title: "Brand Promo",
-                description: "Promotional video showcasing the Fem Flow lifestyle and community experience.",
             },
         ],
         metrics: [
@@ -466,8 +410,8 @@ export const PROJECTS: Project[] = [
         client: "My College Finance",
         year: "2024",
         duration: "8 weeks",
-        heroImage: "/_design_references/Design Assets/Clients/My College Finance/Case Study/Updated Disney Oliver Owl - Illustrated Character Concept 2.2.png",
-        thumbnailImage: "/_design_references/Design Assets/Clients/My College Finance/Case Study/Updated Final - My College Finace Logo w New Oliver 1 - Thiink Media Graphics (Transparent).png",
+        heroImage: "/images/work/my-college-finance/hero.png",
+        thumbnailImage: "/images/work/my-college-finance/hero.png",
         description: "A friendly, Disney-inspired educational brand featuring Oliver Owl—a mascot character designed to make financial literacy approachable for college students.",
         situation: "My College Finance needed to tackle a significant challenge: making financial education engaging for college students who typically find the subject intimidating or boring. The existing materials felt corporate and failed to connect with their young audience.",
         task: "Create a complete brand identity centered around a mascot character that could serve as a friendly guide through complex financial topics. The character needed to be approachable yet professional, suitable for both social media and serious educational content.",
@@ -499,26 +443,9 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/_design_references/Design Assets/Clients/My College Finance/Case Study/Updated Final - My College Finace Logo w New Oliver 1 - Thiink Media Graphics (Transparent).png",
+                src: "/images/work/my-college-finance/hero.png",
                 alt: "My College Finance Logo with Oliver Owl",
                 caption: "Fig. 1 — Primary logo with Oliver mascot",
-            },
-            {
-                src: "/_design_references/Design Assets/Clients/My College Finance/Case Study/Updated Disney Oliver Owl - Illustrated Character Concept 2.2.png",
-                alt: "Oliver Owl Full Character Illustration",
-                caption: "Fig. 2 — Oliver in academic library setting",
-            },
-            {
-                src: "/_design_references/Design Assets/Clients/My College Finance/Case Study/Final - YouTube Banner Image 3.2.png",
-                alt: "My College Finance YouTube Banner",
-                caption: "Fig. 3 — YouTube channel banner design",
-            },
-        ],
-        videos: [
-            {
-                src: "/_design_references/Design Assets/Clients/My College Finance/V5 - MCF Money Education Intro Video w audio.mp4",
-                title: "Money Education Intro",
-                description: "Animated introduction sequence featuring Oliver Owl for the educational video series.",
             },
         ],
         metrics: [
@@ -537,8 +464,8 @@ export const PROJECTS: Project[] = [
         client: "The Sins We Share",
         year: "2024",
         duration: "6 weeks",
-        heroImage: "/_design_references/Design Assets/Clients/The Sins We Share/Case Study/Final Character Refrence 1 - Edited.png",
-        thumbnailImage: "/_design_references/Design Assets/Clients/The Sins We Share/Case Study/Maya Carter Character Concept Art 1.png",
+        heroImage: "/images/work/sins-we-share/hero.png",
+        thumbnailImage: "/images/work/sins-we-share/hero.png",
         description: "Character concept art for an animated drama series, developing distinctive visual identities for complex characters navigating ambition, loyalty, and moral compromise.",
         situation: "The creators of 'The Sins We Share' were developing an animated drama series exploring themes of ambition, family loyalty, and the moral compromises people make for success. They needed character designs that could carry emotional weight in a semi-realistic animation style.",
         task: "Design key characters with distinct visual personalities that communicate their roles and relationships at a glance, while maintaining enough depth for audiences to project complex emotions onto them throughout the series.",
@@ -568,19 +495,9 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/_design_references/Design Assets/Clients/The Sins We Share/Case Study/Maya Carter Character Concept Art 1.png",
-                alt: "Maya Carter Character Concept",
-                caption: "Fig. 1 — Maya Carter, protagonist",
-            },
-            {
-                src: "/_design_references/Design Assets/Clients/The Sins We Share/Case Study/Donald Big Wilison Character Concept Art 1.png",
-                alt: "Donald Wilson Character Concept",
-                caption: "Fig. 2 — Donald 'Big' Wilson",
-            },
-            {
-                src: "/_design_references/Design Assets/Clients/The Sins We Share/Case Study/Final Character Refrence 1 - Edited.png",
-                alt: "The Sins We Share Scene Composition",
-                caption: "Fig. 3 — Key scene composition",
+                src: "/images/work/sins-we-share/hero.png",
+                alt: "The Sins We Share Character Concept",
+                caption: "Fig. 1 — Character concept art",
             },
         ],
         metrics: [

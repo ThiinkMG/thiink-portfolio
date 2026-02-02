@@ -89,7 +89,7 @@ export function Navbar() {
                     className="relative z-50 hover:opacity-80 transition-opacity duration-200"
                 >
                     <Image
-                        src="/_design_references/Design Assets/Thiink MG Brand Assets/Logos/Full Logo - White.png"
+                        src="/images/brand/logos/full-logo-white.png"
                         alt="Thiink Media Graphics"
                         width={160}
                         height={40}

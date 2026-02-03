@@ -21,9 +21,9 @@ export function CTABand() {
                 speed={0.1}
                 opacity={1}
             />
-            {/* Dark Overlay - Heavier for text legibility */}
-            <div className="absolute inset-0 bg-bigstone/60" />
-            <div className="absolute inset-0 bg-gradient-to-br from-bigstone/50 via-bigstone/40 to-bigstone/50" />
+            {/* Dark Overlay - Heavy for text legibility */}
+            <div className="absolute inset-0 bg-bigstone/80" />
+            <div className="absolute inset-0 bg-gradient-to-br from-bigstone/40 via-bigstone/20 to-bigstone/40" />
             {/* Gold accent gradient */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gold/5 to-transparent" />
 
@@ -37,12 +37,12 @@ export function CTABand() {
                     </div>
 
                     {/* Headline */}
-                    <H2 className="text-3xl md:text-4xl lg:text-5xl mb-6 text-marble">
+                    <H2 className="text-3xl md:text-4xl lg:text-5xl mb-6 text-white drop-shadow-lg">
                         Ready to Build Your Legacy?
                     </H2>
 
                     {/* Subtext */}
-                    <Text className="text-lg md:text-xl text-marble/70 max-w-2xl mx-auto mb-10">
+                    <Text className="text-lg md:text-xl text-marble/90 max-w-2xl mx-auto mb-10">
                         Every great brand starts with a conversation. Let's discuss how we can
                         transform your vision into a timeless identity that commands attention.
                     </Text>
@@ -56,7 +56,7 @@ export function CTABand() {
                         </Link>
                         <Link href="/work">
                             <motion.span
-                                className="inline-flex items-center gap-2 font-outfit text-sm uppercase tracking-widest text-marble/70 hover:text-gold transition-colors duration-200 group"
+                                className="inline-flex items-center gap-2 font-outfit text-sm uppercase tracking-widest text-marble hover:text-gold transition-colors duration-200 group"
                                 whileHover={{ x: 5 }}
                             >
                                 View Our Work
@@ -68,8 +68,8 @@ export function CTABand() {
                     </div>
 
                     {/* Trust Indicator */}
-                    <div className="mt-12 pt-8 border-t border-marble/10">
-                        <p className="font-cormorant-sc text-xs uppercase tracking-widest text-marble/40">
+                    <div className="mt-12 pt-8 border-t border-marble/20">
+                        <p className="font-cormorant-sc text-xs uppercase tracking-widest text-marble/60">
                             Trusted by 100+ visionary brands worldwide
                         </p>
                     </div>

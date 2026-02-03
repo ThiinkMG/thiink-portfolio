@@ -73,13 +73,15 @@ export function Navbar() {
         <motion.header
             className={cn(
                 "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-                // Glassmorphism effect when scrolled
-                isScrolled
-                    ? "h-16 glass-amber shadow-lg shadow-gold/5 border-b border-gold/10"
-                    : "h-20 bg-transparent"
+                // Glassmorphism effect when scrolled, solid background when mobile menu is open
+                isMobileMenuOpen
+                    ? "h-20 bg-museum"
+                    : isScrolled
+                        ? "h-16 glass-amber shadow-lg shadow-gold/5 border-b border-gold/10"
+                        : "h-20 bg-transparent"
             )}
             initial={{ y: 0 }}
-            animate={{ y: isHidden ? "-100%" : 0 }}
+            animate={{ y: isHidden && !isMobileMenuOpen ? "-100%" : 0 }}
             transition={{ duration: 0.3, ease: [0.16, 1, 0.3, 1] }}
         >
             <div className="max-w-[1440px] mx-auto px-5 md:px-12 xl:px-20 h-full flex items-center justify-between">

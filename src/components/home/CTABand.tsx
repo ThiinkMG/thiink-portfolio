@@ -21,8 +21,9 @@ export function CTABand() {
                 speed={0.1}
                 opacity={1}
             />
-            {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-br from-bigstone/95 via-bigstone/90 to-bigstone/95" />
+            {/* Dark Overlay - Heavier for text legibility */}
+            <div className="absolute inset-0 bg-bigstone/60" />
+            <div className="absolute inset-0 bg-gradient-to-br from-bigstone/50 via-bigstone/40 to-bigstone/50" />
             {/* Gold accent gradient */}
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-gold/5 to-transparent" />
 

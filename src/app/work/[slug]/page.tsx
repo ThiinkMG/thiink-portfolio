@@ -455,6 +455,11 @@ function VideoSection({ project }: { project: Project }) {
                                             {video.description}
                                         </p>
                                     )}
+                                    {video.warning && (
+                                        <p className="font-garamond text-sm ml-11 mt-1 italic text-red-600">
+                                            * {video.warning}
+                                        </p>
+                                    )}
                                 </div>
                             </div>
                         </ScrollReveal>

@@ -14,6 +14,7 @@ export interface ProjectVideo {
     title: string;
     description?: string;
     thumbnail?: string;
+    warning?: string;
 }
 
 export interface ProjectSection {
@@ -95,9 +96,29 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/images/work/kngdm/hero.png",
-                alt: "KNGDM Brand Identity Mockup",
-                caption: "Fig. 1 — Primary brand identity presentation",
+                src: "/images/work/kngdm/gallery-1.png",
+                alt: "KNGDM Logo Concept",
+                caption: "Fig. 1 — Primary logo design",
+            },
+            {
+                src: "/images/work/kngdm/gallery-2.png",
+                alt: "KNGDM Business Card Design",
+                caption: "Fig. 2 — Business card mockup",
+            },
+            {
+                src: "/images/work/kngdm/gallery-3.png",
+                alt: "KNGDM Brand Identity System",
+                caption: "Fig. 3 — Brand identity presentation",
+            },
+            {
+                src: "/images/work/kngdm/gallery-4.png",
+                alt: "KNGDM Stationery Suite",
+                caption: "Fig. 4 — Complete stationery suite",
+            },
+            {
+                src: "/images/work/kngdm/gallery-5.png",
+                alt: "KNGDM Logo Showcase",
+                caption: "Fig. 5 — Final logo showcase presentation",
             },
         ],
         metrics: [
@@ -116,8 +137,8 @@ export const PROJECTS: Project[] = [
         client: "Neo Sophia",
         year: "2024",
         duration: "12 weeks",
-        heroImage: "/images/work/neo-sophia/hero.png",
-        thumbnailImage: "/images/work/neo-sophia/hero.png",
+        heroImage: "/images/work/neo-sophia/lordmoose_Sophie_the_fox_she_is_a_fox_with_large_bright_green_e_9f52e8f6-e2a2-48e5-b24b-032352a14775.png",
+        thumbnailImage: "/images/work/neo-sophia/lordmoose_Sophie_the_fox_she_is_a_fox_with_large_bright_green_e_9f52e8f6-e2a2-48e5-b24b-032352a14775.png",
         description: "UI/UX design for an AI-driven educational platform that makes philosophy and wisdom traditions accessible to modern learners through engaging character interactions.",
         situation: "Neo Sophia had developed groundbreaking AI technology for philosophical education but lacked the visual design to match their innovative approach. Their existing interface was functional but failed to convey the warmth and wisdom of their content.",
         task: "Create an app experience that feels both intellectually rigorous and emotionally inviting. The design needed to make ancient wisdom feel relevant to digital-native learners while maintaining the gravitas these traditions deserve.",
@@ -148,9 +169,36 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/images/work/neo-sophia/hero.png",
-                alt: "Neo Sophia App Homescreen",
-                caption: "Fig. 1 — Main homescreen design",
+                src: "/images/work/neo-sophia/gallery-1.png",
+                alt: "Sophie Fox Character Turnaround",
+                caption: "Fig. 1 — Sophie Fox mascot character design",
+            },
+            {
+                src: "/images/work/neo-sophia/gallery-2.png",
+                alt: "Sophie Fox Close-up",
+                caption: "Fig. 2 — Character expression study",
+            },
+            {
+                src: "/images/work/neo-sophia/gallery-3.png",
+                alt: "Neo Sophia App Screener",
+                caption: "Fig. 3 — Mobile app landing screen",
+            },
+            {
+                src: "/images/work/neo-sophia/gallery-4.png",
+                alt: "Mr. Brain Character",
+                caption: "Fig. 4 — Mr. Brain mascot splash art",
+            },
+            {
+                src: "/images/work/neo-sophia/gallery-5.png",
+                alt: "Neo Sophia Logo",
+                caption: "Fig. 5 — Brand logo design",
+            },
+        ],
+        videos: [
+            {
+                src: "/images/work/neo-sophia/press-release.mp4",
+                title: "Press Release Video",
+                description: "Official press release video showcasing Neo Sophia's mission and app features.",
             },
         ],
         metrics: [
@@ -200,9 +248,24 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/images/work/aiff/hero.png",
+                src: "/images/work/aiff/gallery-1.png",
+                alt: "AIFF Vertical Poster Design",
+                caption: "Fig. 1 — Festival vertical poster design",
+            },
+            {
+                src: "/images/work/aiff/gallery-2.png",
+                alt: "AIFF Alternative Poster",
+                caption: "Fig. 2 — Alternative poster concept",
+            },
+            {
+                src: "/images/work/aiff/gallery-3.png",
+                alt: "AIFF Retractable Banner",
+                caption: "Fig. 3 — Retractable banner design",
+            },
+            {
+                src: "/images/work/aiff/gallery-4.png",
                 alt: "AIFF Banner Mockup",
-                caption: "Fig. 1 — Retractable banner design",
+                caption: "Fig. 4 — Banner mockup in venue setting",
             },
         ],
         metrics: [
@@ -246,9 +309,32 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/images/work/jack-hoagalino/hero.png",
-                alt: "Jack Hoagalino Poster",
-                caption: "Fig. 1 — Primary promotional poster",
+                src: "/images/work/jack-hoagalino/gallery-1.png",
+                alt: "Jack Hoagalino Portrait Poster 1",
+                caption: "Fig. 1 — Primary portrait poster design",
+            },
+            {
+                src: "/images/work/jack-hoagalino/gallery-2.png",
+                alt: "Jack Hoagalino Portrait Poster 2",
+                caption: "Fig. 2 — Alternative portrait concept",
+            },
+            {
+                src: "/images/work/jack-hoagalino/gallery-3.png",
+                alt: "Jack Hoagalino Portrait Poster 3",
+                caption: "Fig. 3 — Dramatic lighting variant",
+            },
+            {
+                src: "/images/work/jack-hoagalino/gallery-4.png",
+                alt: "Jack Hoagalino Poster Mockup",
+                caption: "Fig. 4 — Poster mockup presentation",
+            },
+        ],
+        videos: [
+            {
+                src: "/images/work/jack-hoagalino/blood-ties-animation.mp4",
+                title: "Blood Ties Animation",
+                description: "Cinematic animated teaser for the Blood Ties project.",
+                warning: "Mature Content. Viewer discretion is advised.",
             },
         ],
         colors: ["#1A1A1A", "#D4A855", "#FFFFFF"],
@@ -287,9 +373,24 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/images/work/ai-automation-podcast/hero.png",
-                alt: "Ai x Automation Podcast Cover",
-                caption: "Fig. 1 — Primary podcast cover art",
+                src: "/images/work/ai-automation-podcast/gallery-1.png",
+                alt: "Ai x Automation Podcast Mockup 1",
+                caption: "Fig. 1 — Podcast cover art mockup",
+            },
+            {
+                src: "/images/work/ai-automation-podcast/gallery-2.png",
+                alt: "Ai x Automation Podcast Mockup 2",
+                caption: "Fig. 2 — Alternative cover presentation",
+            },
+            {
+                src: "/images/work/ai-automation-podcast/gallery-3.png",
+                alt: "Ai x Marketing Magazine Design",
+                caption: "Fig. 3 — Magazine-style layout design",
+            },
+            {
+                src: "/images/work/ai-automation-podcast/gallery-4.png",
+                alt: "Ai x Automation Cover Art Final",
+                caption: "Fig. 4 — Final cover art design",
             },
         ],
         colors: ["#C62828", "#FFF8E1", "#37474F"],
@@ -335,9 +436,24 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/images/work/later-youll-understand/hero.png",
-                alt: "Later You'll Understand Album Mockup",
-                caption: "Fig. 1 — Album cover presentation",
+                src: "/images/work/later-youll-understand/gallery-1.png",
+                alt: "Later You'll Understand Album Cover",
+                caption: "Fig. 1 — Primary album cover art",
+            },
+            {
+                src: "/images/work/later-youll-understand/gallery-2.png",
+                alt: "Album Mockup on Vinyl",
+                caption: "Fig. 2 — Vinyl presentation mockup",
+            },
+            {
+                src: "/images/work/later-youll-understand/gallery-3.png",
+                alt: "Album CD Case Mockup",
+                caption: "Fig. 3 — CD case mockup presentation",
+            },
+            {
+                src: "/images/work/later-youll-understand/gallery-4.png",
+                alt: "Album Track List Design",
+                caption: "Fig. 4 — Back cover track list design",
             },
         ],
         metrics: [
@@ -389,9 +505,36 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/images/work/fem-flow/hero.png",
-                alt: "Fem Flow Primary Logo",
-                caption: "Fig. 1 — Primary logo with figure mark",
+                src: "/images/work/fem-flow/gallery-1.png",
+                alt: "Fem Flow Logo in Meditative Harmony",
+                caption: "Fig. 1 — Logo in meditative harmony composition",
+            },
+            {
+                src: "/images/work/fem-flow/gallery-2.png",
+                alt: "Fem Flow Lifestyle Scene",
+                caption: "Fig. 2 — Brand lifestyle photography direction",
+            },
+            {
+                src: "/images/work/fem-flow/gallery-3.png",
+                alt: "Fem Flow Video Scene",
+                caption: "Fig. 3 — Promotional video scene composition",
+            },
+            {
+                src: "/images/work/fem-flow/gallery-4.png",
+                alt: "Fem Flow Promo Still",
+                caption: "Fig. 4 — Video promotional still frame",
+            },
+            {
+                src: "/images/work/fem-flow/gallery-5.png",
+                alt: "Fem Flow Logo Design",
+                caption: "Fig. 5 — Logo mark exploration",
+            },
+        ],
+        videos: [
+            {
+                src: "/images/work/fem-flow/promo.mp4",
+                title: "FemFlow Promo",
+                description: "Brand promotional video showcasing the FemFlow wellness experience.",
             },
         ],
         metrics: [
@@ -443,9 +586,56 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/images/work/my-college-finance/hero.png",
-                alt: "My College Finance Logo with Oliver Owl",
-                caption: "Fig. 1 — Primary logo with Oliver mascot",
+                src: "/images/work/my-college-finance/gallery-1.png",
+                alt: "Oliver Owl Character Design",
+                caption: "Fig. 1 — Oliver Owl character concept",
+            },
+            {
+                src: "/images/work/my-college-finance/gallery-2.png",
+                alt: "Oliver on Campus",
+                caption: "Fig. 2 — Oliver in campus setting",
+            },
+            {
+                src: "/images/work/my-college-finance/gallery-3.png",
+                alt: "Oliver in Apartment",
+                caption: "Fig. 3 — Oliver in apartment scene",
+            },
+            {
+                src: "/images/work/my-college-finance/gallery-4.png",
+                alt: "My College Finance Logo",
+                caption: "Fig. 4 — Complete logo with Oliver mascot",
+            },
+            {
+                src: "/images/work/my-college-finance/gallery-5.png",
+                alt: "Oliver Owl Character V2",
+                caption: "Fig. 5 — Oliver character design variation",
+            },
+            {
+                src: "/images/work/my-college-finance/gallery-6.png",
+                alt: "My College Finance Google Email Badge",
+                caption: "Fig. 6 — Google email badge featuring Oliver with TM",
+            },
+            {
+                src: "/images/work/my-college-finance/gallery-7.png",
+                alt: "MCF Online Webinar Design",
+                caption: "Fig. 7 — Online webinar presentation design",
+            },
+            {
+                src: "/images/work/my-college-finance/gallery-8.png",
+                alt: "MCF Online Webinar Design V2",
+                caption: "Fig. 8 — Webinar design upscaled version",
+            },
+        ],
+        videos: [
+            {
+                src: "/images/work/my-college-finance/intro-video.mp4",
+                title: "Money Education Intro",
+                description: "Educational intro video featuring Oliver Owl explaining financial literacy basics.",
+            },
+            {
+                src: "/images/work/my-college-finance/investfest-wrap-up.mp4",
+                title: "InvestFest Wrap Up",
+                description: "Highlights from My College Finance's InvestFest event.",
             },
         ],
         metrics: [
@@ -464,8 +654,8 @@ export const PROJECTS: Project[] = [
         client: "The Sins We Share",
         year: "2024",
         duration: "6 weeks",
-        heroImage: "/images/work/sins-we-share/hero.png",
-        thumbnailImage: "/images/work/sins-we-share/hero.png",
+        heroImage: "/images/work/sins-we-share/The Sins We Share - Therapist - Scene 1.png",
+        thumbnailImage: "/images/work/sins-we-share/The Sins We Share - Therapist - Scene 1.png",
         description: "Character concept art for an animated drama series, developing distinctive visual identities for complex characters navigating ambition, loyalty, and moral compromise.",
         situation: "The creators of 'The Sins We Share' were developing an animated drama series exploring themes of ambition, family loyalty, and the moral compromises people make for success. They needed character designs that could carry emotional weight in a semi-realistic animation style.",
         task: "Design key characters with distinct visual personalities that communicate their roles and relationships at a glance, while maintaining enough depth for audiences to project complex emotions onto them throughout the series.",
@@ -495,9 +685,48 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/images/work/sins-we-share/hero.png",
-                alt: "The Sins We Share Character Concept",
-                caption: "Fig. 1 — Character concept art",
+                src: "/images/work/sins-we-share/gallery-1.png",
+                alt: "Character Reference Sheet",
+                caption: "Fig. 1 — Main character reference sheet",
+            },
+            {
+                src: "/images/work/sins-we-share/gallery-2.png",
+                alt: "Maya Carter Character Concept",
+                caption: "Fig. 2 — Maya Carter character design",
+            },
+            {
+                src: "/images/work/sins-we-share/gallery-3.png",
+                alt: "Donald Wilson Character Concept",
+                caption: "Fig. 3 — Donald Wilson character design",
+            },
+            {
+                src: "/images/work/sins-we-share/gallery-4.png",
+                alt: "The Sins We Share Patient Scene",
+                caption: "Fig. 4 — Patient therapy session scene",
+            },
+            {
+                src: "/images/work/sins-we-share/gallery-5.png",
+                alt: "The Sins We Share Therapist Scene",
+                caption: "Fig. 5 — Therapist office scene",
+            },
+        ],
+        videos: [
+            {
+                src: "/images/work/sins-we-share/teaser.mp4",
+                title: "Series Teaser",
+                description: "Official teaser trailer for The Sins We Share animated series.",
+            },
+            {
+                src: "/images/work/sins-we-share/office-scene.mp4",
+                title: "Maya & Big Office Scene",
+                description: "Key scene animation featuring Maya Carter and Donald Wilson.",
+                warning: "Mature Content. Viewer discretion is advised.",
+            },
+            {
+                src: "/images/work/sins-we-share/animated-pilot.mp4",
+                title: "Animated Pilot",
+                description: "Full animated pilot episode with captions.",
+                warning: "Mature Content. Viewer discretion is advised.",
             },
         ],
         metrics: [

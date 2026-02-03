@@ -108,7 +108,8 @@ Before building any component that requires images, videos, backgrounds, or asse
 | Log File | Contents |
 |----------|----------|
 | `_design_references/Design Assets/Thiink MG Brand Assets/IMAGE_LOG.md` | 221 brand assets (logos, textures, reliefs, backgrounds, **videos**) |
-| `_design_references/Design Assets/Clients/CLIENT_ASSETS_LOG.md` | 284 client assets across 9 projects |
+| `_design_references/Design Assets/Clients/CLIENT_ASSETS_LOG.md` | 286 client assets across 9 projects |
+| `_design_references/Design Assets/Clients/VIDEO_YT_LOG.md` | 6 YouTube-hosted videos (>100MB files externally hosted) |
 
 **Video Assets Available** (from IMAGE_LOG.md):
 - Animated Greek goddess figure (MP4)

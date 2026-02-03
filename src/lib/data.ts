@@ -96,29 +96,29 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
+                src: "/images/work/kngdm/hero.png",
+                alt: "KNGDM Brand Identity Hero",
+                caption: "Fig. 1 — Brand identity hero presentation",
+            },
+            {
                 src: "/images/work/kngdm/gallery-1.png",
                 alt: "KNGDM Logo Concept",
-                caption: "Fig. 1 — Primary logo design",
+                caption: "Fig. 2 — Primary logo design",
             },
             {
                 src: "/images/work/kngdm/gallery-2.png",
                 alt: "KNGDM Business Card Design",
-                caption: "Fig. 2 — Business card mockup",
+                caption: "Fig. 3 — Business card mockup",
             },
             {
                 src: "/images/work/kngdm/gallery-3.png",
                 alt: "KNGDM Brand Identity System",
-                caption: "Fig. 3 — Brand identity presentation",
+                caption: "Fig. 4 — Brand identity presentation",
             },
             {
                 src: "/images/work/kngdm/gallery-4.png",
                 alt: "KNGDM Stationery Suite",
-                caption: "Fig. 4 — Complete stationery suite",
-            },
-            {
-                src: "/images/work/kngdm/gallery-5.png",
-                alt: "KNGDM Logo Showcase",
-                caption: "Fig. 5 — Final logo showcase presentation",
+                caption: "Fig. 5 — Complete stationery suite",
             },
         ],
         metrics: [
@@ -169,34 +169,39 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
+                src: "/images/work/neo-sophia/lordmoose_Sophie_the_fox_she_is_a_fox_with_large_bright_green_e_9f52e8f6-e2a2-48e5-b24b-032352a14775.png",
+                alt: "Sophie Fox Hero Portrait",
+                caption: "Fig. 1 — Sophie Fox character hero portrait",
+            },
+            {
                 src: "/images/work/neo-sophia/gallery-1.png",
                 alt: "Sophie Fox Character Turnaround",
-                caption: "Fig. 1 — Sophie Fox mascot character design",
+                caption: "Fig. 2 — Sophie Fox mascot character design",
             },
             {
                 src: "/images/work/neo-sophia/gallery-2.png",
                 alt: "Sophie Fox Close-up",
-                caption: "Fig. 2 — Character expression study",
+                caption: "Fig. 3 — Character expression study",
             },
             {
                 src: "/images/work/neo-sophia/gallery-3.png",
                 alt: "Neo Sophia App Screener",
-                caption: "Fig. 3 — Mobile app landing screen",
+                caption: "Fig. 4 — Mobile app landing screen",
             },
             {
                 src: "/images/work/neo-sophia/gallery-4.png",
                 alt: "Mr. Brain Character",
-                caption: "Fig. 4 — Mr. Brain mascot splash art",
+                caption: "Fig. 5 — Mr. Brain mascot splash art",
             },
             {
                 src: "/images/work/neo-sophia/gallery-5.png",
                 alt: "Neo Sophia Logo",
-                caption: "Fig. 5 — Brand logo design",
+                caption: "Fig. 6 — Brand logo design",
             },
         ],
         videos: [
             {
-                src: "/images/work/neo-sophia/press-release.mp4",
+                src: "https://www.youtube.com/embed/M6fEB6XO6Vs",
                 title: "Press Release Video",
                 description: "Official press release video showcasing Neo Sophia's mission and app features.",
             },
@@ -248,24 +253,24 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
+                src: "/images/work/aiff/hero.png",
+                alt: "Atlanta Indian Film Festival Hero Banner",
+                caption: "Fig. 1 — Festival hero banner",
+            },
+            {
                 src: "/images/work/aiff/gallery-1.png",
                 alt: "AIFF Vertical Poster Design",
-                caption: "Fig. 1 — Festival vertical poster design",
+                caption: "Fig. 2 — Festival vertical poster design",
             },
             {
                 src: "/images/work/aiff/gallery-2.png",
                 alt: "AIFF Alternative Poster",
-                caption: "Fig. 2 — Alternative poster concept",
+                caption: "Fig. 3 — Alternative poster concept",
             },
             {
                 src: "/images/work/aiff/gallery-3.png",
                 alt: "AIFF Retractable Banner",
-                caption: "Fig. 3 — Retractable banner design",
-            },
-            {
-                src: "/images/work/aiff/gallery-4.png",
-                alt: "AIFF Banner Mockup",
-                caption: "Fig. 4 — Banner mockup in venue setting",
+                caption: "Fig. 4 — Retractable banner design",
             },
         ],
         metrics: [
@@ -309,29 +314,34 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
+                src: "/images/work/jack-hoagalino/hero.png",
+                alt: "Jack Hoagalino Hero Poster",
+                caption: "Fig. 1 — Cinematic hero poster",
+            },
+            {
                 src: "/images/work/jack-hoagalino/gallery-1.png",
                 alt: "Jack Hoagalino Portrait Poster 1",
-                caption: "Fig. 1 — Primary portrait poster design",
+                caption: "Fig. 2 — Primary portrait poster design",
             },
             {
                 src: "/images/work/jack-hoagalino/gallery-2.png",
                 alt: "Jack Hoagalino Portrait Poster 2",
-                caption: "Fig. 2 — Alternative portrait concept",
+                caption: "Fig. 3 — Alternative portrait concept",
             },
             {
                 src: "/images/work/jack-hoagalino/gallery-3.png",
                 alt: "Jack Hoagalino Portrait Poster 3",
-                caption: "Fig. 3 — Dramatic lighting variant",
+                caption: "Fig. 4 — Dramatic lighting variant",
             },
             {
                 src: "/images/work/jack-hoagalino/gallery-4.png",
                 alt: "Jack Hoagalino Poster Mockup",
-                caption: "Fig. 4 — Poster mockup presentation",
+                caption: "Fig. 5 — Poster mockup presentation",
             },
         ],
         videos: [
             {
-                src: "/images/work/jack-hoagalino/blood-ties-animation.mp4",
+                src: "https://www.youtube.com/embed/ktkeF1zbvwY",
                 title: "Blood Ties Animation",
                 description: "Cinematic animated teaser for the Blood Ties project.",
                 warning: "Mature Content. Viewer discretion is advised.",
@@ -373,24 +383,24 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
+                src: "/images/work/ai-automation-podcast/hero.png",
+                alt: "Ai x Automation Podcast Hero",
+                caption: "Fig. 1 — Retro-futuristic podcast hero",
+            },
+            {
                 src: "/images/work/ai-automation-podcast/gallery-1.png",
                 alt: "Ai x Automation Podcast Mockup 1",
-                caption: "Fig. 1 — Podcast cover art mockup",
+                caption: "Fig. 2 — Podcast cover art mockup",
             },
             {
                 src: "/images/work/ai-automation-podcast/gallery-2.png",
                 alt: "Ai x Automation Podcast Mockup 2",
-                caption: "Fig. 2 — Alternative cover presentation",
+                caption: "Fig. 3 — Alternative cover presentation",
             },
             {
                 src: "/images/work/ai-automation-podcast/gallery-3.png",
                 alt: "Ai x Marketing Magazine Design",
-                caption: "Fig. 3 — Magazine-style layout design",
-            },
-            {
-                src: "/images/work/ai-automation-podcast/gallery-4.png",
-                alt: "Ai x Automation Cover Art Final",
-                caption: "Fig. 4 — Final cover art design",
+                caption: "Fig. 4 — Magazine-style layout design",
             },
         ],
         colors: ["#C62828", "#FFF8E1", "#37474F"],
@@ -436,14 +446,14 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/images/work/later-youll-understand/gallery-1.png",
-                alt: "Later You'll Understand Album Cover",
-                caption: "Fig. 1 — Primary album cover art",
+                src: "/images/work/later-youll-understand/hero.png",
+                alt: "Later You'll Understand Album Hero",
+                caption: "Fig. 1 — Album art hero presentation",
             },
             {
-                src: "/images/work/later-youll-understand/gallery-2.png",
-                alt: "Album Mockup on Vinyl",
-                caption: "Fig. 2 — Vinyl presentation mockup",
+                src: "/images/work/later-youll-understand/gallery-1.png",
+                alt: "Later You'll Understand Album Cover",
+                caption: "Fig. 2 — Primary album cover art",
             },
             {
                 src: "/images/work/later-youll-understand/gallery-3.png",
@@ -505,34 +515,39 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
+                src: "/images/work/fem-flow/hero.png",
+                alt: "Fem Flow Brand Hero",
+                caption: "Fig. 1 — Brand identity hero",
+            },
+            {
                 src: "/images/work/fem-flow/gallery-1.png",
                 alt: "Fem Flow Logo in Meditative Harmony",
-                caption: "Fig. 1 — Logo in meditative harmony composition",
+                caption: "Fig. 2 — Logo in meditative harmony composition",
             },
             {
                 src: "/images/work/fem-flow/gallery-2.png",
                 alt: "Fem Flow Lifestyle Scene",
-                caption: "Fig. 2 — Brand lifestyle photography direction",
+                caption: "Fig. 3 — Brand lifestyle photography direction",
             },
             {
                 src: "/images/work/fem-flow/gallery-3.png",
                 alt: "Fem Flow Video Scene",
-                caption: "Fig. 3 — Promotional video scene composition",
+                caption: "Fig. 4 — Promotional video scene composition",
             },
             {
                 src: "/images/work/fem-flow/gallery-4.png",
                 alt: "Fem Flow Promo Still",
-                caption: "Fig. 4 — Video promotional still frame",
+                caption: "Fig. 5 — Video promotional still frame",
             },
             {
                 src: "/images/work/fem-flow/gallery-5.png",
                 alt: "Fem Flow Logo Design",
-                caption: "Fig. 5 — Logo mark exploration",
+                caption: "Fig. 6 — Logo mark exploration",
             },
         ],
         videos: [
             {
-                src: "/images/work/fem-flow/promo.mp4",
+                src: "https://www.youtube.com/embed/0_AuYJKdowA",
                 title: "FemFlow Promo",
                 description: "Brand promotional video showcasing the FemFlow wellness experience.",
             },
@@ -586,14 +601,14 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
-                src: "/images/work/my-college-finance/gallery-1.png",
-                alt: "Oliver Owl Character Design",
-                caption: "Fig. 1 — Oliver Owl character concept",
+                src: "/images/work/my-college-finance/hero.png",
+                alt: "My College Finance Hero",
+                caption: "Fig. 1 — Oliver Owl campus hero",
             },
             {
-                src: "/images/work/my-college-finance/gallery-2.png",
-                alt: "Oliver on Campus",
-                caption: "Fig. 2 — Oliver in campus setting",
+                src: "/images/work/my-college-finance/gallery-1.png",
+                alt: "Oliver Owl Character Design",
+                caption: "Fig. 2 — Oliver Owl character concept",
             },
             {
                 src: "/images/work/my-college-finance/gallery-3.png",
@@ -685,45 +700,45 @@ export const PROJECTS: Project[] = [
         ],
         gallery: [
             {
+                src: "/images/work/sins-we-share/The Sins We Share - Therapist - Scene 1.png",
+                alt: "The Sins We Share Therapist Scene Hero",
+                caption: "Fig. 1 — Therapist office hero scene",
+            },
+            {
                 src: "/images/work/sins-we-share/gallery-1.png",
                 alt: "Character Reference Sheet",
-                caption: "Fig. 1 — Main character reference sheet",
+                caption: "Fig. 2 — Main character reference sheet",
             },
             {
                 src: "/images/work/sins-we-share/gallery-2.png",
                 alt: "Maya Carter Character Concept",
-                caption: "Fig. 2 — Maya Carter character design",
+                caption: "Fig. 3 — Maya Carter character design",
             },
             {
                 src: "/images/work/sins-we-share/gallery-3.png",
                 alt: "Donald Wilson Character Concept",
-                caption: "Fig. 3 — Donald Wilson character design",
+                caption: "Fig. 4 — Donald Wilson character design",
             },
             {
                 src: "/images/work/sins-we-share/gallery-4.png",
                 alt: "The Sins We Share Patient Scene",
-                caption: "Fig. 4 — Patient therapy session scene",
-            },
-            {
-                src: "/images/work/sins-we-share/gallery-5.png",
-                alt: "The Sins We Share Therapist Scene",
-                caption: "Fig. 5 — Therapist office scene",
+                caption: "Fig. 5 — Patient therapy session scene",
             },
         ],
         videos: [
             {
-                src: "/images/work/sins-we-share/teaser.mp4",
+                src: "https://www.youtube.com/embed/3X8lUg7qsZU",
                 title: "Series Teaser",
                 description: "Official teaser trailer for The Sins We Share animated series.",
             },
             {
-                src: "/images/work/sins-we-share/office-scene.mp4",
+                src: "https://www.youtube.com/embed/zIOcDrXyma0",
                 title: "Maya & Big Office Scene",
                 description: "Key scene animation featuring Maya Carter and Donald Wilson.",
                 warning: "Mature Content. Viewer discretion is advised.",
             },
             {
-                src: "/images/work/sins-we-share/animated-pilot.mp4",
+                src: "https://www.youtube.com/embed/mL3uIlhJjKo",
                 title: "Animated Pilot",
                 description: "Full animated pilot episode with captions.",
                 warning: "Mature Content. Viewer discretion is advised.",

@@ -944,7 +944,8 @@ Before building ANY component requiring images or videos, consult these logs:
 | Log | Location | Contents |
 |-----|----------|----------|
 | Brand Assets | `/Design Assets/Thiink MG Brand Assets/IMAGE_LOG.md` | 221 assets: logos, textures, bas-reliefs, backgrounds, **videos** |
-| Client Assets | `/Design Assets/Clients/CLIENT_ASSETS_LOG.md` | 284 assets across 9 client projects |
+| Client Assets | `/Design Assets/Clients/CLIENT_ASSETS_LOG.md` | 286 assets across 9 client projects |
+| YouTube Videos | `/Design Assets/Clients/VIDEO_YT_LOG.md` | 6 externally-hosted videos (>100MB, YouTube unlisted) |
 
 **Video Assets Available** (3 MP4 files, 6.7-12.4 MB):
 - Animated Greek goddess figure - Hero backgrounds, loading states

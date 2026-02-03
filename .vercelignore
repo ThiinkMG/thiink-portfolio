@@ -1,0 +1,27 @@
+# Design references and development assets (not needed in production)
+_design_references/
+
+# Agent documentation
+.agent/
+
+# Git
+.git/
+
+# Development
+.env.local
+.env*.local
+*.log
+npm-debug.log*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts (rebuilt on Vercel)
+.next/
+out/
+node_modules/

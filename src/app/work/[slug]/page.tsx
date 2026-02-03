@@ -415,6 +415,9 @@ function GallerySection({ project }: { project: Project }) {
 function VideoSection({ project }: { project: Project }) {
     if (!project.videos || project.videos.length === 0) return null;
 
+    // Helper to check if URL is a YouTube embed
+    const isYouTubeEmbed = (url: string) => url.includes('youtube.com/embed');
+
     return (
         <section className="py-20 border-b border-ink/10">
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
@@ -429,17 +432,27 @@ function VideoSection({ project }: { project: Project }) {
                     {project.videos.map((video, i) => (
                         <ScrollReveal key={i} delay={i * 0.1}>
                             <div className="bg-ink/5 rounded-sm overflow-hidden">
-                                {/* Video Player */}
+                                {/* Video Player - YouTube iframe or native video */}
                                 <div className="relative aspect-video bg-ink/10">
-                                    <video
-                                        src={video.src}
-                                        controls
-                                        className="w-full h-full object-contain"
-                                        poster={video.thumbnail}
-                                        preload="metadata"
-                                    >
-                                        Your browser does not support the video tag.
-                                    </video>
+                                    {isYouTubeEmbed(video.src) ? (
+                                        <iframe
+                                            src={video.src}
+                                            title={video.title}
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowFullScreen
+                                            className="absolute inset-0 w-full h-full"
+                                        />
+                                    ) : (
+                                        <video
+                                            src={video.src}
+                                            controls
+                                            className="w-full h-full object-contain"
+                                            poster={video.thumbnail}
+                                            preload="metadata"
+                                        >
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    )}
                                 </div>
 
                                 {/* Video Info */}

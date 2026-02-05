@@ -475,13 +475,60 @@ export default defineConfig({
               },
             ],
           },
-          // Trust Logos
+          // Trust Marquee Section
+          {
+            type: "object",
+            name: "trustMarquee",
+            label: "Trust Marquee",
+            fields: [
+              {
+                type: "string",
+                name: "title",
+                label: "Section Title",
+                description: "Text above the logos (e.g., 'Trusted by Industry Leaders')",
+              },
+              {
+                type: "string",
+                name: "displayMode",
+                label: "Display Mode",
+                description: "Show company names as text or logo images",
+                options: ["text", "image"],
+              },
+              {
+                type: "object",
+                name: "logos",
+                label: "Logos",
+                list: true,
+                ui: {
+                  itemProps: (item) => ({
+                    label: item?.name || `Logo ${item?._index !== undefined ? item._index + 1 : ''}`,
+                  }),
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "name",
+                    label: "Company Name",
+                    required: true,
+                    description: "Used for text mode and image alt text",
+                  },
+                  {
+                    type: "image",
+                    name: "image",
+                    label: "Logo Image",
+                    description: "Company logo (used when Display Mode is 'image')",
+                  },
+                ],
+              },
+            ],
+          },
+          // Legacy Trust Logos (for backwards compatibility)
           {
             type: "string",
             name: "trustLogos",
-            label: "Trust Logos",
+            label: "Trust Logos (Legacy)",
             list: true,
-            description: "Company names for the trust marquee",
+            description: "Deprecated - use Trust Marquee instead",
           },
           // CTA Band
           {

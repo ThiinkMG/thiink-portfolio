@@ -25,6 +25,20 @@
       "label": "Years Experience"
     }
   ],
+  "trustMarquee": {
+    "title": "Trusted by Industry Leaders",
+    "displayMode": "text",
+    "logos": [
+      { "name": "GOOGLE", "image": "" },
+      { "name": "DISNEY", "image": "" },
+      { "name": "HULU", "image": "" },
+      { "name": "NETFLIX", "image": "" },
+      { "name": "AMAZON", "image": "" },
+      { "name": "APPLE", "image": "" },
+      { "name": "SPOTIFY", "image": "" },
+      { "name": "META", "image": "" }
+    ]
+  },
   "trustLogos": [
     "GOOGLE",
     "DISNEY",

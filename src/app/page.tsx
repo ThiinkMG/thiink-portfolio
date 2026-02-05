@@ -48,7 +48,12 @@ export default function Home() {
       <SectionDivider variant="atom" color="gold" size="md" />
 
       {/* 3. Trust Marquee - Social proof */}
-      <TrustMarquee logos={homepageContent?.trustLogos} />
+      <TrustMarquee
+        title={homepageContent?.trustMarquee?.title}
+        displayMode={homepageContent?.trustMarquee?.displayMode}
+        logos={homepageContent?.trustMarquee?.logos}
+        legacyLogos={homepageContent?.trustLogos}
+      />
 
       {/* Divider - Gold Monogram */}
       <SectionDivider variant="atom" color="gold" size="md" />

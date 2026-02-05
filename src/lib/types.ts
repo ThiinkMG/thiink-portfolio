@@ -68,7 +68,13 @@ export interface HomepageContent {
     opacity?: number;
   };
   stats: { value: string; label: string }[];
-  trustLogos: string[];
+  trustMarquee?: {
+    title?: string;
+    displayMode?: "text" | "image";
+    logos?: { name: string; image?: string }[];
+  };
+  // Legacy support for old trustLogos array
+  trustLogos?: string[];
   ctaBand: {
     headline: string;
     subtext: string;

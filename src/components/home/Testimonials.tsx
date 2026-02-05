@@ -65,6 +65,9 @@ const DEFAULT_TESTIMONIALS: TestimonialData[] = [
     },
 ];
 
+// Auto-advance interval in milliseconds (12 seconds for comfortable reading)
+const AUTO_ADVANCE_INTERVAL = 12000;
+
 export function Testimonials({
     sectionLabel = "Client Stories",
     sectionTitle = "Voices of Our Patrons",
@@ -72,22 +75,49 @@ export function Testimonials({
 }: TestimonialsProps) {
     const [current, setCurrent] = React.useState(0);
     const [direction, setDirection] = React.useState(0);
+    const timerRef = React.useRef<NodeJS.Timeout | null>(null);
 
+    // Reset the auto-advance timer
+    const resetTimer = React.useCallback(() => {
+        if (timerRef.current) {
+            clearInterval(timerRef.current);
+        }
+        timerRef.current = setInterval(() => {
+            setDirection(1);
+            setCurrent((prev) => (prev + 1) % testimonials.length);
+        }, AUTO_ADVANCE_INTERVAL);
+    }, [testimonials.length]);
+
+    // Manual navigation - next
     const next = React.useCallback(() => {
         setDirection(1);
         setCurrent((prev) => (prev + 1) % testimonials.length);
-    }, [testimonials.length]);
+        resetTimer(); // Reset timer on manual navigation
+    }, [testimonials.length, resetTimer]);
 
-    const prev = () => {
+    // Manual navigation - prev
+    const prev = React.useCallback(() => {
         setDirection(-1);
         setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
-    };
+        resetTimer(); // Reset timer on manual navigation
+    }, [testimonials.length, resetTimer]);
 
-    // Auto-advance every 8 seconds
+    // Manual navigation - go to specific slide
+    const goToSlide = React.useCallback((index: number) => {
+        setDirection(index > current ? 1 : -1);
+        setCurrent(index);
+        resetTimer(); // Reset timer on manual navigation
+    }, [current, resetTimer]);
+
+    // Initialize auto-advance timer
     React.useEffect(() => {
-        const timer = setInterval(next, 8000);
-        return () => clearInterval(timer);
-    }, [next]);
+        resetTimer();
+        return () => {
+            if (timerRef.current) {
+                clearInterval(timerRef.current);
+            }
+        };
+    }, [resetTimer]);
 
     const variants = {
         enter: (direction: number) => ({
@@ -148,16 +178,16 @@ export function Testimonials({
                                 </div>
 
                                 {/* Quote */}
-                                <blockquote className="font-garamond text-xl md:text-2xl lg:text-3xl text-marble/90 leading-relaxed mb-8 max-w-3xl mx-auto italic">
+                                <blockquote className="font-garamond text-[clamp(1.25rem,2vw+0.5rem,1.875rem)] text-marble/90 leading-relaxed mb-8 max-w-3xl mx-auto italic">
                                     "{testimonial.quote}"
                                 </blockquote>
 
                                 {/* Attribution */}
                                 <div className="space-y-1">
-                                    <p className="font-cinzel text-gold text-lg">
+                                    <p className="font-cinzel text-gold text-[clamp(1.0625rem,0.5vw+0.9rem,1.25rem)]">
                                         {testimonial.author}
                                     </p>
-                                    <p className="font-cormorant-sc text-xs uppercase tracking-widest text-marble/50">
+                                    <p className="font-cormorant-sc text-[clamp(0.75rem,0.1vw+0.7rem,0.8125rem)] uppercase tracking-widest text-marble/50">
                                         {testimonial.title} • {testimonial.project}
                                     </p>
                                 </div>
@@ -180,10 +210,7 @@ export function Testimonials({
                             {testimonials.map((_, index) => (
                                 <button
                                     key={index}
-                                    onClick={() => {
-                                        setDirection(index > current ? 1 : -1);
-                                        setCurrent(index);
-                                    }}
+                                    onClick={() => goToSlide(index)}
                                     className={cn(
                                         "w-2 h-2 rounded-full transition-all duration-300",
                                         index === current

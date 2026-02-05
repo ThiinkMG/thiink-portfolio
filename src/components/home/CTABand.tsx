@@ -59,12 +59,12 @@ export function CTABand({
                     </div>
 
                     {/* Headline */}
-                    <H2 className="text-3xl md:text-4xl lg:text-5xl mb-6 text-white drop-shadow-lg">
+                    <H2 className="text-[clamp(1.875rem,4vw+0.5rem,3.5rem)] mb-6 text-white drop-shadow-lg">
                         {headline}
                     </H2>
 
                     {/* Subtext */}
-                    <Text className="text-lg md:text-xl text-marble/90 max-w-2xl mx-auto mb-10">
+                    <Text className="text-[clamp(1.125rem,0.5vw+1rem,1.25rem)] text-marble/90 max-w-2xl mx-auto mb-10">
                         {subtext}
                     </Text>
 
@@ -77,7 +77,7 @@ export function CTABand({
                         </Link>
                         <Link href={secondaryButtonLink}>
                             <motion.span
-                                className="inline-flex items-center gap-2 font-outfit text-sm uppercase tracking-widest text-marble hover:text-gold transition-colors duration-200 group"
+                                className="inline-flex items-center gap-2 font-outfit text-[clamp(0.875rem,0.2vw+0.8rem,0.9375rem)] uppercase tracking-widest text-marble hover:text-gold transition-colors duration-200 group"
                                 whileHover={{ x: 5 }}
                             >
                                 {secondaryButtonText}
@@ -90,7 +90,7 @@ export function CTABand({
 
                     {/* Trust Indicator */}
                     <div className="mt-12 pt-8 border-t border-marble/20">
-                        <p className="font-cormorant-sc text-xs uppercase tracking-widest text-marble/60">
+                        <p className="font-cormorant-sc text-[clamp(0.75rem,0.1vw+0.7rem,0.8125rem)] uppercase tracking-widest text-marble/60">
                             {trustLine}
                         </p>
                     </div>

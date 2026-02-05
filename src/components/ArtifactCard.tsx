@@ -121,7 +121,7 @@ export function ArtifactCard({
                             >
                                 <span className={cn(
                                     "px-4 py-2",
-                                    "font-outfit text-sm font-medium uppercase tracking-wider",
+                                    "font-outfit text-[clamp(0.875rem,0.2vw+0.8rem,0.9375rem)] font-medium uppercase tracking-wider",
                                     "text-shark bg-gold",
                                     "shadow-lg"
                                 )}>
@@ -144,14 +144,14 @@ export function ArtifactCard({
 
                     {/* Title */}
                     <h3 className={cn(
-                        "font-cinzel text-lg font-medium text-ivory",
+                        "font-cinzel text-[clamp(1.125rem,0.5vw+0.9rem,1.375rem)] font-medium text-ivory",
                         "group-hover:text-gold transition-colors duration-300"
                     )}>
                         {title}
                     </h3>
 
                     {/* Client & Year */}
-                    <p className="font-garamond text-sm text-platinum/70 italic">
+                    <p className="font-garamond text-[clamp(0.9375rem,0.2vw+0.85rem,1rem)] text-platinum/70 italic">
                         {client}, {year}
                     </p>
                 </div>
@@ -283,7 +283,7 @@ export function FeaturedArtifact({
 
                     {/* Title */}
                     <h3 className={cn(
-                        "font-cinzel text-2xl md:text-3xl font-medium text-ivory",
+                        "font-cinzel text-[clamp(1.5rem,2vw+0.75rem,2rem)] font-medium text-ivory",
                         "group-hover:text-gold transition-colors duration-300"
                     )}>
                         {title}
@@ -291,13 +291,13 @@ export function FeaturedArtifact({
 
                     {/* Description */}
                     {description && (
-                        <p className="font-garamond text-base text-marble/80 leading-relaxed">
+                        <p className="font-garamond text-[clamp(1rem,0.25vw+0.9rem,1.125rem)] text-marble/80 leading-relaxed">
                             {description}
                         </p>
                     )}
 
                     {/* Client & Year */}
-                    <p className="font-garamond text-sm text-platinum/70 italic">
+                    <p className="font-garamond text-[clamp(0.9375rem,0.2vw+0.85rem,1rem)] text-platinum/70 italic">
                         {client}, {year}
                     </p>
 
@@ -305,7 +305,7 @@ export function FeaturedArtifact({
                     <div className="pt-2">
                         <span className={cn(
                             "inline-flex items-center gap-2",
-                            "font-outfit text-sm font-medium uppercase tracking-wider",
+                            "font-outfit text-[clamp(0.875rem,0.2vw+0.8rem,0.9375rem)] font-medium uppercase tracking-wider",
                             "text-gold group-hover:text-bronze",
                             "transition-colors duration-200"
                         )}>

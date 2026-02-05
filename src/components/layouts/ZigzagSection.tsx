@@ -233,12 +233,12 @@ export function ServiceCard({
                     </motion.div>
                 </div>
                 <h4 className={cn(
-                    "font-cinzel font-medium transition-colors",
+                    "font-cinzel text-[clamp(1.125rem,0.5vw+0.9rem,1.25rem)] font-medium transition-colors",
                     isExpanded ? "text-gold" : "text-ivory group-hover:text-gold"
                 )}>
                     {title}
                 </h4>
-                <p className="font-garamond text-sm text-platinum/70 leading-relaxed">
+                <p className="font-garamond text-[clamp(0.9375rem,0.2vw+0.85rem,1rem)] text-platinum/70 leading-relaxed">
                     {description}
                 </p>
 
@@ -253,7 +253,7 @@ export function ServiceCard({
                             className="overflow-hidden"
                         >
                             {expandedDescription && (
-                                <p className="font-garamond text-sm text-marble/60 leading-relaxed pt-2 border-t border-platinum/10 mt-3">
+                                <p className="font-garamond text-[clamp(0.9375rem,0.2vw+0.85rem,1rem)] text-marble/60 leading-relaxed pt-2 border-t border-platinum/10 mt-3">
                                     {expandedDescription}
                                 </p>
                             )}
@@ -262,7 +262,7 @@ export function ServiceCard({
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 onClick={(e) => e.stopPropagation()}
-                                className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-gold text-obsidian font-outfit text-xs uppercase tracking-wider hover:bg-bronze transition-colors duration-200"
+                                className="inline-flex items-center gap-2 mt-4 px-4 py-2 bg-gold text-obsidian font-outfit text-[clamp(0.75rem,0.1vw+0.7rem,0.8125rem)] uppercase tracking-wider hover:bg-bronze transition-colors duration-200"
                             >
                                 {ctaText}
                                 <ArrowRight size={14} />

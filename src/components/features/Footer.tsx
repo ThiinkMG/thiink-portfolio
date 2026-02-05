@@ -83,7 +83,7 @@ export function Footer({
                                 className="h-10 w-auto"
                             />
                         </Link>
-                        <Text className="text-sm text-marble/60 max-w-xs font-garamond leading-relaxed">
+                        <Text className="text-marble/60 max-w-xs font-garamond leading-relaxed">
                             {tagline}
                         </Text>
                         {/* Social links */}
@@ -126,14 +126,14 @@ export function Footer({
                                             href={item.href}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-sm text-marble/50 hover:text-gold transition-colors duration-200 font-garamond"
+                                            className="text-[clamp(0.9375rem,0.2vw+0.85rem,1rem)] text-marble/50 hover:text-gold transition-colors duration-200 font-garamond"
                                         >
                                             {item.label}
                                         </a>
                                     ) : (
                                         <Link
                                             href={item.href}
-                                            className="text-sm text-marble/50 hover:text-gold transition-colors duration-200 font-garamond"
+                                            className="text-[clamp(0.9375rem,0.2vw+0.85rem,1rem)] text-marble/50 hover:text-gold transition-colors duration-200 font-garamond"
                                         >
                                             {item.label}
                                         </Link>
@@ -154,14 +154,14 @@ export function Footer({
                                             href={item.href}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="text-sm text-marble/50 hover:text-gold transition-colors duration-200 font-garamond"
+                                            className="text-[clamp(0.9375rem,0.2vw+0.85rem,1rem)] text-marble/50 hover:text-gold transition-colors duration-200 font-garamond"
                                         >
                                             {item.label}
                                         </a>
                                     ) : (
                                         <Link
                                             href={item.href}
-                                            className="text-sm text-marble/50 hover:text-gold transition-colors duration-200 font-garamond"
+                                            className="text-[clamp(0.9375rem,0.2vw+0.85rem,1rem)] text-marble/50 hover:text-gold transition-colors duration-200 font-garamond"
                                         >
                                             {item.label}
                                         </Link>
@@ -186,7 +186,7 @@ export function Footer({
                             {contact?.email && (
                                 <a
                                     href={`mailto:${contact.email}`}
-                                    className="font-outfit text-sm tracking-wide text-marble/50 hover:text-gold transition-colors duration-200"
+                                    className="font-outfit text-[clamp(0.875rem,0.2vw+0.8rem,0.9375rem)] tracking-wide text-marble/50 hover:text-gold transition-colors duration-200"
                                 >
                                     {contact.email}
                                 </a>
@@ -198,7 +198,7 @@ export function Footer({
                                     href={contact.newProjectForm}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 border-b border-gold/50 text-gold font-outfit text-xs uppercase tracking-widest pb-1 hover:border-gold hover:text-gold-foil transition-colors duration-200 group"
+                                    className="inline-flex items-center gap-2 border-b border-gold/50 text-gold font-outfit text-[clamp(0.75rem,0.1vw+0.7rem,0.8125rem)] uppercase tracking-widest pb-1 hover:border-gold hover:text-gold-foil transition-colors duration-200 group"
                                 >
                                     Start a Conversation
                                     <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">
@@ -216,7 +216,7 @@ export function Footer({
 
             {/* BOTTOM BAR */}
             <div className="py-6">
-                <div className="max-w-[1440px] mx-auto px-6 md:px-12 xl:px-20 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-marble/30 font-outfit uppercase tracking-wider">
+                <div className="max-w-[1440px] mx-auto px-6 md:px-12 xl:px-20 flex flex-col md:flex-row justify-between items-center gap-4 text-[clamp(0.75rem,0.1vw+0.7rem,0.8125rem)] text-marble/30 font-outfit uppercase tracking-wider">
                     <p>© {year} {copyright}. Forged in the digital realm.</p>
                     <div className="flex gap-6">
                         <a

@@ -131,14 +131,14 @@ export function Navbar({
                                         href={item.href}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="font-cormorant-sc text-sm uppercase tracking-widest text-marble/80 hover:text-gold transition-colors duration-200"
+                                        className="font-cormorant-sc text-[clamp(0.875rem,0.2vw+0.8rem,0.9375rem)] uppercase tracking-widest text-marble/80 hover:text-gold transition-colors duration-200"
                                     >
                                         {item.label}
                                     </a>
                                 ) : (
                                     <MagneticLink
                                         href={item.href}
-                                        className="font-cormorant-sc text-sm uppercase tracking-widest text-marble/80 hover:text-gold transition-colors duration-200"
+                                        className="font-cormorant-sc text-[clamp(0.875rem,0.2vw+0.8rem,0.9375rem)] uppercase tracking-widest text-marble/80 hover:text-gold transition-colors duration-200"
                                     >
                                         {item.label}
                                     </MagneticLink>
@@ -234,7 +234,7 @@ export function Navbar({
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 onClick={() => setIsMobileMenuOpen(false)}
-                                                className="font-cinzel text-3xl text-marble hover:text-gold transition-colors duration-200"
+                                                className="font-cinzel text-[clamp(2rem,5vw,3rem)] text-marble hover:text-gold transition-colors duration-200"
                                             >
                                                 {item.label}
                                             </a>
@@ -242,7 +242,7 @@ export function Navbar({
                                             <Link
                                                 href={item.href}
                                                 onClick={() => setIsMobileMenuOpen(false)}
-                                                className="font-cinzel text-3xl text-marble hover:text-gold transition-colors duration-200"
+                                                className="font-cinzel text-[clamp(2rem,5vw,3rem)] text-marble hover:text-gold transition-colors duration-200"
                                             >
                                                 {item.label}
                                             </Link>
@@ -282,7 +282,7 @@ export function Navbar({
                                 transition={{ duration: 0.6, delay: 0.5 }}
                             >
                                 <span className="w-12 h-px bg-gold/30" />
-                                <span className="font-cormorant-sc text-xs uppercase tracking-widest text-marble/40">
+                                <span className="font-cormorant-sc text-[clamp(0.75rem,0.1vw+0.7rem,0.8125rem)] uppercase tracking-widest text-marble/40">
                                     Est. 2019
                                 </span>
                                 <span className="w-12 h-px bg-gold/30" />

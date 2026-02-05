@@ -3,7 +3,7 @@
 import * as React from "react";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/Button";
-import { H1, Text, SectionLabel } from "@/components/ui/Typography";
+import { HeroTitle, Text, SectionLabel } from "@/components/ui/Typography";
 import { easing, duration } from "@/lib/motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -151,7 +151,7 @@ function ProjectThumb({
                             exit={{ opacity: 0 }}
                             className="absolute inset-0 bg-gradient-to-t from-museum/90 via-museum/40 to-transparent flex items-end p-2"
                         >
-                            <span className="font-cormorant-sc text-[10px] text-marble/90 uppercase tracking-wider truncate">
+                            <span className="font-cormorant-sc text-[11px] md:text-xs text-marble/90 uppercase tracking-wider truncate">
                                 {project.title}
                             </span>
                         </motion.div>
@@ -253,7 +253,7 @@ export function Hero({ projects = [], stats = DEFAULT_STATS, hero }: HeroProps) 
                         </motion.div>
 
                         {/* Headline - Portfolio focused */}
-                        <H1 className="text-4xl md:text-5xl lg:text-6xl leading-[1.1]">
+                        <HeroTitle className="leading-[1.05]">
                             <StaggerText
                                 text={heroContent.titleLine1}
                                 delay={0.2}
@@ -264,7 +264,7 @@ export function Hero({ projects = [], stats = DEFAULT_STATS, hero }: HeroProps) 
                                 delay={0.4}
                                 className="block text-gold"
                             />
-                        </H1>
+                        </HeroTitle>
 
                         {/* Subheadline - Work focused */}
                         <motion.div
@@ -272,7 +272,7 @@ export function Hero({ projects = [], stats = DEFAULT_STATS, hero }: HeroProps) 
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: duration.slow, delay: 0.7, ease: easing.apple }}
                         >
-                            <Text className="text-base md:text-lg max-w-md text-marble/70 leading-relaxed">
+                            <Text className="max-w-md text-marble/70 leading-relaxed">
                                 {heroContent.subtitle}
                             </Text>
                         </motion.div>
@@ -316,13 +316,13 @@ export function Hero({ projects = [], stats = DEFAULT_STATS, hero }: HeroProps) 
                                 className="text-right hidden lg:block"
                             >
                                 <Link href={currentProject.href} className="group">
-                                    <span className="font-cormorant-sc text-xs uppercase tracking-widest text-gold/70 block mb-1">
+                                    <span className="font-cormorant-sc text-[clamp(0.8125rem,0.15vw+0.75rem,0.875rem)] uppercase tracking-widest text-gold/70 block mb-1">
                                         Featured Work
                                     </span>
-                                    <span className="font-cinzel text-2xl text-marble group-hover:text-gold transition-colors duration-200 block">
+                                    <span className="font-cinzel text-[clamp(1.5rem,1.5vw+1rem,2rem)] text-marble group-hover:text-gold transition-colors duration-200 block">
                                         {currentProject.title}
                                     </span>
-                                    <span className="font-garamond text-sm text-marble/50 block">
+                                    <span className="font-garamond text-[clamp(0.9375rem,0.2vw+0.85rem,1rem)] text-marble/50 block">
                                         {currentProject.category}
                                     </span>
                                 </Link>
@@ -372,7 +372,7 @@ export function Hero({ projects = [], stats = DEFAULT_STATS, hero }: HeroProps) 
                         >
                             <Link
                                 href="/work"
-                                className="inline-flex items-center gap-2 font-outfit text-xs uppercase tracking-widest text-marble/50 hover:text-gold transition-colors duration-200 group"
+                                className="inline-flex items-center gap-2 font-outfit text-[clamp(0.75rem,0.1vw+0.7rem,0.8125rem)] uppercase tracking-widest text-marble/50 hover:text-gold transition-colors duration-200 group"
                             >
                                 Explore all projects
                                 <span className="inline-block transition-transform duration-200 group-hover:translate-x-1">
@@ -402,8 +402,8 @@ export function Hero({ projects = [], stats = DEFAULT_STATS, hero }: HeroProps) 
                                         index === 0 ? "" : index === 1 ? "hidden sm:block" : "hidden md:block"
                                     )}
                                 >
-                                    <span className="font-cinzel text-xl md:text-2xl text-gold">{stat.value}</span>
-                                    <span className="font-cormorant-sc text-xs tracking-wider text-marble/40 ml-2">
+                                    <span className="font-cinzel text-[clamp(1.25rem,1vw+0.75rem,1.75rem)] text-gold">{stat.value}</span>
+                                    <span className="font-cormorant-sc text-[clamp(0.75rem,0.1vw+0.7rem,0.8125rem)] tracking-wider text-marble/40 ml-2">
                                         {stat.label}
                                     </span>
                                 </div>
@@ -416,7 +416,7 @@ export function Hero({ projects = [], stats = DEFAULT_STATS, hero }: HeroProps) 
                             animate={{ y: [0, 4, 0] }}
                             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                         >
-                            <span className="font-cormorant-sc text-xs tracking-widest uppercase hidden sm:inline">
+                            <span className="font-cormorant-sc text-[clamp(0.75rem,0.1vw+0.7rem,0.8125rem)] tracking-widest uppercase hidden sm:inline">
                                 Scroll
                             </span>
                             <svg

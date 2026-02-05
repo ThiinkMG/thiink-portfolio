@@ -108,7 +108,7 @@ function ProcessStepComponent({ step, index, isLast }: ProcessStepComponentProps
                         whileHover={{ scale: 1.05, borderColor: "rgb(212, 168, 85)" }}
                         transition={{ duration: 0.2 }}
                     >
-                        <span className="font-cinzel text-lg md:text-xl text-gold font-semibold">
+                        <span className="font-cinzel text-[clamp(1.125rem,0.5vw+0.9rem,1.375rem)] text-gold font-semibold">
                             {step.numeral}
                         </span>
                     </motion.div>
@@ -122,12 +122,12 @@ function ProcessStepComponent({ step, index, isLast }: ProcessStepComponentProps
                 <div className="flex-1 pb-12 md:pb-16">
                     {step.subtitle && (
                         <div className="mb-2">
-                            <span className="font-cormorant-sc text-xs uppercase tracking-widest text-gold/70">
+                            <span className="font-cormorant-sc text-[clamp(0.75rem,0.1vw+0.7rem,0.8125rem)] uppercase tracking-widest text-gold/70">
                                 {step.subtitle}
                             </span>
                         </div>
                     )}
-                    <H3 className="text-xl md:text-2xl mb-3 text-marble">{step.title}</H3>
+                    <H3 className="mb-3 text-marble">{step.title}</H3>
                     <Text className="text-marble/70 mb-4 max-w-lg">
                         {step.description}
                     </Text>
@@ -137,7 +137,7 @@ function ProcessStepComponent({ step, index, isLast }: ProcessStepComponentProps
                             {step.details.map((detail) => (
                                 <span
                                     key={detail}
-                                    className="px-3 py-1 text-xs font-outfit uppercase tracking-wider text-marble/50 border border-marble/10 rounded-full"
+                                    className="px-3 py-1 text-[clamp(0.6875rem,0.1vw+0.65rem,0.75rem)] font-outfit uppercase tracking-wider text-marble/50 border border-marble/10 rounded-full"
                                 >
                                     {detail}
                                 </span>
@@ -205,7 +205,7 @@ export function ProcessTimeline({
                 <ScrollReveal>
                     <div className="text-center mb-12">
                         <SectionLabel className="mb-4 block">Capabilities</SectionLabel>
-                        <H2 className="text-2xl md:text-3xl">Full-Service Offerings</H2>
+                        <H2 className="text-[clamp(1.5rem,2vw+0.75rem,2rem)]">Full-Service Offerings</H2>
                     </div>
                 </ScrollReveal>
 

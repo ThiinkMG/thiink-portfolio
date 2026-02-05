@@ -5,13 +5,29 @@ import React from "react";
 // DISPLAY TYPOGRAPHY - Cinzel (Roman carved aesthetic)
 // ─────────────────────────────────────────────────────────────────────────────
 
-// H1: Hero Headline - Maximum impact
+// Hero Title: Maximum impact for hero sections
+export function HeroTitle({ className, children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
+    return (
+        <h1
+            className={cn(
+                "font-cinzel font-semibold tracking-tight leading-[1.05] text-ivory",
+                "text-[clamp(3rem,8vw,7rem)]", // 48px → 112px (per master guide)
+                className
+            )}
+            {...props}
+        >
+            {children}
+        </h1>
+    );
+}
+
+// H1: Page Headlines - Large but not hero-level
 export function H1({ className, children, ...props }: React.HTMLAttributes<HTMLHeadingElement>) {
     return (
         <h1
             className={cn(
                 "font-cinzel font-semibold tracking-tight leading-[1.1] text-ivory",
-                "text-[clamp(2.5rem,5vw+1rem,5rem)]", // 40px → 80px
+                "text-[clamp(2.25rem,5vw+0.75rem,5rem)]", // 36px → 80px (increased mobile min)
                 className
             )}
             {...props}
@@ -27,7 +43,7 @@ export function H2({ className, children, ...props }: React.HTMLAttributes<HTMLH
         <h2
             className={cn(
                 "font-cinzel font-medium tracking-tight text-ivory",
-                "text-[clamp(2rem,3vw+0.75rem,3.5rem)]", // 32px → 56px
+                "text-[clamp(1.875rem,3vw+0.75rem,3.5rem)]", // 30px → 56px (better mobile readability)
                 className
             )}
             {...props}
@@ -43,7 +59,7 @@ export function H3({ className, children, ...props }: React.HTMLAttributes<HTMLH
         <h3
             className={cn(
                 "font-cinzel font-medium text-ivory",
-                "text-[clamp(1.5rem,2vw+0.5rem,2.25rem)]", // 24px → 36px
+                "text-[clamp(1.625rem,2vw+0.5rem,2.25rem)]", // 26px → 36px (better mobile)
                 className
             )}
             {...props}
@@ -59,7 +75,7 @@ export function H4({ className, children, ...props }: React.HTMLAttributes<HTMLH
         <h4
             className={cn(
                 "font-cinzel font-medium text-ivory",
-                "text-[clamp(1.25rem,1.5vw+0.5rem,1.75rem)]", // 20px → 28px
+                "text-[clamp(1.375rem,1.5vw+0.5rem,1.75rem)]", // 22px → 28px (better mobile)
                 className
             )}
             {...props}
@@ -79,7 +95,7 @@ export function Text({ className, children, ...props }: React.HTMLAttributes<HTM
         <p
             className={cn(
                 "font-garamond leading-[1.7] text-marble/90",
-                "text-[clamp(1rem,0.25vw+0.9rem,1.125rem)]", // 16px → 18px
+                "text-[clamp(1.0625rem,0.3vw+0.95rem,1.1875rem)]", // 17px → 19px (improved readability)
                 className
             )}
             {...props}
@@ -95,7 +111,7 @@ export function Lead({ className, children, ...props }: React.HTMLAttributes<HTM
         <p
             className={cn(
                 "font-garamond leading-[1.6] text-marble",
-                "text-[clamp(1.125rem,0.5vw+1rem,1.25rem)]", // 18px → 20px
+                "text-[clamp(1.1875rem,0.5vw+1.05rem,1.375rem)]", // 19px → 22px (improved readability)
                 className
             )}
             {...props}
@@ -114,7 +130,8 @@ export function SectionLabel({ className, children, ...props }: React.HTMLAttrib
     return (
         <span
             className={cn(
-                "font-cormorant-sc text-sm tracking-[0.2em] uppercase text-gold/80",
+                "font-cormorant-sc tracking-[0.2em] uppercase text-gold/80",
+                "text-[clamp(0.875rem,0.2vw+0.8rem,0.9375rem)]", // 14px → 15px
                 className
             )}
             {...props}
@@ -129,7 +146,8 @@ export function Label({ className, children, ...props }: React.HTMLAttributes<HT
     return (
         <span
             className={cn(
-                "font-outfit text-sm uppercase tracking-[0.08em] text-platinum",
+                "font-outfit uppercase tracking-[0.08em] text-platinum",
+                "text-[clamp(0.875rem,0.2vw+0.8rem,0.9375rem)]", // 14px → 15px
                 className
             )}
             {...props}
@@ -144,7 +162,8 @@ export function Caption({ className, children, ...props }: React.HTMLAttributes<
     return (
         <span
             className={cn(
-                "font-cormorant-sc text-xs tracking-[0.15em] uppercase text-platinum/70",
+                "font-cormorant-sc tracking-[0.15em] uppercase text-platinum/70",
+                "text-[clamp(0.8125rem,0.15vw+0.75rem,0.875rem)]", // 13px → 14px (up from 12px)
                 className
             )}
             {...props}
@@ -175,7 +194,7 @@ export function DoubledHeadline({
         <Component
             className={cn(
                 "font-cinzel font-semibold tracking-tight text-ivory relative",
-                "text-[clamp(2rem,3vw+0.75rem,3.5rem)]",
+                "text-[clamp(1.875rem,3vw+0.75rem,3.5rem)]", // 30px → 56px (matching H2)
                 className
             )}
             data-text={text}
@@ -200,7 +219,7 @@ export function DropCap({ className, children, ...props }: React.HTMLAttributes<
         <p
             className={cn(
                 "font-garamond leading-[1.7] text-marble/90",
-                "text-[clamp(1rem,0.25vw+0.9rem,1.125rem)]",
+                "text-[clamp(1.0625rem,0.3vw+0.95rem,1.1875rem)]", // 17px → 19px (matching Text)
                 // Drop cap styling via first-letter pseudo-element
                 "first-letter:font-cinzel first-letter:text-6xl first-letter:font-semibold",
                 "first-letter:text-gold first-letter:float-left first-letter:mr-3",
@@ -227,11 +246,11 @@ export function Placard({ figureNumber, title, subtitle, className, ...props }: 
             {figureNumber && (
                 <Caption>Fig. {figureNumber}.</Caption>
             )}
-            <p className="font-cinzel text-sm font-medium text-ivory tracking-wide">
+            <p className="font-cinzel text-[clamp(0.9375rem,0.2vw+0.85rem,1rem)] font-medium text-ivory tracking-wide">
                 {title}
             </p>
             {subtitle && (
-                <p className="font-garamond text-xs text-platinum/70 italic">
+                <p className="font-garamond text-[clamp(0.8125rem,0.15vw+0.75rem,0.875rem)] text-platinum/70 italic">
                     {subtitle}
                 </p>
             )}
@@ -249,7 +268,7 @@ export function ParchmentText({ className, children, ...props }: React.HTMLAttri
         <p
             className={cn(
                 "font-garamond leading-[1.7] text-ink/90",
-                "text-[clamp(1rem,0.25vw+0.9rem,1.125rem)]",
+                "text-[clamp(1.0625rem,0.3vw+0.95rem,1.1875rem)]", // 17px → 19px (matching Text)
                 className
             )}
             {...props}
@@ -264,7 +283,7 @@ export function ParchmentHeading({ className, children, ...props }: React.HTMLAt
         <h2
             className={cn(
                 "font-cinzel font-medium tracking-tight text-ink",
-                "text-[clamp(2rem,3vw+0.75rem,3.5rem)]",
+                "text-[clamp(1.875rem,3vw+0.75rem,3.5rem)]", // 30px → 56px (matching H2)
                 className
             )}
             {...props}

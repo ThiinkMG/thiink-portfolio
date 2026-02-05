@@ -126,7 +126,7 @@ export function Services({
                 <ScrollReveal>
                     <div className="text-center mb-12">
                         <SectionLabel className="mb-4 block">Capabilities</SectionLabel>
-                        <H2 className="text-2xl md:text-3xl">Full-Service Offerings</H2>
+                        <H2 className="text-[clamp(1.5rem,2vw+0.75rem,2rem)]">Full-Service Offerings</H2>
                     </div>
                 </ScrollReveal>
 

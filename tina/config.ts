@@ -15,6 +15,14 @@ export default defineConfig({
   clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
   token: process.env.TINA_TOKEN,
 
+  // Enable search in admin sidebar
+  search: {
+    tina: {
+      indexerToken: process.env.TINA_SEARCH_TOKEN,
+      stopwordLanguages: ["eng"],
+    },
+  },
+
   build: {
     outputFolder: "admin",
     publicFolder: "public",
@@ -146,6 +154,11 @@ export default defineConfig({
             name: "action",
             label: "Action Steps",
             list: true,
+            ui: {
+              itemProps: (item) => ({
+                label: item?.title || `Step ${item?._index !== undefined ? item._index + 1 : ''}`,
+              }),
+            },
             fields: [
               {
                 type: "string",
@@ -195,6 +208,14 @@ export default defineConfig({
             name: "gallery",
             label: "Gallery",
             list: true,
+            ui: {
+              itemProps: (item) => {
+                // Show alt text or numbered fallback in admin list
+                return {
+                  label: item?.alt || `Image ${item?._index !== undefined ? item._index + 1 : ''}`,
+                };
+              },
+            },
             fields: [
               {
                 type: "image",
@@ -207,6 +228,7 @@ export default defineConfig({
                 name: "alt",
                 label: "Alt Text",
                 required: true,
+                description: "This text will be shown as the item label in the admin",
               },
               {
                 type: "string",
@@ -221,6 +243,11 @@ export default defineConfig({
             name: "videos",
             label: "Videos",
             list: true,
+            ui: {
+              itemProps: (item) => ({
+                label: item?.title || `Video ${item?._index !== undefined ? item._index + 1 : ''}`,
+              }),
+            },
             fields: [
               {
                 type: "string",
@@ -259,6 +286,11 @@ export default defineConfig({
             name: "metrics",
             label: "Metrics",
             list: true,
+            ui: {
+              itemProps: (item) => ({
+                label: item?.label ? `${item.label}: ${item.value || ''}` : `Metric ${item?._index !== undefined ? item._index + 1 : ''}`,
+              }),
+            },
             fields: [
               {
                 type: "string",
@@ -402,6 +434,11 @@ export default defineConfig({
             name: "stats",
             label: "Stats",
             list: true,
+            ui: {
+              itemProps: (item) => ({
+                label: item?.label ? `${item.value || ''} ${item.label}` : `Stat ${item?._index !== undefined ? item._index + 1 : ''}`,
+              }),
+            },
             fields: [
               {
                 type: "string",
@@ -488,6 +525,11 @@ export default defineConfig({
             name: "services",
             label: "Services",
             list: true,
+            ui: {
+              itemProps: (item) => ({
+                label: item?.title || `Service ${item?._index !== undefined ? item._index + 1 : ''}`,
+              }),
+            },
             fields: [
               {
                 type: "string",
@@ -517,6 +559,11 @@ export default defineConfig({
             name: "serviceCards",
             label: "Service Cards",
             list: true,
+            ui: {
+              itemProps: (item) => ({
+                label: item?.title || `Card ${item?._index !== undefined ? item._index + 1 : ''}`,
+              }),
+            },
             fields: [
               {
                 type: "string",
@@ -572,6 +619,11 @@ export default defineConfig({
             name: "steps",
             label: "Process Steps",
             list: true,
+            ui: {
+              itemProps: (item) => ({
+                label: item?.title ? `${item.numeral || ''} ${item.title}` : `Step ${item?._index !== undefined ? item._index + 1 : ''}`,
+              }),
+            },
             fields: [
               {
                 type: "string",

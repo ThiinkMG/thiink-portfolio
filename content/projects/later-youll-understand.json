@@ -60,10 +60,23 @@
   ],
   "videos": [],
   "metrics": [
-    { "label": "Streaming Playlists", "value": "15+" },
-    { "label": "Blog Features", "value": "8" },
-    { "label": "Physical Sales", "value": "500+" }
+    {
+      "label": "Streaming Playlists",
+      "value": "15+"
+    },
+    {
+      "label": "Blog Features",
+      "value": "8"
+    },
+    {
+      "label": "Physical Sales",
+      "value": "500+"
+    }
   ],
-  "colors": ["#8B9467", "#F5F5F0", "#E8D4D4", "#1F1A17"],
+  "colors": [
+    "#8B9467",
+    "#F5F5F0",
+    "#1F1A17"
+  ],
   "nextProject": "fem-flow"
 }

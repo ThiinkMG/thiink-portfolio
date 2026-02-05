@@ -158,76 +158,111 @@ function CaseStudyHero({ project }: { project: Project }) {
 }
 
 // ─────────────────────────────────────────────────────────────────────────────
-// PROJECT OVERVIEW - Quick stats and description
+// PROJECT OVERVIEW - "The Artifact Placard"
+// Museum-style centered card with metadata, color palette, and results
 // ─────────────────────────────────────────────────────────────────────────────
+
+function MetadataField({ label, value }: { label: string; value: string }) {
+    return (
+        <div>
+            <span className="font-cormorant-sc text-xs tracking-[0.2em] text-ink/50 uppercase block mb-1">
+                {label}
+            </span>
+            <span className="font-cinzel text-ink text-base md:text-lg">{value}</span>
+        </div>
+    );
+}
+
+function PlacardOrnament() {
+    return (
+        <div className="flex items-center justify-center gap-4 my-6">
+            <div className="h-px w-12 md:w-16 bg-gradient-to-r from-transparent to-gold/40" />
+            <span className="text-gold/50 text-sm">◆</span>
+            <div className="h-px w-12 md:w-16 bg-gradient-to-l from-transparent to-gold/40" />
+        </div>
+    );
+}
+
+function ColorPaletteDisplay({ colors }: { colors: string[] }) {
+    return (
+        <div className="text-center mb-6">
+            <span className="font-cormorant-sc text-xs tracking-[0.2em] text-ink/50 uppercase block mb-4">
+                Color Palette
+            </span>
+            <div className="flex justify-center gap-3 md:gap-4 flex-wrap">
+                {colors.map((color, i) => (
+                    <div key={i} className="group">
+                        <div
+                            className="w-14 h-14 md:w-16 md:h-16 lg:w-20 lg:h-20 rounded-sm border border-ink/10 shadow-md transition-transform duration-300 hover:scale-105"
+                            style={{ backgroundColor: color }}
+                        />
+                        <span className="font-cormorant-sc text-[10px] text-ink/40 mt-2 block">
+                            {color.toUpperCase()}
+                        </span>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
+
+function MetricsDisplay({ metrics }: { metrics: { label: string; value: string }[] }) {
+    return (
+        <div className="max-w-3xl mx-auto">
+            <span className="font-cormorant-sc text-sm tracking-[0.2em] text-gold uppercase block mb-6 text-center">
+                Results
+            </span>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+                {metrics.map((metric, i) => (
+                    <div key={i} className="bg-ink/5 rounded-sm p-6 text-center hover:bg-ink/8 transition-colors">
+                        <span className="font-cinzel text-2xl md:text-3xl lg:text-4xl text-gold block mb-1">
+                            {metric.value}
+                        </span>
+                        <span className="font-garamond text-ink/60 text-sm">{metric.label}</span>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
 
 function ProjectOverview({ project }: { project: Project }) {
     return (
         <section className="py-20 border-b border-ink/10">
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
                 <ScrollReveal>
-                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
-                        {/* Left: Project Details */}
-                        <div className="lg:col-span-4 space-y-8">
-                            <div className="grid grid-cols-2 gap-6">
-                                <div>
-                                    <Caption className="text-ink/50 block mb-2">Client</Caption>
-                                    <p className="font-cinzel text-ink">{project.client}</p>
-                                </div>
-                                <div>
-                                    <Caption className="text-ink/50 block mb-2">Year</Caption>
-                                    <p className="font-cinzel text-ink">{project.year}</p>
-                                </div>
-                                <div>
-                                    <Caption className="text-ink/50 block mb-2">Duration</Caption>
-                                    <p className="font-cinzel text-ink">{project.duration}</p>
-                                </div>
-                                <div>
-                                    <Caption className="text-ink/50 block mb-2">Category</Caption>
-                                    <p className="font-cinzel text-ink">{project.category}</p>
-                                </div>
-                            </div>
+                    {/* The Artifact Placard Card */}
+                    <div className="bg-parchment/50 border border-ink/10 rounded-sm p-8 md:p-12 max-w-4xl mx-auto mb-12">
+                        {/* Top Ornament */}
+                        <PlacardOrnament />
 
-                            {/* Color Palette */}
-                            {project.colors && (
-                                <div>
-                                    <Caption className="text-ink/50 block mb-3">Color Palette</Caption>
-                                    <div className="flex gap-2">
-                                        {project.colors.map((color, i) => (
-                                            <div
-                                                key={i}
-                                                className="w-10 h-10 rounded-sm border border-ink/10 shadow-sm"
-                                                style={{ backgroundColor: color }}
-                                                title={color}
-                                            />
-                                        ))}
-                                    </div>
-                                </div>
-                            )}
-
-                            {/* Metrics */}
-                            {project.metrics && (
-                                <div className="pt-6 border-t border-ink/10">
-                                    <Caption className="text-ink/50 block mb-4">Results</Caption>
-                                    <div className="space-y-3">
-                                        {project.metrics.map((metric, i) => (
-                                            <div key={i} className="flex justify-between items-baseline">
-                                                <span className="font-garamond text-ink/70">{metric.label}</span>
-                                                <span className="font-cinzel text-gold text-lg">{metric.value}</span>
-                                            </div>
-                                        ))}
-                                    </div>
-                                </div>
-                            )}
+                        {/* Metadata Grid - 2x2 mobile, 4-col desktop */}
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center mb-8">
+                            <MetadataField label="Client" value={project.client} />
+                            <MetadataField label="Year" value={project.year} />
+                            <MetadataField label="Category" value={project.category} />
+                            <MetadataField label="Duration" value={project.duration} />
                         </div>
 
-                        {/* Right: Description */}
-                        <div className="lg:col-span-7 lg:col-start-6">
-                            <DropCap className="text-ink/90 text-lg leading-relaxed">
-                                {project.description}
-                            </DropCap>
-                        </div>
+                        {/* Divider */}
+                        <div className="h-px w-32 mx-auto bg-ink/10 mb-8" />
+
+                        {/* Color Palette - Prominent */}
+                        {project.colors && <ColorPaletteDisplay colors={project.colors} />}
+
+                        {/* Bottom Ornament */}
+                        <PlacardOrnament />
                     </div>
+
+                    {/* Description - Full Width Below */}
+                    <div className="max-w-3xl mx-auto mb-16">
+                        <DropCap className="text-ink/90 text-lg leading-relaxed">
+                            {project.description}
+                        </DropCap>
+                    </div>
+
+                    {/* Metrics/Results Section */}
+                    {project.metrics && <MetricsDisplay metrics={project.metrics} />}
                 </ScrollReveal>
             </div>
         </section>
@@ -247,7 +282,7 @@ function SituationSection({ project }: { project: Project }) {
                         ratio="1:2"
                         left={
                             <div>
-                                <SectionLabel className="text-gold block mb-3 text-base">I.</SectionLabel>
+                                <SectionLabel className="text-ink/70 block mb-3 text-xl">I.</SectionLabel>
                                 <H2 className="text-ink">Situation</H2>
                             </div>
                         }
@@ -276,7 +311,7 @@ function TaskSection({ project }: { project: Project }) {
                         ratio="1:2"
                         left={
                             <div>
-                                <SectionLabel className="text-gold block mb-3 text-base">II.</SectionLabel>
+                                <SectionLabel className="text-ink/70 block mb-3 text-xl">II.</SectionLabel>
                                 <H2 className="text-ink">Task</H2>
                             </div>
                         }
@@ -303,7 +338,7 @@ function ActionSection({ project }: { project: Project }) {
                 {/* Section Header */}
                 <ScrollReveal>
                     <div className="mb-16">
-                        <SectionLabel className="text-gold block mb-3 text-base">III.</SectionLabel>
+                        <SectionLabel className="text-ink/70 block mb-3 text-xl">III.</SectionLabel>
                         <H2 className="text-ink">Action</H2>
                     </div>
                 </ScrollReveal>
@@ -317,7 +352,7 @@ function ActionSection({ project }: { project: Project }) {
                                 <div className="hidden lg:block lg:col-span-3">
                                     {step.marginalia && (
                                         <Marginalia position="right">
-                                            <span className="block font-pinyon text-gold text-lg mb-2">
+                                            <span className="block font-pinyon text-ink/70 text-lg mb-2">
                                                 Curator's Note
                                             </span>
                                             {step.marginalia}
@@ -328,7 +363,7 @@ function ActionSection({ project }: { project: Project }) {
                                 {/* Main Content */}
                                 <div className="lg:col-span-8 lg:col-start-5">
                                     <div className="flex items-baseline gap-4 mb-4">
-                                        <span className="font-cormorant-sc text-gold text-base">
+                                        <span className="font-cormorant-sc text-ink/70 text-lg">
                                             {String(i + 1).padStart(2, '0')}
                                         </span>
                                         <h4 className="font-cinzel text-xl text-ink">
@@ -342,7 +377,7 @@ function ActionSection({ project }: { project: Project }) {
                                     {/* Marginalia - Below on mobile */}
                                     {step.marginalia && (
                                         <div className="lg:hidden mt-6 pl-4 border-l-2 border-gold/40">
-                                            <span className="block font-pinyon text-gold text-sm mb-1">
+                                            <span className="block font-pinyon text-ink/70 text-base mb-1">
                                                 Curator's Note
                                             </span>
                                             <p className="text-sm text-ink/70 italic font-garamond">
@@ -373,7 +408,7 @@ function ResultSection({ project }: { project: Project }) {
                         ratio="1:2"
                         left={
                             <div>
-                                <SectionLabel className="text-gold block mb-3 text-base">IV.</SectionLabel>
+                                <SectionLabel className="text-ink/70 block mb-3 text-xl">IV.</SectionLabel>
                                 <H2 className="text-ink">Result</H2>
                             </div>
                         }
@@ -401,7 +436,7 @@ function GallerySection({ project }: { project: Project }) {
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
                 <ScrollReveal>
                     <div className="mb-12">
-                        <SectionLabel className="text-gold/80 block mb-3">Gallery</SectionLabel>
+                        <SectionLabel className="text-ink/70 block mb-3 text-xl">Gallery</SectionLabel>
                         <H3 className="text-ink">Project Showcase</H3>
                     </div>
                 </ScrollReveal>

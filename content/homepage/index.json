@@ -12,9 +12,18 @@
     "opacity": 60
   },
   "stats": [
-    { "value": "150+", "label": "Projects Delivered" },
-    { "value": "50+", "label": "Happy Clients" },
-    { "value": "8+", "label": "Years Experience" }
+    {
+      "value": "1000+",
+      "label": "Projects Delivered"
+    },
+    {
+      "value": "25+",
+      "label": "5 Star Reviews"
+    },
+    {
+      "value": "7+",
+      "label": "Years Experience"
+    }
   ],
   "trustLogos": [
     "GOOGLE",
@@ -30,7 +39,7 @@
     "headline": "Ready to Elevate Your Brand?",
     "subtext": "Let's create something extraordinary together. Your vision deserves a visual identity that commands attention.",
     "buttonText": "Start Your Project",
-    "trustLine": "Trusted by startups and Fortune 500 companies alike",
+    "trustLine": "Trusted by startups and Small businesses alike!",
     "backgroundImage": "",
     "backgroundOpacity": 20
   }

@@ -22,7 +22,7 @@
       "content": "Rather than explaining the project, the materials suggest a story worth discovering. Compositional choices and copy create questions that drive audience curiosity and engagement."
     }
   ],
-  "result": "The teaser campaign generated significant industry buzz, with the poster shared widely across entertainment networks. The materials successfully positioned Jack for upcoming announcements and opened doors for pitch meetings with production companies.",
+  "result": "The client received a comprehensive press kit, professional pitch deck, and complete project assets, enabling them to launch a successful GoFundMe campaign and secure meetings with serious investors.",
   "deliverables": [
     "Hero Poster Design",
     "Social Media Variants",
@@ -65,6 +65,10 @@
     }
   ],
   "metrics": [],
-  "colors": ["#1A1A1A", "#D4A855", "#FFFFFF"],
+  "colors": [
+    "#1A1A1A",
+    "#D4A855",
+    "#FFFFFF"
+  ],
   "nextProject": "ai-automation"
 }

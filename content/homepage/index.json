@@ -12,9 +12,18 @@
     "opacity": 60
   },
   "stats": [
-    { "value": "150+", "label": "Projects Delivered" },
-    { "value": "50+", "label": "Happy Clients" },
-    { "value": "8+", "label": "Years Experience" }
+    {
+      "value": "150+",
+      "label": "Projects Delivered"
+    },
+    {
+      "value": "50+",
+      "label": "Happy Clients"
+    },
+    {
+      "value": "9+",
+      "label": "Years Experience"
+    }
   ],
   "trustLogos": [
     "GOOGLE",

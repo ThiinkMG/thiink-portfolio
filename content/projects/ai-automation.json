@@ -31,7 +31,7 @@
   ],
   "gallery": [
     {
-      "src": "/images/work/ai-automation-podcast/hero.png",
+      "src": "/images/work/ai-automation-podcast/gallery-4.png",
       "alt": "Ai x Automation Podcast Hero",
       "caption": "Fig. 1 — Retro-futuristic podcast hero"
     },
@@ -53,6 +53,10 @@
   ],
   "videos": [],
   "metrics": [],
-  "colors": ["#C62828", "#FFF8E1", "#37474F"],
+  "colors": [
+    "#C62828",
+    "#FFF8E1",
+    "#37474F"
+  ],
   "nextProject": "later-youll-understand"
 }

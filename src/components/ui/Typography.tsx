@@ -11,7 +11,7 @@ export function HeroTitle({ className, children, ...props }: React.HTMLAttribute
         <h1
             className={cn(
                 "font-cinzel font-semibold tracking-tight leading-[1.05] text-ivory",
-                "text-[clamp(3rem,8vw,7rem)]", // 48px → 112px (per master guide)
+                "text-[clamp(2.5rem,4vw+1rem,4rem)]", // 40px → 64px (UI/UX optimized)
                 className
             )}
             {...props}
@@ -27,7 +27,7 @@ export function H1({ className, children, ...props }: React.HTMLAttributes<HTMLH
         <h1
             className={cn(
                 "font-cinzel font-semibold tracking-tight leading-[1.1] text-ivory",
-                "text-[clamp(2.25rem,5vw+0.75rem,5rem)]", // 36px → 80px (increased mobile min)
+                "text-[clamp(2rem,3vw+0.75rem,3rem)]", // 32px → 48px (UI/UX optimized)
                 className
             )}
             {...props}
@@ -43,7 +43,7 @@ export function H2({ className, children, ...props }: React.HTMLAttributes<HTMLH
         <h2
             className={cn(
                 "font-cinzel font-medium tracking-tight text-ivory",
-                "text-[clamp(1.875rem,3vw+0.75rem,3.5rem)]", // 30px → 56px (better mobile readability)
+                "text-[clamp(1.625rem,2vw+0.5rem,2.5rem)]", // 26px → 40px (UI/UX optimized)
                 className
             )}
             {...props}
@@ -59,7 +59,7 @@ export function H3({ className, children, ...props }: React.HTMLAttributes<HTMLH
         <h3
             className={cn(
                 "font-cinzel font-medium text-ivory",
-                "text-[clamp(1.625rem,2vw+0.5rem,2.25rem)]", // 26px → 36px (better mobile)
+                "text-[clamp(1.375rem,1.5vw+0.25rem,1.75rem)]", // 22px → 28px (UI/UX optimized)
                 className
             )}
             {...props}
@@ -75,7 +75,7 @@ export function H4({ className, children, ...props }: React.HTMLAttributes<HTMLH
         <h4
             className={cn(
                 "font-cinzel font-medium text-ivory",
-                "text-[clamp(1.375rem,1.5vw+0.5rem,1.75rem)]", // 22px → 28px (better mobile)
+                "text-[clamp(1.125rem,1vw+0.25rem,1.5rem)]", // 18px → 24px (UI/UX optimized)
                 className
             )}
             {...props}
@@ -194,7 +194,7 @@ export function DoubledHeadline({
         <Component
             className={cn(
                 "font-cinzel font-semibold tracking-tight text-ivory relative",
-                "text-[clamp(1.875rem,3vw+0.75rem,3.5rem)]", // 30px → 56px (matching H2)
+                "text-[clamp(1.625rem,2vw+0.5rem,2.5rem)]", // 26px → 40px (matching H2)
                 className
             )}
             data-text={text}
@@ -283,7 +283,7 @@ export function ParchmentHeading({ className, children, ...props }: React.HTMLAt
         <h2
             className={cn(
                 "font-cinzel font-medium tracking-tight text-ink",
-                "text-[clamp(1.875rem,3vw+0.75rem,3.5rem)]", // 30px → 56px (matching H2)
+                "text-[clamp(1.625rem,2vw+0.5rem,2.5rem)]", // 26px → 40px (matching H2)
                 className
             )}
             {...props}

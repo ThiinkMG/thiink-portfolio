@@ -59,7 +59,7 @@ export function CTABand({
                     </div>
 
                     {/* Headline */}
-                    <H2 className="text-[clamp(1.875rem,4vw+0.5rem,3.5rem)] mb-6 text-white drop-shadow-lg">
+                    <H2 className="text-[clamp(1.625rem,2.5vw+0.5rem,2.75rem)] mb-6 text-white drop-shadow-lg">
                         {headline}
                     </H2>
 

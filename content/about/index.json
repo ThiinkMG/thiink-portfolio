@@ -23,10 +23,22 @@
     "description": "At Thiink Media Graphics, we specialize in empowering small to medium-sized enterprises with innovative design and digital solutions that drive growth and success, fusing imaginative creativity with practical strategy in every partnership."
   },
   "stats": [
-    { "value": "2019", "label": "Established" },
-    { "value": "150+", "label": "Projects" },
-    { "value": "8+", "label": "Years Experience" },
-    { "value": "100%", "label": "Client Satisfaction" }
+    {
+      "value": "2019",
+      "label": "Established"
+    },
+    {
+      "value": "1000+",
+      "label": "Projects"
+    },
+    {
+      "value": "8+",
+      "label": "Years Experience"
+    },
+    {
+      "value": "100%",
+      "label": "Client Satisfaction"
+    }
   ],
   "services": {
     "label": "What We Do",

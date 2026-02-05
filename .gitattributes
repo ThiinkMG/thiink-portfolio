@@ -1,1 +1,2 @@
-*.mp4 filter=lfs diff=lfs merge=lfs -text
+# Git attributes
+# Note: Git LFS was disabled for .mp4 files since videos were committed before LFS was set up

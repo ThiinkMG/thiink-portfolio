@@ -1,0 +1,69 @@
+{
+  "slug": "later-youll-understand",
+  "title": "Later You'll Understand",
+  "subtitle": "Album Art & Packaging",
+  "category": "Music Packaging",
+  "client": "Dionta Goodson",
+  "year": "2024",
+  "duration": "4 weeks",
+  "heroImage": "/images/work/later-youll-understand/hero.png",
+  "thumbnailImage": "/images/work/later-youll-understand/hero.png",
+  "description": "Complete album packaging design for an underground hip-hop project, featuring motion-blur photography and lo-fi nostalgic aesthetics that capture the introspective nature of the music.",
+  "situation": "Dionta Goodson, an emerging hip-hop artist, was preparing to release 'Later You'll Understand Vol. 1'—a deeply personal project exploring growth, reflection, and the wisdom that comes with time. He needed artwork that would stand apart from the polished mainstream aesthetic.",
+  "task": "Create album packaging that visually translates the project's introspective themes, appeals to underground hip-hop audiences, and works across both digital platforms and physical formats including CD and vinyl.",
+  "action": [
+    {
+      "title": "Lo-Fi Aesthetic Development",
+      "content": "We developed a visual language rooted in motion blur and VHS-style glitch effects. The intentional imperfection mirrors the album's raw, honest approach—beauty found in the unpolished moments.",
+      "marginalia": "The motion blur effect suggests movement through time, reinforcing the album's theme of eventual understanding."
+    },
+    {
+      "title": "Typography as Identity",
+      "content": "Hand-drawn, almost childlike typography was chosen to contrast the adult themes within. The sage green color palette suggests growth while the casual arrangement creates an intimate, personal feeling."
+    },
+    {
+      "title": "Multi-Format Execution",
+      "content": "We designed the artwork to translate seamlessly across formats—from square digital thumbnails to rectangular CD cases to large-format vinyl sleeves. Each format received careful attention to proportions and details.",
+      "marginalia": "Physical formats remain crucial in hip-hop culture, where vinyl and limited CDs carry collector value."
+    }
+  ],
+  "result": "The album art has been praised for its distinctive look in a crowded market. The visual identity helped establish Dionta's artistic direction and contributed to playlist placements and blog features that cited the compelling artwork.",
+  "deliverables": [
+    "Album Cover Art",
+    "Back Cover & Track List",
+    "CD Jewel Case Design",
+    "Vinyl Sleeve Design",
+    "Digital Platform Variants",
+    "Social Media Assets"
+  ],
+  "gallery": [
+    {
+      "src": "/images/work/later-youll-understand/hero.png",
+      "alt": "Later You'll Understand Album Hero",
+      "caption": "Fig. 1 — Album art hero presentation"
+    },
+    {
+      "src": "/images/work/later-youll-understand/gallery-1.png",
+      "alt": "Later You'll Understand Album Cover",
+      "caption": "Fig. 2 — Primary album cover art"
+    },
+    {
+      "src": "/images/work/later-youll-understand/gallery-3.png",
+      "alt": "Album CD Case Mockup",
+      "caption": "Fig. 3 — CD case mockup presentation"
+    },
+    {
+      "src": "/images/work/later-youll-understand/gallery-4.png",
+      "alt": "Album Track List Design",
+      "caption": "Fig. 4 — Back cover track list design"
+    }
+  ],
+  "videos": [],
+  "metrics": [
+    { "label": "Streaming Playlists", "value": "15+" },
+    { "label": "Blog Features", "value": "8" },
+    { "label": "Physical Sales", "value": "500+" }
+  ],
+  "colors": ["#8B9467", "#F5F5F0", "#E8D4D4", "#1F1A17"],
+  "nextProject": "fem-flow"
+}

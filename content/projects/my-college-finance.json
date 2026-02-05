@@ -1,0 +1,101 @@
+{
+  "slug": "my-college-finance",
+  "title": "My College Finance",
+  "subtitle": "Educational Brand & Character",
+  "category": "Brand Identity",
+  "client": "My College Finance",
+  "year": "2024",
+  "duration": "8 weeks",
+  "heroImage": "/images/work/my-college-finance/hero.png",
+  "thumbnailImage": "/images/work/my-college-finance/hero.png",
+  "description": "A friendly, Disney-inspired educational brand featuring Oliver Owl—a mascot character designed to make financial literacy approachable for college students.",
+  "situation": "My College Finance needed to tackle a significant challenge: making financial education engaging for college students who typically find the subject intimidating or boring. The existing materials felt corporate and failed to connect with their young audience.",
+  "task": "Create a complete brand identity centered around a mascot character that could serve as a friendly guide through complex financial topics. The character needed to be approachable yet professional, suitable for both social media and serious educational content.",
+  "action": [
+    {
+      "title": "Character Creation",
+      "content": "We designed Oliver Owl—a wise yet approachable owl character in professional attire. The choice of an owl leverages natural associations with wisdom while the friendly illustration style removes intimidation. His blue suit suggests professionalism without stuffiness.",
+      "marginalia": "Oliver's name was chosen for its associations with growth and wisdom (olive tree) and classic storytelling (Oliver Twist)."
+    },
+    {
+      "title": "Disney-Inspired Illustration",
+      "content": "The character design draws from the warmth of classic Disney animation while maintaining a contemporary feel. Large expressive eyes create emotional connection, while the detailed academic settings ground Oliver in the educational context."
+    },
+    {
+      "title": "Multi-Platform Application",
+      "content": "We developed Oliver for various contexts—from YouTube thumbnails to webinar announcements to social media posts. Each application maintains character consistency while adapting to platform-specific requirements.",
+      "marginalia": "The character system includes multiple poses and expressions for different content needs."
+    }
+  ],
+  "result": "Oliver Owl has become the beloved face of My College Finance. Student engagement with educational content increased significantly, and the brand has expanded into webinars, YouTube content, and campus partnerships. The mascot has developed genuine fan affection.",
+  "deliverables": [
+    "Oliver Owl Character Design",
+    "Character Pose Library",
+    "Primary Brand Logo",
+    "YouTube Channel Assets",
+    "Social Media Templates",
+    "Webinar Graphics",
+    "Campus Marketing Materials"
+  ],
+  "gallery": [
+    {
+      "src": "/images/work/my-college-finance/hero.png",
+      "alt": "My College Finance Hero",
+      "caption": "Fig. 1 — Oliver Owl campus hero"
+    },
+    {
+      "src": "/images/work/my-college-finance/gallery-1.png",
+      "alt": "Oliver Owl Character Design",
+      "caption": "Fig. 2 — Oliver Owl character concept"
+    },
+    {
+      "src": "/images/work/my-college-finance/gallery-3.png",
+      "alt": "Oliver in Apartment",
+      "caption": "Fig. 3 — Oliver in apartment scene"
+    },
+    {
+      "src": "/images/work/my-college-finance/gallery-4.png",
+      "alt": "My College Finance Logo",
+      "caption": "Fig. 4 — Complete logo with Oliver mascot"
+    },
+    {
+      "src": "/images/work/my-college-finance/gallery-5.png",
+      "alt": "Oliver Owl Character V2",
+      "caption": "Fig. 5 — Oliver character design variation"
+    },
+    {
+      "src": "/images/work/my-college-finance/gallery-6.png",
+      "alt": "My College Finance Google Email Badge",
+      "caption": "Fig. 6 — Google email badge featuring Oliver with TM"
+    },
+    {
+      "src": "/images/work/my-college-finance/gallery-7.png",
+      "alt": "MCF Online Webinar Design",
+      "caption": "Fig. 7 — Online webinar presentation design"
+    },
+    {
+      "src": "/images/work/my-college-finance/gallery-8.png",
+      "alt": "MCF Online Webinar Design V2",
+      "caption": "Fig. 8 — Webinar design upscaled version"
+    }
+  ],
+  "videos": [
+    {
+      "src": "/images/work/my-college-finance/intro-video.mp4",
+      "title": "Money Education Intro",
+      "description": "Educational intro video featuring Oliver Owl explaining financial literacy basics."
+    },
+    {
+      "src": "/images/work/my-college-finance/investfest-wrap-up.mp4",
+      "title": "InvestFest Wrap Up",
+      "description": "Highlights from My College Finance's InvestFest event."
+    }
+  ],
+  "metrics": [
+    { "label": "Content Engagement", "value": "+85%" },
+    { "label": "YouTube Subscribers", "value": "15K" },
+    { "label": "Campus Partners", "value": "25" }
+  ],
+  "colors": ["#1E3A8A", "#FFFFFF", "#D4A855", "#F5F5F0"],
+  "nextProject": "sins-we-share"
+}

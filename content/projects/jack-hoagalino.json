@@ -1,0 +1,70 @@
+{
+  "slug": "jack-hoagalino",
+  "title": "Jack Hoagalino",
+  "subtitle": "Entertainment Branding",
+  "category": "Entertainment",
+  "client": "Jack Hoagalino",
+  "year": "2024",
+  "duration": "4 weeks",
+  "heroImage": "/images/work/jack-hoagalino/hero.png",
+  "thumbnailImage": "/images/work/jack-hoagalino/hero.png",
+  "description": "Cinematic poster design and visual identity for an emerging entertainment personality, blending dramatic storytelling with personal brand positioning.",
+  "situation": "Jack Hoagalino, an emerging figure in entertainment, needed promotional materials that would establish credibility and intrigue before formal project announcements. The challenge was creating buzz without revealing specifics.",
+  "task": "Design teaser materials that create cinematic anticipation, establish Jack's visual brand identity, and generate industry interest—all while maintaining strategic ambiguity about upcoming projects.",
+  "action": [
+    {
+      "title": "Cinematic Positioning",
+      "content": "We approached the project as if designing for a major studio release. High-contrast photography, dramatic lighting, and film-inspired typography create immediate association with quality entertainment.",
+      "marginalia": "The poster format was chosen specifically for its cultural associations with prestige projects."
+    },
+    {
+      "title": "Mystery as Strategy",
+      "content": "Rather than explaining the project, the materials suggest a story worth discovering. Compositional choices and copy create questions that drive audience curiosity and engagement."
+    }
+  ],
+  "result": "The teaser campaign generated significant industry buzz, with the poster shared widely across entertainment networks. The materials successfully positioned Jack for upcoming announcements and opened doors for pitch meetings with production companies.",
+  "deliverables": [
+    "Hero Poster Design",
+    "Social Media Variants",
+    "Press Kit Materials",
+    "Digital Campaign Assets"
+  ],
+  "gallery": [
+    {
+      "src": "/images/work/jack-hoagalino/hero.png",
+      "alt": "Jack Hoagalino Hero Poster",
+      "caption": "Fig. 1 — Cinematic hero poster"
+    },
+    {
+      "src": "/images/work/jack-hoagalino/gallery-1.png",
+      "alt": "Jack Hoagalino Portrait Poster 1",
+      "caption": "Fig. 2 — Primary portrait poster design"
+    },
+    {
+      "src": "/images/work/jack-hoagalino/gallery-2.png",
+      "alt": "Jack Hoagalino Portrait Poster 2",
+      "caption": "Fig. 3 — Alternative portrait concept"
+    },
+    {
+      "src": "/images/work/jack-hoagalino/gallery-3.png",
+      "alt": "Jack Hoagalino Portrait Poster 3",
+      "caption": "Fig. 4 — Dramatic lighting variant"
+    },
+    {
+      "src": "/images/work/jack-hoagalino/gallery-4.png",
+      "alt": "Jack Hoagalino Poster Mockup",
+      "caption": "Fig. 5 — Poster mockup presentation"
+    }
+  ],
+  "videos": [
+    {
+      "src": "https://www.youtube.com/embed/ktkeF1zbvwY",
+      "title": "Blood Ties Animation",
+      "description": "Cinematic animated teaser for the Blood Ties project.",
+      "warning": "Mature Content. Viewer discretion is advised."
+    }
+  ],
+  "metrics": [],
+  "colors": ["#1A1A1A", "#D4A855", "#FFFFFF"],
+  "nextProject": "ai-automation"
+}

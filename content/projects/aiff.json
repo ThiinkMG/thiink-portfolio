@@ -1,0 +1,68 @@
+{
+  "slug": "aiff",
+  "title": "Atlanta Indian Film Festival",
+  "subtitle": "Event Branding",
+  "category": "Event Branding",
+  "client": "AIFF",
+  "year": "2024",
+  "duration": "6 weeks",
+  "heroImage": "/images/work/aiff/hero.png",
+  "thumbnailImage": "/images/work/aiff/hero.png",
+  "description": "Vibrant event branding for Atlanta's premier celebration of Indian cinema, bridging cultural heritage with contemporary design sensibilities.",
+  "situation": "The Atlanta Indian Film Festival needed branding that would honor the rich tradition of Indian cinema while appealing to Atlanta's diverse, cosmopolitan audience. Previous years had relied on generic festival templates that failed to capture the event's unique character.",
+  "task": "Develop a distinctive visual identity that celebrates Indian cinematic heritage, attracts both Indian diaspora and mainstream audiences, and scales effectively from digital marketing to large-format event signage.",
+  "action": [
+    {
+      "title": "Cultural Research & Synthesis",
+      "content": "We immersed ourselves in Indian cinema's visual history—from classic Bollywood poster art to contemporary independent film aesthetics. This research informed a design direction that felt authentically rooted yet fresh.",
+      "marginalia": "Indian cinema is the world's largest film industry by volume, producing over 1,500 films annually."
+    },
+    {
+      "title": "Dynamic Visual System",
+      "content": "The identity centers on flowing, dance-inspired forms that suggest both film reels and classical Indian movement. A vibrant color palette draws from traditional textiles while maintaining modern accessibility."
+    },
+    {
+      "title": "Multi-Format Execution",
+      "content": "We designed comprehensive event materials including banners, programs, digital assets, and wayfinding signage—ensuring visual consistency across the entire festival experience."
+    }
+  ],
+  "result": "The 2024 festival saw record attendance with a 35% increase over the previous year. The visual identity received widespread praise on social media and was featured in local arts publications. AIFF has retained us for ongoing annual branding.",
+  "deliverables": [
+    "Festival Logo & Identity",
+    "Retractable Banners",
+    "Event Program Design",
+    "Digital Marketing Suite",
+    "Social Media Templates",
+    "Wayfinding Signage"
+  ],
+  "gallery": [
+    {
+      "src": "/images/work/aiff/hero.png",
+      "alt": "Atlanta Indian Film Festival Hero Banner",
+      "caption": "Fig. 1 — Festival hero banner"
+    },
+    {
+      "src": "/images/work/aiff/gallery-1.png",
+      "alt": "AIFF Vertical Poster Design",
+      "caption": "Fig. 2 — Festival vertical poster design"
+    },
+    {
+      "src": "/images/work/aiff/gallery-2.png",
+      "alt": "AIFF Alternative Poster",
+      "caption": "Fig. 3 — Alternative poster concept"
+    },
+    {
+      "src": "/images/work/aiff/gallery-3.png",
+      "alt": "AIFF Retractable Banner",
+      "caption": "Fig. 4 — Retractable banner design"
+    }
+  ],
+  "videos": [],
+  "metrics": [
+    { "label": "Attendance Increase", "value": "+35%" },
+    { "label": "Social Impressions", "value": "500K+" },
+    { "label": "Media Features", "value": "12" }
+  ],
+  "colors": ["#E53935", "#FFB300", "#1E88E5", "#FFFFFF"],
+  "nextProject": "jack-hoagalino"
+}

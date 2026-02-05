@@ -1,0 +1,85 @@
+{
+  "slug": "neo-sophia",
+  "title": "Neo Sophia",
+  "subtitle": "Educational App Design",
+  "category": "App Design",
+  "client": "Neo Sophia",
+  "year": "2024",
+  "duration": "12 weeks",
+  "heroImage": "/images/work/neo-sophia/lordmoose_Sophie_the_fox_she_is_a_fox_with_large_bright_green_e_9f52e8f6-e2a2-48e5-b24b-032352a14775.png",
+  "thumbnailImage": "/images/work/neo-sophia/lordmoose_Sophie_the_fox_she_is_a_fox_with_large_bright_green_e_9f52e8f6-e2a2-48e5-b24b-032352a14775.png",
+  "description": "UI/UX design for an AI-driven educational platform that makes philosophy and wisdom traditions accessible to modern learners through engaging character interactions.",
+  "situation": "Neo Sophia had developed groundbreaking AI technology for philosophical education but lacked the visual design to match their innovative approach. Their existing interface was functional but failed to convey the warmth and wisdom of their content.",
+  "task": "Create an app experience that feels both intellectually rigorous and emotionally inviting. The design needed to make ancient wisdom feel relevant to digital-native learners while maintaining the gravitas these traditions deserve.",
+  "action": [
+    {
+      "title": "Character-Driven Design",
+      "content": "We centered the experience around Sophie Fox and Mr. Brain—mascot characters that serve as guides through the philosophical curriculum. These characters bridge the gap between complex concepts and accessible learning.",
+      "marginalia": "Sophie Fox represents curiosity and intuition; Mr. Brain embodies analytical thinking."
+    },
+    {
+      "title": "Intuitive Information Architecture",
+      "content": "The app structure mirrors the journey of philosophical inquiry: from wonder to investigation to understanding. Each screen was designed to reduce cognitive load while encouraging deeper exploration."
+    },
+    {
+      "title": "Visual Language of Wisdom",
+      "content": "We developed a warm, inviting color palette paired with clean typography that suggests both approachability and intellectual depth. Subtle animations reward user progress and maintain engagement.",
+      "marginalia": "Custom illustrations blend classical philosophy references with contemporary digital aesthetics."
+    }
+  ],
+  "result": "The redesigned app saw a 60% increase in daily active users and a 45% improvement in lesson completion rates. User feedback specifically praised the welcoming aesthetic and intuitive navigation. Neo Sophia has since secured additional funding to expand their curriculum.",
+  "deliverables": [
+    "Complete UI/UX Redesign",
+    "Character Illustration Suite",
+    "Custom Icon Library",
+    "Animation Specifications",
+    "Design System Documentation",
+    "Prototype & User Flows"
+  ],
+  "gallery": [
+    {
+      "src": "/images/work/neo-sophia/lordmoose_Sophie_the_fox_she_is_a_fox_with_large_bright_green_e_9f52e8f6-e2a2-48e5-b24b-032352a14775.png",
+      "alt": "Sophie Fox Hero Portrait",
+      "caption": "Fig. 1 — Sophie Fox character hero portrait"
+    },
+    {
+      "src": "/images/work/neo-sophia/gallery-1.png",
+      "alt": "Sophie Fox Character Turnaround",
+      "caption": "Fig. 2 — Sophie Fox mascot character design"
+    },
+    {
+      "src": "/images/work/neo-sophia/gallery-2.png",
+      "alt": "Sophie Fox Close-up",
+      "caption": "Fig. 3 — Character expression study"
+    },
+    {
+      "src": "/images/work/neo-sophia/gallery-3.png",
+      "alt": "Neo Sophia App Screener",
+      "caption": "Fig. 4 — Mobile app landing screen"
+    },
+    {
+      "src": "/images/work/neo-sophia/gallery-4.png",
+      "alt": "Mr. Brain Character",
+      "caption": "Fig. 5 — Mr. Brain mascot splash art"
+    },
+    {
+      "src": "/images/work/neo-sophia/gallery-5.png",
+      "alt": "Neo Sophia Logo",
+      "caption": "Fig. 6 — Brand logo design"
+    }
+  ],
+  "videos": [
+    {
+      "src": "https://www.youtube.com/embed/M6fEB6XO6Vs",
+      "title": "Press Release Video",
+      "description": "Official press release video showcasing Neo Sophia's mission and app features."
+    }
+  ],
+  "metrics": [
+    { "label": "Daily Active Users", "value": "+60%" },
+    { "label": "Lesson Completion", "value": "+45%" },
+    { "label": "App Store Rating", "value": "4.8★" }
+  ],
+  "colors": ["#4A90A4", "#F5E6D3", "#2D3748"],
+  "nextProject": "aiff"
+}

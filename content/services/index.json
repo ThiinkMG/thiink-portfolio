@@ -1,0 +1,71 @@
+{
+  "sectionLabel": "Our Expertise",
+  "sectionTitle": "The Craft",
+  "services": [
+    {
+      "title": "The Foundation",
+      "description": "We forge brand identities that command attention and inspire loyalty. From strategic positioning to visual systems, we create the philosophical foundation your brand needs to thrive.",
+      "icon": "Palette",
+      "label": "Brand Identity",
+      "image": "/images/brand/reliefs/apollo-triumph.png",
+      "ctaText": "Explore Branding",
+      "ctaHref": "/services/branding"
+    },
+    {
+      "title": "Digital Temples",
+      "description": "Your website should be more than a digital brochure—it should be a monument to your vision. We craft immersive web experiences that convert visitors into devoted followers.",
+      "icon": "Globe",
+      "label": "Web Design",
+      "image": "/images/brand/reliefs/oracle-pythia.png",
+      "ctaText": "View Web Work",
+      "ctaHref": "/services/web"
+    },
+    {
+      "title": "Artisan Graphics",
+      "description": "From print collateral to digital assets, we create visual materials that elevate every touchpoint. Each piece is crafted with the precision of a Renaissance master.",
+      "icon": "Layers",
+      "label": "Visual Design",
+      "image": "/images/brand/reliefs/platos-allegory.png",
+      "ctaText": "See Graphics",
+      "ctaHref": "/services/graphics"
+    }
+  ],
+  "serviceCards": [
+    {
+      "title": "Logo Design",
+      "description": "Iconic marks that capture your brand's essence in a single symbol.",
+      "expandedDescription": "From concept sketches to final vector files, we craft logos that stand the test of time. Includes primary, secondary, and icon variations.",
+      "icon": "Palette"
+    },
+    {
+      "title": "Brand Systems",
+      "description": "Comprehensive guidelines ensuring consistency across all touchpoints.",
+      "expandedDescription": "Complete brand books with typography, color palettes, imagery guidelines, and application examples for print and digital.",
+      "icon": "Layers"
+    },
+    {
+      "title": "Web Development",
+      "description": "High-performance sites built with modern frameworks and best practices.",
+      "expandedDescription": "Custom websites built with Next.js, React, and modern technologies. Optimized for speed, SEO, and conversion.",
+      "icon": "Globe"
+    },
+    {
+      "title": "UI/UX Design",
+      "description": "Intuitive interfaces that delight users and drive conversions.",
+      "expandedDescription": "User research, wireframing, prototyping, and polished interface designs that balance aesthetics with usability.",
+      "icon": "Code"
+    },
+    {
+      "title": "Print Design",
+      "description": "Business cards, packaging, and collateral that make lasting impressions.",
+      "expandedDescription": "From business cards to packaging, brochures to banners—print materials that translate your digital brand into tactile experiences.",
+      "icon": "Printer"
+    },
+    {
+      "title": "Creative Direction",
+      "description": "Strategic vision that guides every aspect of your visual identity.",
+      "expandedDescription": "High-level creative strategy and art direction to ensure all brand expressions align with your core vision and goals.",
+      "icon": "Sparkles"
+    }
+  ]
+}

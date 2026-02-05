@@ -8,7 +8,7 @@ import { Caption } from "@/components/ui/Typography";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { easing } from "@/lib/motion";
 import { cn } from "@/lib/utils";
-import type { ProjectImage } from "@/lib/data";
+import type { ProjectImage } from "@/lib/types";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // PROJECT GALLERY - Grid with Lightbox

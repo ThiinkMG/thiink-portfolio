@@ -1,0 +1,31 @@
+{
+  "hero": {
+    "label": "Design Excellence",
+    "titleLine1": "We Craft Visual",
+    "titleLine2": "Identities That Endure",
+    "subtitle": "Luxury design for visionary brands. From strategic positioning to visual execution, we create identities that command attention and inspire devotion.",
+    "primaryCta": "View Our Work",
+    "secondaryCta": "Start a Project"
+  },
+  "stats": [
+    { "value": "150+", "label": "Projects Delivered" },
+    { "value": "50+", "label": "Happy Clients" },
+    { "value": "8+", "label": "Years Experience" }
+  ],
+  "trustLogos": [
+    "GOOGLE",
+    "DISNEY",
+    "HULU",
+    "NETFLIX",
+    "AMAZON",
+    "APPLE",
+    "SPOTIFY",
+    "META"
+  ],
+  "ctaBand": {
+    "headline": "Ready to Elevate Your Brand?",
+    "subtext": "Let's create something extraordinary together. Your vision deserves a visual identity that commands attention.",
+    "buttonText": "Start Your Project",
+    "trustLine": "Trusted by startups and Fortune 500 companies alike"
+  }
+}

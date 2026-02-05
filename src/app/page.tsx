@@ -7,6 +7,7 @@ import { Testimonials } from "@/components/home/Testimonials";
 import { CTABand } from "@/components/home/CTABand";
 import { Footer } from "@/components/features/Footer";
 import { SectionDivider } from "@/components/ui/SectionDivider";
+import { getProjects } from "@/lib/cms";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // HOMEPAGE - "The Exhibition Hall"
@@ -14,12 +15,14 @@ import { SectionDivider } from "@/components/ui/SectionDivider";
 // ─────────────────────────────────────────────────────────────────────────────
 
 export default function Home() {
+  const projects = getProjects();
+
   return (
     <main id="main-content" className="bg-museum min-h-screen">
       <Navbar />
 
       {/* 1. Hero - Portfolio showcase with rotating featured projects */}
-      <Hero />
+      <Hero projects={projects} />
 
       {/* 2. Featured Work - Portfolio gallery (moved up for portfolio focus) */}
       <FeaturedWork />

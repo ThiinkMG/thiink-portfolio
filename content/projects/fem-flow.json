@@ -1,0 +1,86 @@
+{
+  "slug": "fem-flow",
+  "title": "Fem Flow",
+  "subtitle": "Wellness Brand Identity",
+  "category": "Brand Identity",
+  "client": "Fem Flow",
+  "year": "2024",
+  "duration": "10 weeks",
+  "heroImage": "/images/work/fem-flow/hero.png",
+  "thumbnailImage": "/images/work/fem-flow/hero.png",
+  "description": "A holistic brand identity for a women's wellness platform, merging meditation aesthetics with modern lifestyle branding to create a warm, inviting presence.",
+  "situation": "Fem Flow was launching as a women's wellness platform focused on meditation, movement, and community. The founders wanted to differentiate from the sterile, minimalist wellness brands dominating the market—they envisioned something warmer and more human.",
+  "task": "Develop a complete brand identity that communicates calm and empowerment simultaneously. The visual system needed to work across digital products, social media, video content, and potential physical merchandise.",
+  "action": [
+    {
+      "title": "Symbolic Logo Development",
+      "content": "The logo features a figure in lotus position that subtly forms the letters 'FF.' This dual reading rewards careful observation while remaining instantly recognizable at small scales—a meditation on the brand name itself.",
+      "marginalia": "The lotus position represents both stillness and strength—core values for the brand."
+    },
+    {
+      "title": "Earthy Color Philosophy",
+      "content": "We moved away from typical spa pastels toward forest greens and warm creams. These colors connect to nature and groundedness while maintaining the sophistication expected of a premium wellness offering."
+    },
+    {
+      "title": "Lifestyle Visual System",
+      "content": "Beyond the logo, we developed a comprehensive visual language including photography guidelines, scene compositions, and video production templates. Warm golden-hour lighting became a signature element.",
+      "marginalia": "All lifestyle imagery was developed to feel aspirational yet attainable—real women in real moments."
+    }
+  ],
+  "result": "Fem Flow launched to enthusiastic reception from their target audience. The brand's visual distinction helped secure partnerships with wellness influencers and earned features in lifestyle publications. Community membership exceeded projections by 60%.",
+  "deliverables": [
+    "Primary Logo & Variants",
+    "Brand Guidelines",
+    "Color & Typography System",
+    "Photography Direction",
+    "Video Production Templates",
+    "Social Media Kit",
+    "Website Design Direction"
+  ],
+  "gallery": [
+    {
+      "src": "/images/work/fem-flow/hero.png",
+      "alt": "Fem Flow Brand Hero",
+      "caption": "Fig. 1 — Brand identity hero"
+    },
+    {
+      "src": "/images/work/fem-flow/gallery-1.png",
+      "alt": "Fem Flow Logo in Meditative Harmony",
+      "caption": "Fig. 2 — Logo in meditative harmony composition"
+    },
+    {
+      "src": "/images/work/fem-flow/gallery-2.png",
+      "alt": "Fem Flow Lifestyle Scene",
+      "caption": "Fig. 3 — Brand lifestyle photography direction"
+    },
+    {
+      "src": "/images/work/fem-flow/gallery-3.png",
+      "alt": "Fem Flow Video Scene",
+      "caption": "Fig. 4 — Promotional video scene composition"
+    },
+    {
+      "src": "/images/work/fem-flow/gallery-4.png",
+      "alt": "Fem Flow Promo Still",
+      "caption": "Fig. 5 — Video promotional still frame"
+    },
+    {
+      "src": "/images/work/fem-flow/gallery-5.png",
+      "alt": "Fem Flow Logo Design",
+      "caption": "Fig. 6 — Logo mark exploration"
+    }
+  ],
+  "videos": [
+    {
+      "src": "https://www.youtube.com/embed/0_AuYJKdowA",
+      "title": "FemFlow Promo",
+      "description": "Brand promotional video showcasing the FemFlow wellness experience."
+    }
+  ],
+  "metrics": [
+    { "label": "Membership Growth", "value": "+60%" },
+    { "label": "Brand Partnerships", "value": "12" },
+    { "label": "Social Following", "value": "45K" }
+  ],
+  "colors": ["#2D4A3E", "#E8DFD0", "#D4A855", "#8B9467"],
+  "nextProject": "my-college-finance"
+}

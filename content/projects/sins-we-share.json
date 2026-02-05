@@ -1,0 +1,91 @@
+{
+  "slug": "sins-we-share",
+  "title": "The Sins We Share",
+  "subtitle": "Animation Concept Art",
+  "category": "Character Design",
+  "client": "The Sins We Share",
+  "year": "2024",
+  "duration": "6 weeks",
+  "heroImage": "/images/work/sins-we-share/The Sins We Share - Therapist - Scene 1.png",
+  "thumbnailImage": "/images/work/sins-we-share/The Sins We Share - Therapist - Scene 1.png",
+  "description": "Character concept art for an animated drama series, developing distinctive visual identities for complex characters navigating ambition, loyalty, and moral compromise.",
+  "situation": "The creators of 'The Sins We Share' were developing an animated drama series exploring themes of ambition, family loyalty, and the moral compromises people make for success. They needed character designs that could carry emotional weight in a semi-realistic animation style.",
+  "task": "Design key characters with distinct visual personalities that communicate their roles and relationships at a glance, while maintaining enough depth for audiences to project complex emotions onto them throughout the series.",
+  "action": [
+    {
+      "title": "Character Psychology Mapping",
+      "content": "Before any visual work, we developed detailed character profiles exploring each figure's motivations, background, and relationship to others. Maya Carter's confident posture and sharp glasses reflect her analytical nature; Donald Wilson's imposing presence and gold accents speak to his earned power.",
+      "marginalia": "Visual storytelling requires characters whose design choices feel inevitable once you know their stories."
+    },
+    {
+      "title": "Semi-Realistic Style Development",
+      "content": "We chose a style that bridges realistic proportions with subtle stylization—enough realism for emotional nuance, enough stylization to maintain the flexibility animation requires. The urban backgrounds ground the characters in a recognizable world."
+    },
+    {
+      "title": "Scene Composition",
+      "content": "Beyond individual portraits, we developed key scene compositions showing characters in relationship. The office confrontation scene establishes visual hierarchies and tension through careful staging and lighting."
+    }
+  ],
+  "result": "The character designs have been adopted as the official visual direction for the series development. The concepts are being used for pitch materials and early production planning, with positive reception from potential production partners.",
+  "deliverables": [
+    "Maya Carter Character Design",
+    "Donald Wilson Character Design",
+    "Key Scene Compositions",
+    "Character Reference Sheets",
+    "Style Guide for Animation",
+    "Pitch Deck Visuals"
+  ],
+  "gallery": [
+    {
+      "src": "/images/work/sins-we-share/The Sins We Share - Therapist - Scene 1.png",
+      "alt": "The Sins We Share Therapist Scene Hero",
+      "caption": "Fig. 1 — Therapist office hero scene"
+    },
+    {
+      "src": "/images/work/sins-we-share/gallery-1.png",
+      "alt": "Character Reference Sheet",
+      "caption": "Fig. 2 — Main character reference sheet"
+    },
+    {
+      "src": "/images/work/sins-we-share/gallery-2.png",
+      "alt": "Maya Carter Character Concept",
+      "caption": "Fig. 3 — Maya Carter character design"
+    },
+    {
+      "src": "/images/work/sins-we-share/gallery-3.png",
+      "alt": "Donald Wilson Character Concept",
+      "caption": "Fig. 4 — Donald Wilson character design"
+    },
+    {
+      "src": "/images/work/sins-we-share/gallery-4.png",
+      "alt": "The Sins We Share Patient Scene",
+      "caption": "Fig. 5 — Patient therapy session scene"
+    }
+  ],
+  "videos": [
+    {
+      "src": "https://www.youtube.com/embed/3X8lUg7qsZU",
+      "title": "Series Teaser",
+      "description": "Official teaser trailer for The Sins We Share animated series."
+    },
+    {
+      "src": "https://www.youtube.com/embed/zIOcDrXyma0",
+      "title": "Maya & Big Office Scene",
+      "description": "Key scene animation featuring Maya Carter and Donald Wilson.",
+      "warning": "Mature Content. Viewer discretion is advised."
+    },
+    {
+      "src": "https://www.youtube.com/embed/mL3uIlhJjKo",
+      "title": "Animated Pilot",
+      "description": "Full animated pilot episode with captions.",
+      "warning": "Mature Content. Viewer discretion is advised."
+    }
+  ],
+  "metrics": [
+    { "label": "Production Interest", "value": "3 Studios" },
+    { "label": "Pitch Success", "value": "Round 2" },
+    { "label": "Character Approval", "value": "100%" }
+  ],
+  "colors": ["#2D3748", "#D4A855", "#8B4513", "#F5F5F0"],
+  "nextProject": "kngdm"
+}

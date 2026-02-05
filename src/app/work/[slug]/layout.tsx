@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { PROJECTS } from "@/lib/data";
+import { getProjects, getProjectBySlug } from "@/lib/cms";
 
 type Props = {
     params: Promise<{ slug: string }>;
@@ -8,7 +8,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { slug } = await params;
-    const project = PROJECTS.find((p) => p.slug === slug);
+    const project = getProjectBySlug(slug);
 
     if (!project) {
         return {

@@ -8,20 +8,33 @@ import { easing, duration } from "@/lib/motion";
 import Image from "next/image";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { PROJECTS } from "@/lib/data";
+import type { Project } from "@/lib/types";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // HERO SECTION - Portfolio-Focused "The Gallery Entrance"
 // Showcases actual work with rotating featured projects (all 9 clients)
 // ─────────────────────────────────────────────────────────────────────────────
 
-// Map projects from data.ts for hero showcase
-const FEATURED_PROJECTS = PROJECTS.map((p) => ({
-    title: p.title,
-    category: p.category,
-    image: p.thumbnailImage,
-    href: `/work/${p.slug}`,
-}));
+interface FeaturedProject {
+    title: string;
+    category: string;
+    image: string;
+    href: string;
+}
+
+interface HeroProps {
+    projects?: Project[];
+}
+
+// Helper to map projects to featured format
+function mapProjectsToFeatured(projects: Project[]): FeaturedProject[] {
+    return projects.map((p) => ({
+        title: p.title,
+        category: p.category,
+        image: p.thumbnailImage,
+        href: `/work/${p.slug}`,
+    }));
+}
 
 // Stagger Text Animation Component
 function StaggerText({
@@ -70,7 +83,7 @@ function ProjectThumb({
     onClick,
     index,
 }: {
-    project: typeof FEATURED_PROJECTS[0];
+    project: FeaturedProject;
     isActive: boolean;
     isHovered: boolean;
     onHoverStart: () => void;
@@ -133,22 +146,30 @@ function ProjectThumb({
     );
 }
 
-export function Hero() {
+export function Hero({ projects = [] }: HeroProps) {
     const [activeProject, setActiveProject] = React.useState(0);
     const [hoveredThumb, setHoveredThumb] = React.useState<number | null>(null);
     const [isPaused, setIsPaused] = React.useState(false);
     const { scrollY } = useScroll();
     const opacity = useTransform(scrollY, [0, 400], [1, 0]);
 
+    // Map projects to featured format
+    const FEATURED_PROJECTS = React.useMemo(() => mapProjectsToFeatured(projects), [projects]);
+
     // Auto-rotate projects every 7 seconds (pauses on hover)
     React.useEffect(() => {
-        if (isPaused) return;
+        if (isPaused || FEATURED_PROJECTS.length === 0) return;
 
         const timer = setInterval(() => {
             setActiveProject((prev) => (prev + 1) % FEATURED_PROJECTS.length);
         }, 7000);
         return () => clearInterval(timer);
-    }, [isPaused]);
+    }, [isPaused, FEATURED_PROJECTS.length]);
+
+    // Early return if no projects
+    if (FEATURED_PROJECTS.length === 0) {
+        return null;
+    }
 
     const currentProject = FEATURED_PROJECTS[activeProject];
 

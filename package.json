@@ -4,19 +4,26 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:tina": "dotenv -e .env.local -- tinacms dev -c \"next dev\"",
     "build": "next build",
+    "build:tina": "dotenv -e .env.local -- tinacms build && next build",
     "start": "next start",
     "lint": "eslint",
     "optimize-images": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
+    "@tinacms/cli": "^2.1.5",
     "clsx": "^2.1.1",
     "framer-motion": "^12.30.0",
     "lucide-react": "^0.563.0",
     "next": "16.1.6",
     "react": "19.2.3",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "19.2.3",
-    "tailwind-merge": "^3.4.0"
+    "server-only": "^0.0.1",
+    "tailwind-merge": "^3.4.0",
+    "tinacms": "^3.4.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -24,6 +31,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "dotenv-cli": "^11.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
     "tailwindcss": "^4",

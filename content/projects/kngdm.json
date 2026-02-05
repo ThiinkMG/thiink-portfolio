@@ -1,0 +1,76 @@
+{
+  "slug": "kngdm",
+  "title": "KNGDM",
+  "subtitle": "Brand Identity System",
+  "category": "Brand Identity",
+  "client": "KNGDM",
+  "year": "2024",
+  "duration": "8 weeks",
+  "heroImage": "/images/work/kngdm/hero.png",
+  "thumbnailImage": "/images/work/kngdm/hero.png",
+  "description": "A comprehensive brand identity system for a visionary lifestyle brand. From strategic positioning to visual execution, we crafted an identity that commands attention and inspires devotion.",
+  "situation": "KNGDM approached us at a pivotal moment in their growth. As a lifestyle brand with ambitious goals, they needed a visual identity that could scale from boutique exclusivity to global recognition while maintaining their core ethos of empowerment and community.",
+  "task": "Design a complete brand identity system that communicates authority, aspiration, and belonging. The visual language needed to work across digital platforms, physical products, and experiential touchpoints—from social media to luxury packaging.",
+  "action": [
+    {
+      "title": "Strategic Discovery",
+      "content": "We began with intensive workshops to understand KNGDM's vision, audience, and competitive landscape. Through mood boarding and archetype mapping, we identified the intersection of 'Sovereign Authority' and 'Community Belonging' as their unique positioning.",
+      "marginalia": "The name KNGDM itself—Kingdom without the 'i'—speaks to collective sovereignty rather than individual rule."
+    },
+    {
+      "title": "Visual Identity Development",
+      "content": "The logo draws from heraldic traditions while maintaining contemporary minimalism. We developed a custom wordmark with subtle crown references embedded in the letterforms, creating a mark that rewards closer inspection.",
+      "marginalia": "Multiple logo variants were created for different applications and scales."
+    },
+    {
+      "title": "System Architecture",
+      "content": "Beyond the logo, we created a comprehensive brand system including typography hierarchies, color palettes, pattern libraries, and photography guidelines. Every element was designed to work in harmony while maintaining flexibility for future growth."
+    }
+  ],
+  "result": "The new identity launched to immediate acclaim from KNGDM's community. The brand system has been successfully deployed across all touchpoints, from their e-commerce platform to limited-edition product drops. Early metrics show a 40% increase in brand recognition and a 25% lift in customer engagement.",
+  "deliverables": [
+    "Primary & Secondary Logo Suite",
+    "Brand Guidelines Document",
+    "Typography System",
+    "Color Palette & Usage",
+    "Pattern Library",
+    "Business Card Design",
+    "Social Media Templates",
+    "Packaging Guidelines"
+  ],
+  "gallery": [
+    {
+      "src": "/images/work/kngdm/hero.png",
+      "alt": "KNGDM Brand Identity Hero",
+      "caption": "Fig. 1 — Brand identity hero presentation"
+    },
+    {
+      "src": "/images/work/kngdm/gallery-1.png",
+      "alt": "KNGDM Logo Concept",
+      "caption": "Fig. 2 — Primary logo design"
+    },
+    {
+      "src": "/images/work/kngdm/gallery-2.png",
+      "alt": "KNGDM Business Card Design",
+      "caption": "Fig. 3 — Business card mockup"
+    },
+    {
+      "src": "/images/work/kngdm/gallery-3.png",
+      "alt": "KNGDM Brand Identity System",
+      "caption": "Fig. 4 — Brand identity presentation"
+    },
+    {
+      "src": "/images/work/kngdm/gallery-4.png",
+      "alt": "KNGDM Stationery Suite",
+      "caption": "Fig. 5 — Complete stationery suite"
+    }
+  ],
+  "videos": [],
+  "metrics": [
+    { "label": "Brand Recognition", "value": "+40%" },
+    { "label": "Engagement Lift", "value": "+25%" },
+    { "label": "Social Following", "value": "2x" }
+  ],
+  "colors": ["#000000", "#FFFFFF", "#D4A855"],
+  "nextProject": "neo-sophia"
+}

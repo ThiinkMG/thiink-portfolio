@@ -1,0 +1,34 @@
+{
+  "sectionLabel": "Our Approach",
+  "sectionTitle": "The Method",
+  "steps": [
+    {
+      "numeral": "I",
+      "title": "Discovery",
+      "subtitle": "The Inquiry",
+      "description": "We begin with deep listening. Understanding your vision, audience, and aspirations forms the philosophical foundation of everything that follows.",
+      "details": ["Brand audit", "Market research", "Stakeholder interviews", "Vision alignment"]
+    },
+    {
+      "numeral": "II",
+      "title": "Strategy",
+      "subtitle": "The Architecture",
+      "description": "With insights gathered, we architect a strategic framework that positions your brand for lasting impact and meaningful differentiation.",
+      "details": ["Positioning", "Messaging framework", "Visual direction", "Competitive analysis"]
+    },
+    {
+      "numeral": "III",
+      "title": "Creation",
+      "subtitle": "The Craft",
+      "description": "Here, vision becomes form. We craft every element with the precision of Renaissance masters—logos, systems, experiences that transcend trends.",
+      "details": ["Design exploration", "Identity development", "System creation", "Iteration & refinement"]
+    },
+    {
+      "numeral": "IV",
+      "title": "Delivery",
+      "subtitle": "The Legacy",
+      "description": "Your brand is launched into the world with comprehensive guidelines and assets, ready to build its legacy across every touchpoint.",
+      "details": ["Brand guidelines", "Asset delivery", "Implementation support", "Launch strategy"]
+    }
+  ]
+}

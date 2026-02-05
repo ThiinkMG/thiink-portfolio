@@ -9,12 +9,12 @@
   "heroImage": "/images/work/neo-sophia/lordmoose_Sophie_the_fox_she_is_a_fox_with_large_bright_green_e_9f52e8f6-e2a2-48e5-b24b-032352a14775.png",
   "thumbnailImage": "/images/work/neo-sophia/lordmoose_Sophie_the_fox_she_is_a_fox_with_large_bright_green_e_9f52e8f6-e2a2-48e5-b24b-032352a14775.png",
   "description": "UI/UX design for an AI-driven educational platform that makes philosophy and wisdom traditions accessible to modern learners through engaging character interactions.",
-  "situation": "Neo Sophia had developed groundbreaking AI technology for philosophical education but lacked the visual design to match their innovative approach. Their existing interface was functional but failed to convey the warmth and wisdom of their content.",
-  "task": "Create an app experience that feels both intellectually rigorous and emotionally inviting. The design needed to make ancient wisdom feel relevant to digital-native learners while maintaining the gravitas these traditions deserve.",
+  "situation": "Neo Sophia had developed groundbreaking AI technology for philosophical education but lacked the visual storytelling to match their innovative approach. Their brand presence needed a compelling way to communicate the warmth and wisdom of their content to potential users and investors.",
+  "task": "Create a visual narrative that feels both intellectually rigorous and emotionally inviting. The content needed to make ancient wisdom feel relevant to digital-native audiences while maintaining the gravitas these traditions deserve.",
   "action": [
     {
       "title": "Character-Driven Design",
-      "content": "We centered the experience around Sophie Fox and Mr. Brain—mascot characters that serve as guides through the philosophical curriculum. These characters bridge the gap between complex concepts and accessible learning.",
+      "content": "We centered the commercial around Sophie Fox and Mr. Brain—mascot characters that serve as guides through the philosophical curriculum. These characters bridge the gap between complex concepts and accessible learning in a memorable, shareable format.",
       "marginalia": "Sophie Fox represents curiosity and intuition; Mr. Brain embodies analytical thinking."
     },
     {
@@ -76,10 +76,23 @@
     }
   ],
   "metrics": [
-    { "label": "Daily Active Users", "value": "+60%" },
-    { "label": "Lesson Completion", "value": "+45%" },
-    { "label": "App Store Rating", "value": "4.8★" }
+    {
+      "label": "Daily Active Users",
+      "value": "+60%"
+    },
+    {
+      "label": "Lesson Completion",
+      "value": "+45%"
+    },
+    {
+      "label": "App Store Rating",
+      "value": "4.8★"
+    }
   ],
-  "colors": ["#4A90A4", "#F5E6D3", "#2D3748"],
+  "colors": [
+    "#4A90A4",
+    "#F5E6D3",
+    "#2D3748"
+  ],
   "nextProject": "aiff"
 }

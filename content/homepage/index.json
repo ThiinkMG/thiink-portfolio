@@ -29,14 +29,38 @@
     "title": "Trusted by Industry Leaders",
     "displayMode": "text",
     "logos": [
-      { "name": "GOOGLE", "image": "" },
-      { "name": "DISNEY", "image": "" },
-      { "name": "HULU", "image": "" },
-      { "name": "NETFLIX", "image": "" },
-      { "name": "AMAZON", "image": "" },
-      { "name": "APPLE", "image": "" },
-      { "name": "SPOTIFY", "image": "" },
-      { "name": "META", "image": "" }
+      {
+        "name": "GOOGLE",
+        "image": ""
+      },
+      {
+        "name": "DISNEY",
+        "image": ""
+      },
+      {
+        "name": "HULU",
+        "image": ""
+      },
+      {
+        "name": "NETFLIX",
+        "image": ""
+      },
+      {
+        "name": "AMAZON",
+        "image": ""
+      },
+      {
+        "name": "APPLE",
+        "image": ""
+      },
+      {
+        "name": "SPOTIFY",
+        "image": ""
+      },
+      {
+        "name": "META",
+        "image": ""
+      }
     ]
   },
   "trustLogos": [
@@ -44,10 +68,9 @@
     "DISNEY",
     "HULU",
     "NETFLIX",
-    "AMAZON",
-    "APPLE",
-    "SPOTIFY",
-    "META"
+    "BBB",
+    "Distrokid",
+    "AIFF"
   ],
   "ctaBand": {
     "headline": "Ready to Elevate Your Brand?",

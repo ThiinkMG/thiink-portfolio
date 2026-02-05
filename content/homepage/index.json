@@ -7,6 +7,10 @@
     "primaryCta": "View Our Work",
     "secondaryCta": "Start a Project"
   },
+  "heroBackground": {
+    "image": "/images/brand/backgrounds/philosophers.png",
+    "opacity": 60
+  },
   "stats": [
     { "value": "150+", "label": "Projects Delivered" },
     { "value": "50+", "label": "Happy Clients" },
@@ -26,6 +30,8 @@
     "headline": "Ready to Elevate Your Brand?",
     "subtext": "Let's create something extraordinary together. Your vision deserves a visual identity that commands attention.",
     "buttonText": "Start Your Project",
-    "trustLine": "Trusted by startups and Fortune 500 companies alike"
+    "trustLine": "Trusted by startups and Fortune 500 companies alike",
+    "backgroundImage": "",
+    "backgroundOpacity": 20
   }
 }

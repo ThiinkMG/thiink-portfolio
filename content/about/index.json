@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "label": "Est. 2019",
+    "title": "About",
+    "titleHighlight": "Thiink",
+    "subtitle": "Guardians of timeless creative vision, merging ancient wisdom with digital innovation.",
+    "backgroundImage": "/images/brand/backgrounds/philosophers.png",
+    "backgroundOpacity": 30
+  },
+  "vision": {
+    "label": "Our Vision",
+    "title": "Transcending Traditional Design",
+    "paragraphs": [
+      "Established in 2019, Thiink Media Graphics transcends traditional design agencies, embodying the role of guardians for a timeless creative vision. Merging ancient philosophical wisdom with modern digital innovation, we craft designs that resonate across eras, balancing enduring knowledge and contemporary creativity.",
+      "Our ultimate goal is to redefine the benchmarks of creative agency excellence, transforming business identities into unforgettable brands that captivate visually and wield substantial strategic influence within their industries."
+    ],
+    "sideQuote": "Design that demands attention",
+    "sideNote": "Our philosophy draws from the timeless principles of classical aesthetics, where every element serves both form and function."
+  },
+  "mission": {
+    "label": "Our Mission",
+    "title": "Empowering Growth Through Design",
+    "description": "At Thiink Media Graphics, we specialize in empowering small to medium-sized enterprises with innovative design and digital solutions that drive growth and success, fusing imaginative creativity with practical strategy in every partnership."
+  },
+  "stats": [
+    { "value": "2019", "label": "Established" },
+    { "value": "150+", "label": "Projects" },
+    { "value": "8+", "label": "Years Experience" },
+    { "value": "100%", "label": "Client Satisfaction" }
+  ],
+  "services": {
+    "label": "What We Do",
+    "title": "Our Expertise",
+    "items": [
+      {
+        "title": "Core Identity",
+        "description": "Brand strategy, logo design, and visual identity systems that define who you are."
+      },
+      {
+        "title": "Design Forge",
+        "description": "Marketing materials, social media assets, and campaign visuals that captivate."
+      },
+      {
+        "title": "Web Artisan",
+        "description": "Websites and digital experiences that convert visitors into advocates."
+      },
+      {
+        "title": "Print Craft",
+        "description": "Physical touchpoints from business cards to large-format displays."
+      }
+    ]
+  },
+  "cta": {
+    "label": "Ready to Begin?",
+    "title": "Let's Create Something Timeless",
+    "description": "Every great brand starts with a conversation. Tell us about your vision, and let's explore how we can bring it to life.",
+    "primaryButton": "Start a Project",
+    "secondaryButton": "View Our Work"
+  }
+}

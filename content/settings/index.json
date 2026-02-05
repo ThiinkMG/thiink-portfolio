@@ -12,5 +12,32 @@
     "linkedin": "https://linkedin.com/company/thiinkmediagraphics",
     "twitter": "",
     "youtube": ""
+  },
+  "navbar": {
+    "logo": "/images/brand/logos/full-logo-white.png",
+    "ctaText": "Start Project",
+    "ctaLink": "https://www.thiinkmediagraphics.com/new-project-form",
+    "links": [
+      { "label": "Work", "href": "/work" },
+      { "label": "Services", "href": "/#services" },
+      { "label": "About", "href": "/about" },
+      { "label": "Contact", "href": "/#contact" }
+    ]
+  },
+  "footer": {
+    "tagline": "Where timeless design meets modern innovation. We transform brands into enduring legacies.",
+    "copyright": "Thiink Media Graphics",
+    "serviceLinks": [
+      { "label": "Core Identity", "href": "/#services" },
+      { "label": "Design Forge", "href": "/#services" },
+      { "label": "Web Artisan", "href": "/#services" },
+      { "label": "Print Craft", "href": "/#services" }
+    ],
+    "exploreLinks": [
+      { "label": "Portfolio", "href": "/work" },
+      { "label": "Blog", "href": "/blog" },
+      { "label": "Pricing", "href": "/pricing" },
+      { "label": "Contact", "href": "/#contact" }
+    ]
   }
 }

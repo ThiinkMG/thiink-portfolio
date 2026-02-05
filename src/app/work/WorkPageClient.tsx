@@ -8,7 +8,7 @@ import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { SectionDivider } from "@/components/ui/SectionDivider";
 import { motion } from "framer-motion";
 import { easing } from "@/lib/motion";
-import type { Project } from "@/lib/types";
+import type { Project, SiteSettings } from "@/lib/types";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // WORK PAGE CLIENT - "The Gallery"
@@ -17,12 +17,18 @@ import type { Project } from "@/lib/types";
 
 interface WorkPageClientProps {
     projects: Project[];
+    siteSettings?: SiteSettings | null;
 }
 
-export function WorkPageClient({ projects }: WorkPageClientProps) {
+export function WorkPageClient({ projects, siteSettings }: WorkPageClientProps) {
     return (
         <main id="main-content" className="bg-museum min-h-screen">
-            <Navbar />
+            <Navbar
+                logo={siteSettings?.navbar?.logo}
+                ctaText={siteSettings?.navbar?.ctaText}
+                ctaLink={siteSettings?.navbar?.ctaLink}
+                links={siteSettings?.navbar?.links}
+            />
 
             {/* Hero Section */}
             <section className="pt-32 pb-20 px-6 md:px-12 lg:px-20">
@@ -110,7 +116,15 @@ export function WorkPageClient({ projects }: WorkPageClientProps) {
                 </div>
             </section>
 
-            <Footer />
+            <Footer
+                logo={siteSettings?.navbar?.logo}
+                tagline={siteSettings?.footer?.tagline}
+                copyright={siteSettings?.footer?.copyright}
+                serviceLinks={siteSettings?.footer?.serviceLinks}
+                exploreLinks={siteSettings?.footer?.exploreLinks}
+                contact={siteSettings?.contact}
+                social={siteSettings?.social}
+            />
         </main>
     );
 }

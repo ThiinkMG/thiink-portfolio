@@ -15,6 +15,7 @@ import type {
   ServicesContent,
   ProcessContent,
   SiteSettings,
+  AboutContent,
 } from "./types";
 
 // Re-export types for convenience
@@ -28,6 +29,7 @@ export type {
   ServicesContent,
   ProcessContent,
   SiteSettings,
+  AboutContent,
 } from "./types";
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -129,4 +131,12 @@ export function getProcessContent(): ProcessContent | null {
 
 export function getSiteSettings(): SiteSettings | null {
   return readJsonFile<SiteSettings>("settings/index.json");
+}
+
+// ─────────────────────────────────────────────────────────────────────────────
+// ABOUT CONTENT
+// ─────────────────────────────────────────────────────────────────────────────
+
+export function getAboutContent(): AboutContent | null {
+  return readJsonFile<AboutContent>("about/index.json");
 }

@@ -12,7 +12,7 @@ import Link from "next/link";
 import { ArrowLeft, ArrowRight, Play } from "lucide-react";
 import { motion } from "framer-motion";
 import { easing } from "@/lib/motion";
-import type { Project } from "@/lib/types";
+import type { Project, SiteSettings } from "@/lib/types";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // CASE STUDY PAGE CLIENT - "The Reading Room"
@@ -22,13 +22,19 @@ import type { Project } from "@/lib/types";
 interface CaseStudyPageClientProps {
     project: Project;
     nextProject: Project;
+    siteSettings?: SiteSettings | null;
 }
 
-export function CaseStudyPageClient({ project, nextProject }: CaseStudyPageClientProps) {
+export function CaseStudyPageClient({ project, nextProject, siteSettings }: CaseStudyPageClientProps) {
     return (
         <main id="main-content" className="min-h-screen">
             {/* Navigation - stays dark for contrast */}
-            <Navbar />
+            <Navbar
+                logo={siteSettings?.navbar?.logo}
+                ctaText={siteSettings?.navbar?.ctaText}
+                ctaLink={siteSettings?.navbar?.ctaLink}
+                links={siteSettings?.navbar?.links}
+            />
 
             {/* ─── HERO SECTION ─── Dark transition zone */}
             <CaseStudyHero project={project} />
@@ -58,7 +64,15 @@ export function CaseStudyPageClient({ project, nextProject }: CaseStudyPageClien
             </div>
 
             {/* Footer - back to dark */}
-            <Footer />
+            <Footer
+                logo={siteSettings?.navbar?.logo}
+                tagline={siteSettings?.footer?.tagline}
+                copyright={siteSettings?.footer?.copyright}
+                serviceLinks={siteSettings?.footer?.serviceLinks}
+                exploreLinks={siteSettings?.footer?.exploreLinks}
+                contact={siteSettings?.contact}
+                social={siteSettings?.social}
+            />
         </main>
     );
 }

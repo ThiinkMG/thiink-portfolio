@@ -428,6 +428,26 @@ export default defineConfig({
               },
             ],
           },
+          // Hero Background (for fallback when no projects)
+          {
+            type: "object",
+            name: "heroBackground",
+            label: "Hero Background",
+            description: "Background settings for hero section (used when no featured projects)",
+            fields: [
+              {
+                type: "image",
+                name: "image",
+                label: "Background Image",
+              },
+              {
+                type: "number",
+                name: "opacity",
+                label: "Overlay Opacity",
+                description: "0 = transparent, 100 = fully dark (default: 60)",
+              },
+            ],
+          },
           // Stats
           {
             type: "object",
@@ -488,6 +508,256 @@ export default defineConfig({
                 name: "trustLine",
                 label: "Trust Line",
                 description: "Text below the button (e.g., 'Trusted by...')",
+              },
+              {
+                type: "image",
+                name: "backgroundImage",
+                label: "Background Image",
+                description: "Optional background image for the CTA band",
+              },
+              {
+                type: "number",
+                name: "backgroundOpacity",
+                label: "Background Opacity",
+                description: "0 = transparent, 100 = fully visible (default: 20)",
+              },
+            ],
+          },
+        ],
+      },
+
+      // ─────────────────────────────────────────────────────────────────────────
+      // ABOUT COLLECTION
+      // About page content
+      // ─────────────────────────────────────────────────────────────────────────
+      {
+        name: "about",
+        label: "About Page",
+        path: "content/about",
+        format: "json",
+        ui: {
+          allowedActions: {
+            create: false,
+            delete: false,
+          },
+        },
+        fields: [
+          // Hero Section
+          {
+            type: "object",
+            name: "hero",
+            label: "Hero Section",
+            fields: [
+              {
+                type: "string",
+                name: "label",
+                label: "Label",
+                description: "Small text above title (e.g., 'Est. 2019')",
+              },
+              {
+                type: "string",
+                name: "title",
+                label: "Title",
+              },
+              {
+                type: "string",
+                name: "titleHighlight",
+                label: "Title Highlight",
+                description: "Word to highlight in gold (e.g., 'Thiink')",
+              },
+              {
+                type: "string",
+                name: "subtitle",
+                label: "Subtitle",
+                ui: {
+                  component: "textarea",
+                },
+              },
+              {
+                type: "image",
+                name: "backgroundImage",
+                label: "Background Image",
+                description: "Hero background image (e.g., philosophers image)",
+              },
+              {
+                type: "number",
+                name: "backgroundOpacity",
+                label: "Background Opacity",
+                description: "0 = transparent, 100 = fully visible (default: 30)",
+              },
+            ],
+          },
+          // Vision Section
+          {
+            type: "object",
+            name: "vision",
+            label: "Vision Section",
+            fields: [
+              {
+                type: "string",
+                name: "label",
+                label: "Section Label",
+              },
+              {
+                type: "string",
+                name: "title",
+                label: "Title",
+              },
+              {
+                type: "string",
+                name: "paragraphs",
+                label: "Paragraphs",
+                list: true,
+                ui: {
+                  component: "textarea",
+                },
+              },
+              {
+                type: "string",
+                name: "sideQuote",
+                label: "Side Quote",
+              },
+              {
+                type: "string",
+                name: "sideNote",
+                label: "Side Note",
+                ui: {
+                  component: "textarea",
+                },
+              },
+            ],
+          },
+          // Mission Section
+          {
+            type: "object",
+            name: "mission",
+            label: "Mission Section",
+            fields: [
+              {
+                type: "string",
+                name: "label",
+                label: "Section Label",
+              },
+              {
+                type: "string",
+                name: "title",
+                label: "Title",
+              },
+              {
+                type: "string",
+                name: "description",
+                label: "Description",
+                ui: {
+                  component: "textarea",
+                },
+              },
+            ],
+          },
+          // Stats
+          {
+            type: "object",
+            name: "stats",
+            label: "Stats",
+            list: true,
+            ui: {
+              itemProps: (item) => ({
+                label: item?.label ? `${item.value || ''} ${item.label}` : `Stat ${item?._index !== undefined ? item._index + 1 : ''}`,
+              }),
+            },
+            fields: [
+              {
+                type: "string",
+                name: "value",
+                label: "Value",
+                required: true,
+              },
+              {
+                type: "string",
+                name: "label",
+                label: "Label",
+                required: true,
+              },
+            ],
+          },
+          // Services Section
+          {
+            type: "object",
+            name: "services",
+            label: "Services Section",
+            fields: [
+              {
+                type: "string",
+                name: "label",
+                label: "Section Label",
+              },
+              {
+                type: "string",
+                name: "title",
+                label: "Title",
+              },
+              {
+                type: "object",
+                name: "items",
+                label: "Service Items",
+                list: true,
+                ui: {
+                  itemProps: (item) => ({
+                    label: item?.title || `Service ${item?._index !== undefined ? item._index + 1 : ''}`,
+                  }),
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "title",
+                    label: "Title",
+                    required: true,
+                  },
+                  {
+                    type: "string",
+                    name: "description",
+                    label: "Description",
+                    required: true,
+                    ui: {
+                      component: "textarea",
+                    },
+                  },
+                ],
+              },
+            ],
+          },
+          // CTA Section
+          {
+            type: "object",
+            name: "cta",
+            label: "CTA Section",
+            fields: [
+              {
+                type: "string",
+                name: "label",
+                label: "Section Label",
+              },
+              {
+                type: "string",
+                name: "title",
+                label: "Title",
+              },
+              {
+                type: "string",
+                name: "description",
+                label: "Description",
+                ui: {
+                  component: "textarea",
+                },
+              },
+              {
+                type: "string",
+                name: "primaryButton",
+                label: "Primary Button Text",
+              },
+              {
+                type: "string",
+                name: "secondaryButton",
+                label: "Secondary Button Text",
               },
             ],
           },
@@ -735,6 +1005,127 @@ export default defineConfig({
                 type: "string",
                 name: "youtube",
                 label: "YouTube URL",
+              },
+            ],
+          },
+          // Navbar Configuration
+          {
+            type: "object",
+            name: "navbar",
+            label: "Navigation",
+            fields: [
+              {
+                type: "image",
+                name: "logo",
+                label: "Logo",
+              },
+              {
+                type: "string",
+                name: "ctaText",
+                label: "CTA Button Text",
+                description: "Text for the main navigation button (e.g., 'Start Project')",
+              },
+              {
+                type: "string",
+                name: "ctaLink",
+                label: "CTA Button Link",
+              },
+              {
+                type: "object",
+                name: "links",
+                label: "Navigation Links",
+                list: true,
+                ui: {
+                  itemProps: (item) => ({
+                    label: item?.label || `Link ${item?._index !== undefined ? item._index + 1 : ''}`,
+                  }),
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "label",
+                    label: "Label",
+                    required: true,
+                  },
+                  {
+                    type: "string",
+                    name: "href",
+                    label: "Link URL",
+                    required: true,
+                  },
+                ],
+              },
+            ],
+          },
+          // Footer Configuration
+          {
+            type: "object",
+            name: "footer",
+            label: "Footer",
+            fields: [
+              {
+                type: "string",
+                name: "tagline",
+                label: "Footer Tagline",
+                ui: {
+                  component: "textarea",
+                },
+              },
+              {
+                type: "string",
+                name: "copyright",
+                label: "Copyright Text",
+                description: "Text before the year (e.g., 'Thiink Media Graphics')",
+              },
+              {
+                type: "object",
+                name: "serviceLinks",
+                label: "Service Links",
+                list: true,
+                ui: {
+                  itemProps: (item) => ({
+                    label: item?.label || `Link ${item?._index !== undefined ? item._index + 1 : ''}`,
+                  }),
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "label",
+                    label: "Label",
+                    required: true,
+                  },
+                  {
+                    type: "string",
+                    name: "href",
+                    label: "Link URL",
+                    required: true,
+                  },
+                ],
+              },
+              {
+                type: "object",
+                name: "exploreLinks",
+                label: "Explore Links",
+                list: true,
+                ui: {
+                  itemProps: (item) => ({
+                    label: item?.label || `Link ${item?._index !== undefined ? item._index + 1 : ''}`,
+                  }),
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "label",
+                    label: "Label",
+                    required: true,
+                  },
+                  {
+                    type: "string",
+                    name: "href",
+                    label: "Link URL",
+                    required: true,
+                  },
+                ],
               },
             ],
           },

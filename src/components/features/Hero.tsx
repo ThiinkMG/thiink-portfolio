@@ -22,8 +22,24 @@ interface FeaturedProject {
     href: string;
 }
 
+interface Stat {
+    value: string;
+    label: string;
+}
+
+interface HeroContent {
+    label?: string;
+    titleLine1?: string;
+    titleLine2?: string;
+    subtitle?: string;
+    primaryCta?: string;
+    secondaryCta?: string;
+}
+
 interface HeroProps {
     projects?: Project[];
+    stats?: Stat[];
+    hero?: HeroContent;
 }
 
 // Helper to map projects to featured format
@@ -146,7 +162,23 @@ function ProjectThumb({
     );
 }
 
-export function Hero({ projects = [] }: HeroProps) {
+// Default stats if none provided
+const DEFAULT_STATS: Stat[] = [
+    { value: "150+", label: "Projects" },
+    { value: "50+", label: "Clients" },
+    { value: "8+", label: "Years" },
+];
+
+export function Hero({ projects = [], stats = DEFAULT_STATS, hero }: HeroProps) {
+    // Hero content with defaults
+    const heroContent = {
+        label: hero?.label || "Creative Studio",
+        titleLine1: hero?.titleLine1 || "Design That",
+        titleLine2: hero?.titleLine2 || "Demands Attention",
+        subtitle: hero?.subtitle || "Brand identities, digital experiences, and visual systems for companies that want to be remembered.",
+        primaryCta: hero?.primaryCta || "View Our Work",
+        secondaryCta: hero?.secondaryCta || "Start a Project",
+    };
     const [activeProject, setActiveProject] = React.useState(0);
     const [hoveredThumb, setHoveredThumb] = React.useState<number | null>(null);
     const [isPaused, setIsPaused] = React.useState(false);
@@ -217,18 +249,18 @@ export function Hero({ projects = [] }: HeroProps) {
                             className="flex items-center gap-3"
                         >
                             <span className="w-8 h-px bg-gold" />
-                            <SectionLabel className="text-gold">Creative Studio</SectionLabel>
+                            <SectionLabel className="text-gold">{heroContent.label}</SectionLabel>
                         </motion.div>
 
                         {/* Headline - Portfolio focused */}
                         <H1 className="text-4xl md:text-5xl lg:text-6xl leading-[1.1]">
                             <StaggerText
-                                text="Design That"
+                                text={heroContent.titleLine1}
                                 delay={0.2}
                                 className="block text-marble"
                             />
                             <StaggerText
-                                text="Demands Attention"
+                                text={heroContent.titleLine2}
                                 delay={0.4}
                                 className="block text-gold"
                             />
@@ -241,8 +273,7 @@ export function Hero({ projects = [] }: HeroProps) {
                             transition={{ duration: duration.slow, delay: 0.7, ease: easing.apple }}
                         >
                             <Text className="text-base md:text-lg max-w-md text-marble/70 leading-relaxed">
-                                Brand identities, digital experiences, and visual systems
-                                for companies that want to be remembered.
+                                {heroContent.subtitle}
                             </Text>
                         </motion.div>
 
@@ -255,12 +286,12 @@ export function Hero({ projects = [] }: HeroProps) {
                         >
                             <Link href="/work">
                                 <Button variant="primary" size="lg">
-                                    View Our Work
+                                    {heroContent.primaryCta}
                                 </Button>
                             </Link>
                             <Link href="https://www.thiinkmediagraphics.com/new-project-form">
                                 <Button variant="secondary" size="lg">
-                                    Start a Project
+                                    {heroContent.secondaryCta}
                                 </Button>
                             </Link>
                         </motion.div>
@@ -364,24 +395,19 @@ export function Hero({ projects = [] }: HeroProps) {
                     <div className="flex items-center justify-between">
                         {/* Stats */}
                         <div className="flex items-center gap-8 md:gap-12">
-                            <div>
-                                <span className="font-cinzel text-xl md:text-2xl text-gold">1000+</span>
-                                <span className="font-cormorant-sc text-xs tracking-wider text-marble/40 ml-2">
-                                    Projects
-                                </span>
-                            </div>
-                            <div className="hidden sm:block">
-                                <span className="font-cinzel text-xl md:text-2xl text-gold">9</span>
-                                <span className="font-cormorant-sc text-xs tracking-wider text-marble/40 ml-2">
-                                    Years
-                                </span>
-                            </div>
-                            <div className="hidden md:block">
-                                <span className="font-cinzel text-xl md:text-2xl text-gold">100%</span>
-                                <span className="font-cormorant-sc text-xs tracking-wider text-marble/40 ml-2">
-                                    Client Satisfaction
-                                </span>
-                            </div>
+                            {stats.map((stat, index) => (
+                                <div
+                                    key={stat.label}
+                                    className={cn(
+                                        index === 0 ? "" : index === 1 ? "hidden sm:block" : "hidden md:block"
+                                    )}
+                                >
+                                    <span className="font-cinzel text-xl md:text-2xl text-gold">{stat.value}</span>
+                                    <span className="font-cormorant-sc text-xs tracking-wider text-marble/40 ml-2">
+                                        {stat.label}
+                                    </span>
+                                </div>
+                            ))}
                         </div>
 
                         {/* Scroll indicator */}

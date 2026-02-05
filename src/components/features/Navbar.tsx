@@ -15,19 +15,40 @@ import { easing } from "@/lib/motion";
 // Mobile menu with full-screen overlay
 // ─────────────────────────────────────────────────────────────────────────────
 
-const NAV_ITEMS = [
+interface NavItem {
+    label: string;
+    href: string;
+    external?: boolean;
+}
+
+interface NavbarProps {
+    logo?: string;
+    ctaText?: string;
+    ctaLink?: string;
+    links?: NavItem[];
+}
+
+const DEFAULT_NAV_ITEMS: NavItem[] = [
     { label: "Work", href: "/work" },
     { label: "Services", href: "/#services" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "https://www.thiinkmediagraphics.com/contact", external: true },
 ];
 
-export function Navbar() {
+export function Navbar({
+    logo = "/images/brand/logos/full-logo-white.png",
+    ctaText = "Start Project",
+    ctaLink = "https://www.thiinkmediagraphics.com/new-project-form",
+    links = DEFAULT_NAV_ITEMS,
+}: NavbarProps) {
     const { scrollY } = useScroll();
     const [isScrolled, setIsScrolled] = React.useState(false);
     const [isHidden, setIsHidden] = React.useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
     const lastScrollY = React.useRef(0);
+
+    // Determine if link is external
+    const isExternalLink = (href: string) => href.startsWith("http");
 
     // Lock body scroll when mobile menu is open
     React.useEffect(() => {
@@ -91,7 +112,7 @@ export function Navbar() {
                     className="relative z-50 hover:opacity-80 transition-opacity duration-200"
                 >
                     <Image
-                        src="/images/brand/logos/full-logo-white.png"
+                        src={logo}
                         alt="Thiink Media Graphics"
                         width={160}
                         height={40}
@@ -103,9 +124,9 @@ export function Navbar() {
                 {/* ─── DESKTOP NAV ─── */}
                 <nav className="hidden md:flex items-center gap-8">
                     <div className="flex items-center gap-8 mr-8">
-                        {NAV_ITEMS.map((item) => (
+                        {links.map((item) => (
                             <div key={item.label} className="relative group">
-                                {item.external ? (
+                                {item.external || isExternalLink(item.href) ? (
                                     <a
                                         href={item.href}
                                         target="_blank"
@@ -129,7 +150,7 @@ export function Navbar() {
                     </div>
 
                     <a
-                        href="https://www.thiinkmediagraphics.com/new-project-form"
+                        href={ctaLink}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -138,7 +159,7 @@ export function Navbar() {
                             size={isScrolled ? "sm" : "md"}
                             className="font-outfit uppercase tracking-wider"
                         >
-                            Start Project
+                            {ctaText}
                         </Button>
                     </a>
                 </nav>
@@ -195,7 +216,7 @@ export function Navbar() {
                         <nav className="flex flex-col items-center justify-center h-full px-6">
                             {/* Navigation Links */}
                             <ul className="space-y-8 text-center mb-12">
-                                {NAV_ITEMS.map((item, index) => (
+                                {links.map((item, index) => (
                                     <motion.li
                                         key={item.label}
                                         initial={{ opacity: 0, y: 20 }}
@@ -207,7 +228,7 @@ export function Navbar() {
                                             ease: easing.apple,
                                         }}
                                     >
-                                        {item.external ? (
+                                        {item.external || isExternalLink(item.href) ? (
                                             <a
                                                 href={item.href}
                                                 target="_blank"
@@ -237,18 +258,18 @@ export function Navbar() {
                                 exit={{ opacity: 0, y: -10 }}
                                 transition={{
                                     duration: 0.4,
-                                    delay: NAV_ITEMS.length * 0.1,
+                                    delay: links.length * 0.1,
                                     ease: easing.apple,
                                 }}
                             >
                                 <a
-                                    href="https://www.thiinkmediagraphics.com/new-project-form"
+                                    href={ctaLink}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     onClick={() => setIsMobileMenuOpen(false)}
                                 >
                                     <Button variant="primary" size="lg" className="font-outfit uppercase tracking-wider">
-                                        Start a Project
+                                        {ctaText}
                                     </Button>
                                 </a>
                             </motion.div>

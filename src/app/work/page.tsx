@@ -1,4 +1,4 @@
-import { getProjects } from "@/lib/cms";
+import { getProjects, getSiteSettings } from "@/lib/cms";
 import { WorkPageClient } from "./WorkPageClient";
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -8,5 +8,6 @@ import { WorkPageClient } from "./WorkPageClient";
 
 export default function WorkPage() {
     const projects = getProjects();
-    return <WorkPageClient projects={projects} />;
+    const siteSettings = getSiteSettings();
+    return <WorkPageClient projects={projects} siteSettings={siteSettings} />;
 }

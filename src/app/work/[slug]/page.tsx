@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import { getProjectBySlug, getNextProject, getProjectSlugs } from "@/lib/cms";
+import { getProjectBySlug, getNextProject, getProjectSlugs, getSiteSettings } from "@/lib/cms";
 import { CaseStudyPageClient } from "./CaseStudyPageClient";
 
 // ─────────────────────────────────────────────────────────────────────────────
@@ -25,6 +25,7 @@ export default async function CaseStudyPage({ params }: PageProps) {
     }
 
     const nextProject = getNextProject(slug);
+    const siteSettings = getSiteSettings();
 
-    return <CaseStudyPageClient project={project} nextProject={nextProject} />;
+    return <CaseStudyPageClient project={project} nextProject={nextProject} siteSettings={siteSettings} />;
 }

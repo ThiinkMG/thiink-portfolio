@@ -63,6 +63,10 @@ export interface HomepageContent {
     primaryCta: string;
     secondaryCta: string;
   };
+  heroBackground?: {
+    image?: string;
+    opacity?: number;
+  };
   stats: { value: string; label: string }[];
   trustLogos: string[];
   ctaBand: {
@@ -70,6 +74,8 @@ export interface HomepageContent {
     subtext: string;
     buttonText: string;
     trustLine: string;
+    backgroundImage?: string;
+    backgroundOpacity?: number;
   };
 }
 
@@ -106,6 +112,11 @@ export interface ProcessContent {
   }[];
 }
 
+export interface NavLink {
+  label: string;
+  href: string;
+}
+
 export interface SiteSettings {
   siteName: string;
   tagline: string;
@@ -120,5 +131,53 @@ export interface SiteSettings {
     linkedin: string;
     twitter: string;
     youtube: string;
+  };
+  navbar?: {
+    logo: string;
+    ctaText: string;
+    ctaLink: string;
+    links: NavLink[];
+  };
+  footer?: {
+    tagline: string;
+    copyright: string;
+    serviceLinks: NavLink[];
+    exploreLinks: NavLink[];
+  };
+}
+
+export interface AboutContent {
+  hero: {
+    label: string;
+    title: string;
+    titleHighlight: string;
+    subtitle: string;
+    backgroundImage?: string;
+    backgroundOpacity?: number;
+  };
+  vision: {
+    label: string;
+    title: string;
+    paragraphs: string[];
+    sideQuote: string;
+    sideNote: string;
+  };
+  mission: {
+    label: string;
+    title: string;
+    description: string;
+  };
+  stats: { value: string; label: string }[];
+  services: {
+    label: string;
+    title: string;
+    items: { title: string; description: string }[];
+  };
+  cta: {
+    label: string;
+    title: string;
+    description: string;
+    primaryButton: string;
+    secondaryButton: string;
   };
 }

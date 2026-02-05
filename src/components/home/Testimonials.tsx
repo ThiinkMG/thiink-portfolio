@@ -12,7 +12,21 @@ import { cn } from "@/lib/utils";
 // Rotating spotlight with client quotes
 // ─────────────────────────────────────────────────────────────────────────────
 
-const TESTIMONIALS = [
+interface TestimonialData {
+    quote: string;
+    author: string;
+    title: string;
+    project: string;
+}
+
+interface TestimonialsProps {
+    sectionLabel?: string;
+    sectionTitle?: string;
+    testimonials?: TestimonialData[];
+}
+
+// Default testimonials for fallback
+const DEFAULT_TESTIMONIALS: TestimonialData[] = [
     {
         quote: "Thiink Media Graphics is an amazing graphic design company that produces exceptional work with friendly and fast service.",
         author: "Alexander Sofronas",
@@ -51,25 +65,29 @@ const TESTIMONIALS = [
     },
 ];
 
-export function Testimonials() {
+export function Testimonials({
+    sectionLabel = "Client Stories",
+    sectionTitle = "Voices of Our Patrons",
+    testimonials = DEFAULT_TESTIMONIALS,
+}: TestimonialsProps) {
     const [current, setCurrent] = React.useState(0);
     const [direction, setDirection] = React.useState(0);
 
-    const next = () => {
+    const next = React.useCallback(() => {
         setDirection(1);
-        setCurrent((prev) => (prev + 1) % TESTIMONIALS.length);
-    };
+        setCurrent((prev) => (prev + 1) % testimonials.length);
+    }, [testimonials.length]);
 
     const prev = () => {
         setDirection(-1);
-        setCurrent((prev) => (prev - 1 + TESTIMONIALS.length) % TESTIMONIALS.length);
+        setCurrent((prev) => (prev - 1 + testimonials.length) % testimonials.length);
     };
 
     // Auto-advance every 8 seconds
     React.useEffect(() => {
         const timer = setInterval(next, 8000);
         return () => clearInterval(timer);
-    }, []);
+    }, [next]);
 
     const variants = {
         enter: (direction: number) => ({
@@ -86,15 +104,17 @@ export function Testimonials() {
         }),
     };
 
-    const testimonial = TESTIMONIALS[current];
+    const testimonial = testimonials[current];
+
+    if (!testimonial) return null;
 
     return (
         <section className="py-24 md:py-32 bg-museum">
             <div className="max-w-5xl mx-auto px-6 md:px-12 lg:px-20">
                 {/* ─── SECTION HEADER ─── */}
                 <ScrollReveal className="text-center mb-16 md:mb-20">
-                    <SectionLabel className="mb-4 block">Client Stories</SectionLabel>
-                    <H2 className="mb-6">Voices of Our Patrons</H2>
+                    <SectionLabel className="mb-4 block">{sectionLabel}</SectionLabel>
+                    <H2 className="mb-6">{sectionTitle}</H2>
                 </ScrollReveal>
 
                 {/* ─── TESTIMONIAL CARD ─── */}
@@ -157,7 +177,7 @@ export function Testimonials() {
 
                         {/* Dots */}
                         <div className="flex gap-2">
-                            {TESTIMONIALS.map((_, index) => (
+                            {testimonials.map((_, index) => (
                                 <button
                                     key={index}
                                     onClick={() => {

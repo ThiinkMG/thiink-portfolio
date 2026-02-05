@@ -67,10 +67,23 @@
   ],
   "videos": [],
   "metrics": [
-    { "label": "Brand Recognition", "value": "+40%" },
-    { "label": "Engagement Lift", "value": "+25%" },
-    { "label": "Social Following", "value": "2x" }
+    {
+      "label": "Brand Recognition",
+      "value": "+40%"
+    },
+    {
+      "label": "Engagement Lift",
+      "value": "+25%"
+    },
+    {
+      "label": "Social Following",
+      "value": "2x"
+    }
   ],
-  "colors": ["#000000", "#FFFFFF", "#D4A855"],
+  "colors": [
+    "#000000",
+    "#FFFFFF",
+    "#ef4900"
+  ],
   "nextProject": "neo-sophia"
 }

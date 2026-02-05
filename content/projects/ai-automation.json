@@ -31,7 +31,7 @@
   ],
   "gallery": [
     {
-      "src": "/images/work/ai-automation-podcast/hero.png",
+      "src": "/images/work/ai-automation-podcast/gallery-4.png",
       "alt": "Ai x Automation Podcast Hero",
       "caption": "Fig. 1 — Retro-futuristic podcast hero"
     },
@@ -49,10 +49,24 @@
       "src": "/images/work/ai-automation-podcast/gallery-3.png",
       "alt": "Ai x Marketing Magazine Design",
       "caption": "Fig. 4 — Magazine-style layout design"
+    },
+    {
+      "src": "/images/work/ai-automation-podcast/Alex%20Sofronas%20-%20Ai%20x%20Marketing%20Podcast%20Final%20Magazine%20Design%202%20-%20Final.png",
+      "alt": "Podcast Cover Art, Magazine Mockups",
+      "caption": "Fig. 5 — Magazine-style layout design"
+    },
+    {
+      "src": "/images/work/ai-automation-podcast/Alex%20Sofronas%20-%20Ai%20x%20Marketing%20Podcast%20Final%20Magazine%20Design%203%20-%20Final.png",
+      "alt": "Podcast Cover Art, Magazine Mockups",
+      "caption": "Fig. 6 — Magazine-style layout design"
     }
   ],
   "videos": [],
   "metrics": [],
-  "colors": ["#C62828", "#FFF8E1", "#37474F"],
+  "colors": [
+    "#C62828",
+    "#FFF8E1",
+    "#37474F"
+  ],
   "nextProject": "later-youll-understand"
 }

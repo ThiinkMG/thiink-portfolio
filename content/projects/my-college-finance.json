@@ -8,13 +8,13 @@
   "duration": "8 weeks",
   "heroImage": "/images/work/my-college-finance/hero.png",
   "thumbnailImage": "/images/work/my-college-finance/hero.png",
-  "description": "A friendly, Disney-inspired educational brand featuring Oliver Owl—a mascot character designed to make financial literacy approachable for college students.",
+  "description": "A friendly, Disney-inspired educational brand featuring Oliver P. Finance—a mascot character designed to make financial literacy approachable for college students.",
   "situation": "My College Finance needed to tackle a significant challenge: making financial education engaging for college students who typically find the subject intimidating or boring. The existing materials felt corporate and failed to connect with their young audience.",
   "task": "Create a complete brand identity centered around a mascot character that could serve as a friendly guide through complex financial topics. The character needed to be approachable yet professional, suitable for both social media and serious educational content.",
   "action": [
     {
       "title": "Character Creation",
-      "content": "We designed Oliver Owl—a wise yet approachable owl character in professional attire. The choice of an owl leverages natural associations with wisdom while the friendly illustration style removes intimidation. His blue suit suggests professionalism without stuffiness.",
+      "content": "We designed Oliver P. Finance—a wise yet approachable owl character in professional attire. The choice of an owl leverages natural associations with wisdom while the friendly illustration style removes intimidation. His blue suit suggests professionalism without stuffiness.",
       "marginalia": "Oliver's name was chosen for its associations with growth and wisdom (olive tree) and classic storytelling (Oliver Twist)."
     },
     {
@@ -92,10 +92,24 @@
     }
   ],
   "metrics": [
-    { "label": "Content Engagement", "value": "+85%" },
-    { "label": "YouTube Subscribers", "value": "15K" },
-    { "label": "Campus Partners", "value": "25" }
+    {
+      "label": "Content Engagement",
+      "value": "+85%"
+    },
+    {
+      "label": "YouTube Subscribers",
+      "value": "15K"
+    },
+    {
+      "label": "Campus Partners",
+      "value": "25"
+    }
   ],
-  "colors": ["#1E3A8A", "#FFFFFF", "#D4A855", "#F5F5F0"],
+  "colors": [
+    "#1E3A8A",
+    "#FFFFFF",
+    "#D4A855",
+    "#F5F5F0"
+  ],
   "nextProject": "sins-we-share"
 }

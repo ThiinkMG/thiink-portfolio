@@ -18,34 +18,82 @@
     "ctaText": "Start Project",
     "ctaLink": "https://www.thiinkmediagraphics.com/new-project-form",
     "links": [
-      { "label": "Work", "href": "/work" },
-      { "label": "Services", "href": "/#services" },
-      { "label": "About", "href": "/about" },
-      { "label": "Contact", "href": "/#contact" }
+      {
+        "label": "Work",
+        "href": "/work"
+      },
+      {
+        "label": "Services",
+        "href": "/#services"
+      },
+      {
+        "label": "About",
+        "href": "/about"
+      },
+      {
+        "label": "Contact",
+        "href": "/#contact"
+      }
     ]
   },
   "footer": {
     "tagline": "Where timeless design meets modern innovation. We transform brands into enduring legacies.",
     "copyright": "Thiink Media Graphics",
     "serviceLinks": [
-      { "label": "Core Identity", "href": "/#services" },
-      { "label": "Design Forge", "href": "/#services" },
-      { "label": "Web Artisan", "href": "/#services" },
-      { "label": "Print Craft", "href": "/#services" }
+      {
+        "label": "Core Identity",
+        "href": "/#services"
+      },
+      {
+        "label": "Design Forge",
+        "href": "/#services"
+      },
+      {
+        "label": "Web Artisan",
+        "href": "/#services"
+      },
+      {
+        "label": "Print Craft",
+        "href": "/#services"
+      }
     ],
     "exploreLinks": [
-      { "label": "Portfolio", "href": "/work" },
-      { "label": "Blog", "href": "/blog" },
-      { "label": "Pricing", "href": "/pricing" },
-      { "label": "Contact", "href": "/#contact" }
+      {
+        "label": "Portfolio",
+        "href": "/work"
+      },
+      {
+        "label": "Blog",
+        "href": "/blog"
+      },
+      {
+        "label": "Pricing",
+        "href": "/pricing"
+      },
+      {
+        "label": "Contact",
+        "href": "/#contact"
+      }
     ]
   },
   "workPageStats": {
     "stats": [
-      { "value": "50+", "label": "Projects Completed" },
-      { "value": "6", "label": "Years Experience" },
-      { "value": "100%", "label": "Client Satisfaction" },
-      { "value": "5", "label": "Industries Served" }
+      {
+        "value": "1000+",
+        "label": "Projects Completed"
+      },
+      {
+        "value": "7+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "100%",
+        "label": "Client Satisfaction"
+      },
+      {
+        "value": "Atlanta's #1",
+        "label": "Rising Design Agencies "
+      }
     ]
   }
 }

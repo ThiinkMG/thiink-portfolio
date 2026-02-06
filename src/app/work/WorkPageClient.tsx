@@ -78,41 +78,27 @@ export function WorkPageClient({ projects, siteSettings }: WorkPageClientProps) 
                         ))}
                     </div>
 
-                    {/* Stats */}
-                    <motion.div
-                        className="mt-20 pt-12 border-t border-marble/10"
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 0.6 }}
-                    >
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                            <div>
-                                <span className="font-cinzel text-3xl md:text-4xl text-gold block mb-2">
-                                    50+
-                                </span>
-                                <Caption className="text-marble/50">Projects Completed</Caption>
+                    {/* Stats - CMS Editable via Site Settings > Work Page Stats */}
+                    {siteSettings?.workPageStats?.stats && siteSettings.workPageStats.stats.length > 0 && (
+                        <motion.div
+                            className="mt-20 pt-12 border-t border-marble/10"
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6 }}
+                        >
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                                {siteSettings.workPageStats.stats.map((stat, index) => (
+                                    <div key={index}>
+                                        <span className="font-cinzel text-3xl md:text-4xl text-gold block mb-2">
+                                            {stat.value}
+                                        </span>
+                                        <Caption className="text-marble/50">{stat.label}</Caption>
+                                    </div>
+                                ))}
                             </div>
-                            <div>
-                                <span className="font-cinzel text-3xl md:text-4xl text-gold block mb-2">
-                                    6
-                                </span>
-                                <Caption className="text-marble/50">Years Experience</Caption>
-                            </div>
-                            <div>
-                                <span className="font-cinzel text-3xl md:text-4xl text-gold block mb-2">
-                                    100%
-                                </span>
-                                <Caption className="text-marble/50">Client Satisfaction</Caption>
-                            </div>
-                            <div>
-                                <span className="font-cinzel text-3xl md:text-4xl text-gold block mb-2">
-                                    5
-                                </span>
-                                <Caption className="text-marble/50">Industries Served</Caption>
-                            </div>
-                        </div>
-                    </motion.div>
+                        </motion.div>
+                    )}
                 </div>
             </section>
 

@@ -79,11 +79,22 @@ export interface HomepageContent {
     headline: string;
     subtext: string;
     buttonText: string;
+    buttonLink?: string;
+    secondaryButtonText?: string;
+    secondaryButtonLink?: string;
     trustLine: string;
     backgroundImage?: string;
     backgroundOpacity?: number;
   };
   featuredWork?: FeaturedWorkConfig;
+  servicesSection?: {
+    label?: string;
+    title?: string;
+  };
+  testimonialsSection?: {
+    label?: string;
+    title?: string;
+  };
 }
 
 export interface FeaturedWorkConfig {
@@ -161,6 +172,9 @@ export interface SiteSettings {
     copyright: string;
     serviceLinks: NavLink[];
     exploreLinks: NavLink[];
+  };
+  workPageStats?: {
+    stats: { value: string; label: string }[];
   };
 }
 

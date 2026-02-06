@@ -39,5 +39,13 @@
       { "label": "Pricing", "href": "/pricing" },
       { "label": "Contact", "href": "/#contact" }
     ]
+  },
+  "workPageStats": {
+    "stats": [
+      { "value": "50+", "label": "Projects Completed" },
+      { "value": "6", "label": "Years Experience" },
+      { "value": "100%", "label": "Client Satisfaction" },
+      { "value": "5", "label": "Industries Served" }
+    ]
   }
 }

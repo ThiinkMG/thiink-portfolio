@@ -47,6 +47,9 @@ interface ProcessTimelineProps {
     sectionDescription?: string;
     steps?: ProcessStep[];
     serviceCards?: ServiceCardData[];
+    // Services section headers (Full-Service Offerings)
+    servicesSectionLabel?: string;
+    servicesSectionTitle?: string;
 }
 
 // Default content for fallback
@@ -156,6 +159,8 @@ export function ProcessTimeline({
     sectionDescription = "Like the ancient philosophers who sought truth through systematic inquiry, we follow a proven methodology to uncover and craft your brand's essence.",
     steps = DEFAULT_STEPS,
     serviceCards = DEFAULT_SERVICE_CARDS,
+    servicesSectionLabel = "Capabilities",
+    servicesSectionTitle = "Full-Service Offerings",
 }: ProcessTimelineProps) {
     // Track which service card is expanded (null = none)
     const [expandedCard, setExpandedCard] = useState<string | null>(null);
@@ -204,8 +209,8 @@ export function ProcessTimeline({
                 {/* ─── SERVICE CARDS GRID ─── */}
                 <ScrollReveal>
                     <div className="text-center mb-12">
-                        <SectionLabel className="mb-4 block">Capabilities</SectionLabel>
-                        <H2 className="text-[clamp(1.5rem,2vw+0.75rem,2rem)]">Full-Service Offerings</H2>
+                        <SectionLabel className="mb-4 block">{servicesSectionLabel}</SectionLabel>
+                        <H2 className="text-[clamp(1.5rem,2vw+0.75rem,2rem)]">{servicesSectionTitle}</H2>
                     </div>
                 </ScrollReveal>
 

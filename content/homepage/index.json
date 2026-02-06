@@ -76,9 +76,20 @@
     "headline": "Ready to Elevate Your Brand?",
     "subtext": "Let's create something extraordinary together. Your vision deserves a visual identity that commands attention.",
     "buttonText": "Start Your Project",
+    "buttonLink": "https://www.thiinkmediagraphics.com/new-project-form",
+    "secondaryButtonText": "View Our Work",
+    "secondaryButtonLink": "/work",
     "trustLine": "Trusted by startups and Small businesses alike!",
     "backgroundImage": "",
     "backgroundOpacity": 20
+  },
+  "servicesSection": {
+    "label": "Capabilities",
+    "title": "Full-Service Offerings"
+  },
+  "testimonialsSection": {
+    "label": "Client Stories",
+    "title": "Voices of Our Patrons"
   },
   "featuredWork": {
     "sectionLabel": "Selected Work",

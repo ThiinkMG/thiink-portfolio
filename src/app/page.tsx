@@ -64,19 +64,28 @@ export default function Home() {
         sectionTitle={processContent?.sectionTitle}
         steps={processContent?.steps}
         serviceCards={servicesContent?.serviceCards}
+        servicesSectionLabel={homepageContent?.servicesSection?.label}
+        servicesSectionTitle={homepageContent?.servicesSection?.title}
       />
 
       {/* Divider - Gold Monogram */}
       <SectionDivider variant="atom" color="gold" size="md" />
 
       {/* 5. Testimonials - Client proof */}
-      <Testimonials testimonials={testimonials} />
+      <Testimonials
+        testimonials={testimonials}
+        sectionLabel={homepageContent?.testimonialsSection?.label}
+        sectionTitle={homepageContent?.testimonialsSection?.title}
+      />
 
       {/* 6. CTA Band - Conversion */}
       <CTABand
         headline={homepageContent?.ctaBand?.headline}
         subtext={homepageContent?.ctaBand?.subtext}
         buttonText={homepageContent?.ctaBand?.buttonText}
+        buttonLink={homepageContent?.ctaBand?.buttonLink}
+        secondaryButtonText={homepageContent?.ctaBand?.secondaryButtonText}
+        secondaryButtonLink={homepageContent?.ctaBand?.secondaryButtonLink}
         trustLine={homepageContent?.ctaBand?.trustLine}
         backgroundImage={homepageContent?.ctaBand?.backgroundImage}
         backgroundOpacity={homepageContent?.ctaBand?.backgroundOpacity ? homepageContent.ctaBand.backgroundOpacity / 100 : undefined}

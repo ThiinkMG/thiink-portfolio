@@ -530,32 +530,57 @@ export default defineConfig({
             list: true,
             description: "Deprecated - use Trust Marquee instead",
           },
-          // CTA Band
+          // CTA Band - appears at bottom of homepage before footer
           {
             type: "object",
             name: "ctaBand",
             label: "CTA Band",
+            description: "Call-to-action section at bottom of homepage. Contains headline, buttons, and trust line.",
             fields: [
               {
                 type: "string",
                 name: "headline",
                 label: "Headline",
+                description: "Main heading (e.g., 'Ready to Elevate Your Brand?')",
               },
               {
                 type: "string",
                 name: "subtext",
                 label: "Subtext",
+                description: "Supporting text below headline",
+                ui: {
+                  component: "textarea",
+                },
               },
               {
                 type: "string",
                 name: "buttonText",
-                label: "Button Text",
+                label: "Primary Button Text",
+                description: "Gold button text (e.g., 'Start Your Project')",
+              },
+              {
+                type: "string",
+                name: "buttonLink",
+                label: "Primary Button Link",
+                description: "URL for main CTA button (e.g., '/new-project-form')",
+              },
+              {
+                type: "string",
+                name: "secondaryButtonText",
+                label: "Secondary Button Text",
+                description: "Text link next to primary button (e.g., 'View Our Work')",
+              },
+              {
+                type: "string",
+                name: "secondaryButtonLink",
+                label: "Secondary Button Link",
+                description: "URL for secondary link (e.g., '/work')",
               },
               {
                 type: "string",
                 name: "trustLine",
                 label: "Trust Line",
-                description: "Text below the button (e.g., 'Trusted by...')",
+                description: "Small text at bottom (e.g., 'Trusted by startups and small businesses alike!')",
               },
               {
                 type: "image",
@@ -630,6 +655,48 @@ export default defineConfig({
                 name: "ctaLink",
                 label: "CTA Link",
                 description: "e.g., '/work'",
+              },
+            ],
+          },
+          // Services Section Headers (Full-Service Offerings)
+          {
+            type: "object",
+            name: "servicesSection",
+            label: "Services Section (Full-Service Offerings)",
+            description: "Headers for the service capabilities grid on homepage",
+            fields: [
+              {
+                type: "string",
+                name: "label",
+                label: "Section Label",
+                description: "Small gold text above title (e.g., 'Capabilities')",
+              },
+              {
+                type: "string",
+                name: "title",
+                label: "Section Title",
+                description: "Main heading (e.g., 'Full-Service Offerings')",
+              },
+            ],
+          },
+          // Testimonials Section Headers
+          {
+            type: "object",
+            name: "testimonialsSection",
+            label: "Testimonials Section",
+            description: "Headers for the client testimonials carousel on homepage",
+            fields: [
+              {
+                type: "string",
+                name: "label",
+                label: "Section Label",
+                description: "Small gold text above title (e.g., 'Client Stories')",
+              },
+              {
+                type: "string",
+                name: "title",
+                label: "Section Title",
+                description: "Main heading (e.g., 'Voices of Our Patrons')",
               },
             ],
           },
@@ -970,7 +1037,7 @@ export default defineConfig({
 
       // ─────────────────────────────────────────────────────────────────────────
       // PROCESS COLLECTION
-      // Process timeline steps
+      // Process timeline steps - appears on homepage in "Our Approach / The Method" section
       // ─────────────────────────────────────────────────────────────────────────
       {
         name: "process",
@@ -988,11 +1055,13 @@ export default defineConfig({
             type: "string",
             name: "sectionLabel",
             label: "Section Label",
+            description: "Small gold text above title (e.g., 'Our Approach'). Appears on homepage.",
           },
           {
             type: "string",
             name: "sectionTitle",
             label: "Section Title",
+            description: "Main heading (e.g., 'The Method'). Appears on homepage.",
           },
           {
             type: "object",
@@ -1010,13 +1079,20 @@ export default defineConfig({
                 name: "numeral",
                 label: "Roman Numeral",
                 required: true,
-                description: "e.g., I, II, III, IV",
+                description: "Displayed in gold circle (e.g., 'I', 'II', 'III', 'IV')",
               },
               {
                 type: "string",
                 name: "title",
                 label: "Title",
                 required: true,
+                description: "Main step title (e.g., 'Discovery', 'Strategy')",
+              },
+              {
+                type: "string",
+                name: "subtitle",
+                label: "Subtitle",
+                description: "Small gold text above title (e.g., 'The Inquiry', 'The Architecture')",
               },
               {
                 type: "string",
@@ -1026,12 +1102,20 @@ export default defineConfig({
                 ui: {
                   component: "textarea",
                 },
+                description: "Main paragraph describing this step",
+              },
+              {
+                type: "string",
+                name: "details",
+                label: "Detail Tags",
+                list: true,
+                description: "Pill/badge tags shown below description (e.g., 'Brand Audit', 'Market Research')",
               },
               {
                 type: "string",
                 name: "marginalia",
                 label: "Marginalia",
-                description: "Optional curator's note",
+                description: "Optional curator's note (not currently displayed)",
               },
             ],
           },
@@ -1234,6 +1318,42 @@ export default defineConfig({
                     name: "href",
                     label: "Link URL",
                     required: true,
+                  },
+                ],
+              },
+            ],
+          },
+          // Work Page Stats - displayed at bottom of /work portfolio page
+          {
+            type: "object",
+            name: "workPageStats",
+            label: "Work Page Stats",
+            description: "Statistics displayed at the bottom of the /work portfolio page",
+            fields: [
+              {
+                type: "object",
+                name: "stats",
+                label: "Stats",
+                list: true,
+                ui: {
+                  itemProps: (item) => ({
+                    label: item?.label ? `${item.value || ''} ${item.label}` : `Stat ${item?._index !== undefined ? item._index + 1 : ''}`,
+                  }),
+                },
+                fields: [
+                  {
+                    type: "string",
+                    name: "value",
+                    label: "Value",
+                    required: true,
+                    description: "The statistic number (e.g., '50+', '100%', '6')",
+                  },
+                  {
+                    type: "string",
+                    name: "label",
+                    label: "Label",
+                    required: true,
+                    description: "Description of the stat (e.g., 'Projects Completed')",
                   },
                 ],
               },

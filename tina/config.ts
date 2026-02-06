@@ -571,6 +571,68 @@ export default defineConfig({
               },
             ],
           },
+          // Featured Work Section (The Gallery)
+          {
+            type: "object",
+            name: "featuredWork",
+            label: "Featured Work Section",
+            fields: [
+              {
+                type: "string",
+                name: "sectionLabel",
+                label: "Section Label",
+                description: "Small text above title (e.g., 'Selected Work')",
+              },
+              {
+                type: "string",
+                name: "sectionTitle",
+                label: "Section Title",
+                description: "e.g., 'The Gallery'",
+              },
+              {
+                type: "string",
+                name: "sectionDescription",
+                label: "Section Description",
+                ui: {
+                  component: "textarea",
+                },
+              },
+              {
+                type: "string",
+                name: "featuredProjectSlug",
+                label: "Featured Project Slug",
+                description: "Slug of the project to feature prominently (e.g., 'kngdm')",
+              },
+              {
+                type: "string",
+                name: "featuredDescription",
+                label: "Featured Description Override",
+                description: "Optional: Override the project's default description for homepage",
+                ui: {
+                  component: "textarea",
+                },
+              },
+              {
+                type: "string",
+                name: "gridProjectSlugs",
+                label: "Grid Project Slugs",
+                list: true,
+                description: "Slugs of projects to display in the grid (e.g., 'neo-sophia', 'aiff')",
+              },
+              {
+                type: "string",
+                name: "ctaText",
+                label: "CTA Button Text",
+                description: "e.g., 'Explore Full Portfolio'",
+              },
+              {
+                type: "string",
+                name: "ctaLink",
+                label: "CTA Link",
+                description: "e.g., '/work'",
+              },
+            ],
+          },
         ],
       },
 

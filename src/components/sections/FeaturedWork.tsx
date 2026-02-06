@@ -5,99 +5,81 @@ import { ArtifactCard, ArtifactGrid, FeaturedArtifact } from "@/components/Artif
 import { SectionDivider } from "@/components/ui/SectionDivider";
 import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { CTALink } from "@/components/ui/TextLink";
+import type { Project, FeaturedWorkConfig } from "@/lib/types";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // FEATURED WORK SECTION - "The Gallery"
 // Museum-style portfolio showcase with ArtifactCards
+// CMS-editable via content/homepage/index.json
 // ─────────────────────────────────────────────────────────────────────────────
 
-// Featured project for hero display
-const FEATURED_PROJECT = {
-    title: "KNGDM Brand Identity",
-    client: "KNGDM",
-    year: "2024",
-    category: "Brand Identity",
-    description: "A comprehensive brand identity system for a visionary lifestyle brand. From logo design to full brand guidelines, we crafted an identity that commands attention and inspires devotion.",
-    image: "/images/work/kngdm/hero.png",
-    href: "/work/kngdm",
+interface FeaturedWorkProps {
+    config?: FeaturedWorkConfig;
+    projects: Project[];
+}
+
+// Default configuration when CMS data is not available
+const DEFAULT_CONFIG: FeaturedWorkConfig = {
+    sectionLabel: "Selected Work",
+    sectionTitle: "The Gallery",
+    sectionDescription: "Each project represents a journey of discovery, collaboration, and transformation. These are not just designs—they are artifacts of vision realized.",
+    featuredProjectSlug: "kngdm",
+    featuredDescription: "A comprehensive brand identity system for a visionary lifestyle brand. From logo design to full brand guidelines, we crafted an identity that commands attention and inspires devotion.",
+    gridProjectSlugs: ["neo-sophia", "aiff", "later-youll-understand", "jack-hoagalino", "ai-automation", "my-college-finance"],
+    ctaText: "Explore Full Portfolio",
+    ctaLink: "/work",
 };
 
-// Portfolio grid projects
-const PROJECTS = [
-    {
-        title: "Neo Sophia App",
-        client: "Neo Sophia",
-        year: "2024",
-        category: "App Design",
-        image: "/images/work/neo-sophia/hero.png",
-        href: "/work/neo-sophia",
-    },
-    {
-        title: "Atlanta Indian Film Festival",
-        client: "AIFF",
-        year: "2024",
-        category: "Event Branding",
-        image: "/images/work/aiff/hero.png",
-        href: "/work/aiff",
-    },
-    {
-        title: "Later You'll Understand",
-        client: "Dionta Goodson",
-        year: "2023",
-        category: "Album Art",
-        image: "/images/work/later-youll-understand/hero.png",
-        href: "/work/later-youll-understand",
-    },
-    {
-        title: "Jack Hoagalino",
-        client: "Jack Hoagalino",
-        year: "2024",
-        category: "Entertainment",
-        image: "/images/work/jack-hoagalino/hero.png",
-        href: "/work/jack-hoagalino",
-    },
-    {
-        title: "Ai x Automation Podcast",
-        client: "Alex Sofranos",
-        year: "2024",
-        category: "Podcast Branding",
-        image: "/images/work/ai-automation-podcast/hero.png",
-        href: "/work/ai-automation",
-    },
-    {
-        title: "My College Finance",
-        client: "My College Finance",
-        year: "2023",
-        category: "Mascot Design",
-        image: "/images/work/my-college-finance/hero.png",
-        href: "/work/my-college-finance",
-    },
-];
+export function FeaturedWork({ config, projects }: FeaturedWorkProps) {
+    // Merge CMS config with defaults
+    const displayConfig = {
+        sectionLabel: config?.sectionLabel || DEFAULT_CONFIG.sectionLabel,
+        sectionTitle: config?.sectionTitle || DEFAULT_CONFIG.sectionTitle,
+        sectionDescription: config?.sectionDescription || DEFAULT_CONFIG.sectionDescription,
+        featuredProjectSlug: config?.featuredProjectSlug || DEFAULT_CONFIG.featuredProjectSlug,
+        featuredDescription: config?.featuredDescription || DEFAULT_CONFIG.featuredDescription,
+        gridProjectSlugs: config?.gridProjectSlugs?.length ? config.gridProjectSlugs : DEFAULT_CONFIG.gridProjectSlugs,
+        ctaText: config?.ctaText || DEFAULT_CONFIG.ctaText,
+        ctaLink: config?.ctaLink || DEFAULT_CONFIG.ctaLink,
+    };
 
-export function FeaturedWork() {
+    // Find featured project by slug
+    const featuredProject = projects.find(
+        (p) => p.slug === displayConfig.featuredProjectSlug
+    );
+
+    // Filter grid projects by slugs, maintaining order from config
+    const gridProjects = displayConfig.gridProjectSlugs
+        ?.map((slug) => projects.find((p) => p.slug === slug))
+        .filter((p): p is Project => p !== undefined) || [];
+
+    // Early return if no featured project found
+    if (!featuredProject) {
+        return null;
+    }
+
     return (
         <section id="featured-work" className="py-24 md:py-32 bg-museum">
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
                 {/* ─── SECTION HEADER ─── */}
                 <ScrollReveal className="text-center mb-16 md:mb-20">
-                    <SectionLabel className="mb-4 block">Selected Work</SectionLabel>
-                    <H2 className="mb-6">The Gallery</H2>
+                    <SectionLabel className="mb-4 block">{displayConfig.sectionLabel}</SectionLabel>
+                    <H2 className="mb-6">{displayConfig.sectionTitle}</H2>
                     <Text className="max-w-2xl mx-auto text-marble/70">
-                        Each project represents a journey of discovery, collaboration, and
-                        transformation. These are not just designs—they are artifacts of vision realized.
+                        {displayConfig.sectionDescription}
                     </Text>
                 </ScrollReveal>
 
                 {/* ─── FEATURED PROJECT ─── */}
                 <ScrollReveal className="mb-20">
                     <FeaturedArtifact
-                        title={FEATURED_PROJECT.title}
-                        client={FEATURED_PROJECT.client}
-                        year={FEATURED_PROJECT.year}
-                        category={FEATURED_PROJECT.category}
-                        description={FEATURED_PROJECT.description}
-                        image={FEATURED_PROJECT.image}
-                        href={FEATURED_PROJECT.href}
+                        title={`${featuredProject.title}${featuredProject.subtitle ? ` ${featuredProject.subtitle}` : ''}`}
+                        client={featuredProject.client}
+                        year={featuredProject.year}
+                        category={featuredProject.category}
+                        description={displayConfig.featuredDescription || featuredProject.description}
+                        image={featuredProject.heroImage}
+                        href={`/work/${featuredProject.slug}`}
                         figureNumber={1}
                     />
                 </ScrollReveal>
@@ -107,15 +89,15 @@ export function FeaturedWork() {
 
                 {/* ─── PROJECT GRID ─── */}
                 <ArtifactGrid columns={3} gap="lg">
-                    {PROJECTS.map((project, index) => (
+                    {gridProjects.map((project, index) => (
                         <ArtifactCard
-                            key={project.title}
+                            key={project.slug}
                             title={project.title}
                             client={project.client}
                             year={project.year}
                             category={project.category}
-                            image={project.image}
-                            href={project.href}
+                            image={project.thumbnailImage || project.heroImage}
+                            href={`/work/${project.slug}`}
                             figureNumber={index + 2}
                             size="md"
                         />
@@ -124,8 +106,8 @@ export function FeaturedWork() {
 
                 {/* ─── VIEW ALL CTA ─── */}
                 <ScrollReveal className="text-center mt-16">
-                    <CTALink href="/work" variant="gold" size="lg">
-                        Explore Full Portfolio
+                    <CTALink href={displayConfig.ctaLink!} variant="gold" size="lg">
+                        {displayConfig.ctaText}
                     </CTALink>
                 </ScrollReveal>
             </div>

@@ -83,6 +83,18 @@ export interface HomepageContent {
     backgroundImage?: string;
     backgroundOpacity?: number;
   };
+  featuredWork?: FeaturedWorkConfig;
+}
+
+export interface FeaturedWorkConfig {
+  sectionLabel?: string;
+  sectionTitle?: string;
+  sectionDescription?: string;
+  featuredProjectSlug?: string;
+  featuredDescription?: string;
+  gridProjectSlugs?: string[];
+  ctaText?: string;
+  ctaLink?: string;
 }
 
 export interface ServicesContent {

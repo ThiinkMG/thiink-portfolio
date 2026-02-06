@@ -42,7 +42,7 @@ export default function Home() {
       <Hero projects={projects} stats={homepageContent?.stats} hero={homepageContent?.hero} />
 
       {/* 2. Featured Work - Portfolio gallery (moved up for portfolio focus) */}
-      <FeaturedWork />
+      <FeaturedWork config={homepageContent?.featuredWork} projects={projects} />
 
       {/* Divider - Gold Monogram */}
       <SectionDivider variant="atom" color="gold" size="md" />

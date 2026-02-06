@@ -79,5 +79,22 @@
     "trustLine": "Trusted by startups and Small businesses alike!",
     "backgroundImage": "",
     "backgroundOpacity": 20
+  },
+  "featuredWork": {
+    "sectionLabel": "Selected Work",
+    "sectionTitle": "The Gallery",
+    "sectionDescription": "Each project represents a journey of discovery, collaboration, and transformation. These are not just designs—they are artifacts of vision realized.",
+    "featuredProjectSlug": "kngdm",
+    "featuredDescription": "A comprehensive brand identity system for a visionary lifestyle brand. From logo design to full brand guidelines, we crafted an identity that commands attention and inspires devotion.",
+    "gridProjectSlugs": [
+      "neo-sophia",
+      "aiff",
+      "later-youll-understand",
+      "jack-hoagalino",
+      "ai-automation",
+      "my-college-finance"
+    ],
+    "ctaText": "Explore Full Portfolio",
+    "ctaLink": "/work"
   }
 }

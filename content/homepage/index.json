@@ -83,14 +83,6 @@
     "backgroundImage": "",
     "backgroundOpacity": 20
   },
-  "servicesSection": {
-    "label": "Capabilities",
-    "title": "Full-Service Offerings"
-  },
-  "testimonialsSection": {
-    "label": "Client Stories",
-    "title": "Voices of Our Patrons"
-  },
   "featuredWork": {
     "sectionLabel": "Selected Work",
     "sectionTitle": "The Gallery",
@@ -98,14 +90,22 @@
     "featuredProjectSlug": "kngdm",
     "featuredDescription": "A comprehensive brand identity system for a visionary lifestyle brand. From logo design to full brand guidelines, we crafted an identity that commands attention and inspires devotion.",
     "gridProjectSlugs": [
-      "neo-sophia",
       "aiff",
       "later-youll-understand",
+      "my-college-finance",
       "jack-hoagalino",
-      "ai-automation",
-      "my-college-finance"
+      "neo-sophia",
+      "ai-automation"
     ],
     "ctaText": "Explore Full Portfolio",
     "ctaLink": "/work"
+  },
+  "servicesSection": {
+    "label": "Capabilities",
+    "title": "Full-Service Offerings"
+  },
+  "testimonialsSection": {
+    "label": "Client Stories",
+    "title": "Voices of Our Patrons"
   }
 }

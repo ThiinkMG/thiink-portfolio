@@ -67,7 +67,7 @@ export default function AboutPage() {
                             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
                                 {/* Main Content */}
                                 <div className="lg:col-span-8">
-                                    <SectionLabel className="text-gold/80 block mb-4">
+                                    <SectionLabel className="text-ink/50 block mb-4">
                                         {aboutContent?.vision?.label || "Our Vision"}
                                     </SectionLabel>
                                     <H2 className="text-ink mb-8">
@@ -111,7 +111,7 @@ export default function AboutPage() {
                     <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20">
                         <ScrollReveal>
                             <div className="text-center max-w-3xl mx-auto">
-                                <SectionLabel className="text-gold/80 block mb-4">
+                                <SectionLabel className="text-ink/50 block mb-4">
                                     {aboutContent?.mission?.label || "Our Mission"}
                                 </SectionLabel>
                                 <H2 className="text-ink mb-8">
@@ -138,7 +138,7 @@ export default function AboutPage() {
                                         <div className="font-cinzel text-3xl md:text-4xl text-gold mb-2">
                                             {stat.value}
                                         </div>
-                                        <div className="font-cormorant-sc text-xs uppercase tracking-widest text-ink/50">
+                                        <div className="font-cormorant-sc text-sm uppercase tracking-widest text-ink/50">
                                             {stat.label}
                                         </div>
                                     </div>
@@ -153,7 +153,7 @@ export default function AboutPage() {
                     <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-20">
                         <ScrollReveal>
                             <div className="text-center mb-16">
-                                <SectionLabel className="text-gold/80 block mb-4">
+                                <SectionLabel className="text-ink/50 block mb-4">
                                     {aboutContent?.services?.label || "What We Do"}
                                 </SectionLabel>
                                 <H2 className="text-ink">
@@ -183,7 +183,7 @@ export default function AboutPage() {
                             ]).map((service, i) => (
                                 <ScrollReveal key={i} delay={i * 0.1}>
                                     <div className="bg-marble/30 border border-ink/5 p-8 rounded-sm hover:border-gold/20 transition-colors duration-300">
-                                        <div className="font-cormorant-sc text-xs uppercase tracking-widest text-gold/70 mb-3">
+                                        <div className="font-cormorant-sc text-base uppercase tracking-widest text-ink/40 mb-3">
                                             0{i + 1}
                                         </div>
                                         <h3 className="font-cinzel text-lg text-ink mb-3">
@@ -203,7 +203,7 @@ export default function AboutPage() {
                 <section className="py-20 md:py-32">
                     <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 text-center">
                         <ScrollReveal>
-                            <SectionLabel className="text-gold/80 block mb-4">
+                            <SectionLabel className="text-ink/50 block mb-4">
                                 {aboutContent?.cta?.label || "Ready to Begin?"}
                             </SectionLabel>
                             <H2 className="text-ink mb-6">

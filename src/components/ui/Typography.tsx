@@ -131,7 +131,7 @@ export function SectionLabel({ className, children, ...props }: React.HTMLAttrib
         <span
             className={cn(
                 "font-cormorant-sc tracking-[0.2em] uppercase text-gold/80",
-                "text-[clamp(0.875rem,0.2vw+0.8rem,0.9375rem)]", // 14px → 15px
+                "text-[clamp(1rem,0.4vw+0.85rem,1.125rem)]", // 16px → 18px
                 className
             )}
             {...props}
@@ -163,7 +163,7 @@ export function Caption({ className, children, ...props }: React.HTMLAttributes<
         <span
             className={cn(
                 "font-cormorant-sc tracking-[0.15em] uppercase text-platinum/70",
-                "text-[clamp(0.8125rem,0.15vw+0.75rem,0.875rem)]", // 13px → 14px (up from 12px)
+                "text-[clamp(0.9375rem,0.25vw+0.85rem,1.0625rem)]", // 15px → 17px
                 className
             )}
             {...props}

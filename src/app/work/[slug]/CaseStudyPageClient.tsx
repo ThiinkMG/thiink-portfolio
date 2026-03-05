@@ -165,7 +165,7 @@ function CaseStudyHero({ project }: { project: Project }) {
 function MetadataField({ label, value }: { label: string; value: string }) {
     return (
         <div>
-            <span className="font-cormorant-sc text-xs tracking-[0.2em] text-ink/50 uppercase block mb-1">
+            <span className="font-cormorant-sc text-sm tracking-[0.2em] text-ink/50 uppercase block mb-1">
                 {label}
             </span>
             <span className="font-cinzel text-ink text-base md:text-lg">{value}</span>
@@ -186,7 +186,7 @@ function PlacardOrnament() {
 function ColorPaletteDisplay({ colors }: { colors: string[] }) {
     return (
         <div className="text-center mb-6">
-            <span className="font-cormorant-sc text-xs tracking-[0.2em] text-ink/50 uppercase block mb-4">
+            <span className="font-cormorant-sc text-sm tracking-[0.2em] text-ink/50 uppercase block mb-4">
                 Color Palette
             </span>
             <div className="flex justify-center gap-3 md:gap-4 flex-wrap">
@@ -209,7 +209,7 @@ function ColorPaletteDisplay({ colors }: { colors: string[] }) {
 function MetricsDisplay({ metrics }: { metrics: { label: string; value: string }[] }) {
     return (
         <div className="max-w-3xl mx-auto">
-            <span className="font-cormorant-sc text-sm tracking-[0.2em] text-gold uppercase block mb-6 text-center">
+            <span className="font-cormorant-sc text-base tracking-[0.2em] text-ink/50 uppercase block mb-6 text-center">
                 Results
             </span>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
@@ -462,7 +462,7 @@ function VideoSection({ project }: { project: Project }) {
             <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
                 <ScrollReveal>
                     <div className="mb-12">
-                        <SectionLabel className="text-gold/80 block mb-3">Video</SectionLabel>
+                        <SectionLabel className="text-ink/50 block mb-3">Video</SectionLabel>
                         <H3 className="text-ink">In Motion</H3>
                     </div>
                 </ScrollReveal>
@@ -537,7 +537,7 @@ function DeliverablesSection({ project }: { project: Project }) {
                         ratio="1:2"
                         left={
                             <div>
-                                <SectionLabel className="text-gold/80 block mb-3">Deliverables</SectionLabel>
+                                <SectionLabel className="text-ink/50 block mb-3">Deliverables</SectionLabel>
                                 <H3 className="text-ink">What We Created</H3>
                             </div>
                         }

@@ -72,7 +72,7 @@ export function TrustMarquee({
                 key={key}
                 className="mx-8 md:mx-16 flex items-center justify-center opacity-30 hover:opacity-80 transition-opacity duration-300"
             >
-                <span className="font-josefin font-bold text-3xl md:text-4xl text-ivory tracking-tighter">
+                <span className="font-outfit font-bold text-3xl md:text-4xl text-ivory tracking-tighter">
                     {logo.name}
                 </span>
             </div>

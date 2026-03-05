@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { createPortal } from "react-dom";
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { MagneticLink } from "@/components/ui/MagneticLink";
@@ -45,7 +46,13 @@ export function Navbar({
     const [isScrolled, setIsScrolled] = React.useState(false);
     const [isHidden, setIsHidden] = React.useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
+    const [mounted, setMounted] = React.useState(false);
     const lastScrollY = React.useRef(0);
+
+    // Track client mount for portal rendering
+    React.useEffect(() => {
+        setMounted(true);
+    }, []);
 
     // Determine if link is external
     const isExternalLink = (href: string) => href.startsWith("http");
@@ -91,6 +98,7 @@ export function Navbar({
     });
 
     return (
+        <>
         <motion.header
             className={cn(
                 "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
@@ -122,7 +130,7 @@ export function Navbar({
                 </Link>
 
                 {/* ─── DESKTOP NAV ─── */}
-                <nav className="hidden md:flex items-center gap-8">
+                <nav className="hidden lg:flex items-center gap-8">
                     <div className="flex items-center gap-8 mr-8">
                         {links.map((item) => (
                             <div key={item.label} className="relative group">
@@ -168,7 +176,7 @@ export function Navbar({
                 <button
                     type="button"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    className="md:hidden text-marble p-2 hover:text-gold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-museum rounded-sm relative z-50"
+                    className="lg:hidden text-marble p-2 hover:text-gold transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-museum rounded-sm relative z-50"
                     aria-label={isMobileMenuOpen ? "Close navigation menu" : "Open navigation menu"}
                     aria-expanded={isMobileMenuOpen}
                     aria-controls="mobile-menu"
@@ -200,8 +208,12 @@ export function Navbar({
                     </div>
                 </button>
             </div>
+        </motion.header>
 
-            {/* ─── MOBILE MENU OVERLAY ─── */}
+        {/* ─── MOBILE MENU OVERLAY ─── */}
+        {/* Rendered via portal to document.body so `fixed inset-0` is not trapped
+            inside the motion.header's CSS transform containing block */}
+        {mounted && createPortal(
             <AnimatePresence>
                 {isMobileMenuOpen && (
                     <motion.div
@@ -210,7 +222,7 @@ export function Navbar({
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         transition={{ duration: 0.3, ease: easing.apple }}
-                        className="fixed inset-0 z-40 bg-museum/98 backdrop-blur-md md:hidden"
+                        className="fixed inset-0 z-40 bg-museum/98 backdrop-blur-md lg:hidden"
                     >
                         {/* Menu Content */}
                         <nav className="flex flex-col items-center justify-center h-full px-6">
@@ -290,7 +302,9 @@ export function Navbar({
                         </nav>
                     </motion.div>
                 )}
-            </AnimatePresence>
-        </motion.header>
+            </AnimatePresence>,
+            document.body
+        )}
+        </>
     );
 }

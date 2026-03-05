@@ -68,9 +68,9 @@ export function Footer({
         <footer className="bg-slate border-t border-gold/10">
             {/* Main Footer Content */}
             <div className="max-w-[1440px] mx-auto px-6 md:px-12 xl:px-20 py-16 md:py-20">
-                <div className="grid grid-cols-4 md:grid-cols-12 gap-8 md:gap-12">
+                <div className="grid grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
                     {/* COL 1: BRAND */}
-                    <div className="col-span-4 md:col-span-4 lg:col-span-3 flex flex-col gap-6">
+                    <div className="col-span-2 lg:col-span-3 flex flex-col gap-6">
                         <Link
                             href="/"
                             className="hover:opacity-80 transition-opacity duration-200"
@@ -116,7 +116,7 @@ export function Footer({
                     </div>
 
                     {/* COL 2: SERVICES */}
-                    <div className="col-span-2 md:col-span-2 lg:col-span-3 flex flex-col gap-4 mt-8 md:mt-0">
+                    <div className="col-span-1 lg:col-span-3 flex flex-col gap-4 mt-8 lg:mt-0">
                         <SectionLabel className="text-gold/70">Services</SectionLabel>
                         <ul className="flex flex-col gap-3">
                             {serviceLinks.map((item) => (
@@ -144,7 +144,7 @@ export function Footer({
                     </div>
 
                     {/* COL 3: EXPLORE */}
-                    <div className="col-span-2 md:col-span-2 lg:col-span-3 flex flex-col gap-4 mt-8 md:mt-0">
+                    <div className="col-span-1 lg:col-span-3 flex flex-col gap-4 mt-8 lg:mt-0">
                         <SectionLabel className="text-gold/70">Explore</SectionLabel>
                         <ul className="flex flex-col gap-3">
                             {exploreLinks.map((item) => (
@@ -172,7 +172,7 @@ export function Footer({
                     </div>
 
                     {/* COL 4: CONTACT */}
-                    <div className="col-span-4 md:col-span-4 lg:col-span-3 flex flex-col gap-4 mt-8 lg:mt-0">
+                    <div className="col-span-2 lg:col-span-3 flex flex-col gap-4 mt-8 lg:mt-0">
                         <SectionLabel className="text-gold/70">Contact</SectionLabel>
                         <div className="flex flex-col gap-3">
                             {contact?.phone && (

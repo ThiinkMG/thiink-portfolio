@@ -32,7 +32,8 @@
       },
       {
         "label": "Contact",
-        "href": "/#contact"
+        "href": "https://www.thiinkmediagraphics.com/contact",
+        "external": true
       }
     ]
   },

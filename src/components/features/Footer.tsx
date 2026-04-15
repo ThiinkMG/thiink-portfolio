@@ -212,7 +212,7 @@ export function Footer({
             </div>
 
             {/* Divider */}
-            <SectionDivider variant="line" color="gold" className="opacity-30 mx-6 md:mx-12 xl:mx-20" />
+            <SectionDivider variant="line" color="gold" animate={false} className="opacity-30 mx-6 md:mx-12 xl:mx-20" />
 
             {/* BOTTOM BAR */}
             <div className="py-6">

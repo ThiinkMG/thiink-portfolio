@@ -108,8 +108,8 @@ function ProcessStepComponent({ step, index, isLast }: ProcessStepComponentProps
                     {/* Number Circle */}
                     <motion.div
                         className="w-14 h-14 md:w-16 md:h-16 rounded-full border-2 border-gold/50 flex items-center justify-center bg-obsidian/80 backdrop-blur-sm"
-                        whileHover={{ scale: 1.05, borderColor: "rgb(212, 168, 85)" }}
-                        transition={{ duration: 0.2 }}
+                        whileHover={{ scale: 1.05, borderColor: "var(--color-gold)" }}
+                        transition={{ duration: 0.15 }}
                     >
                         <span className="font-cinzel text-[clamp(1.125rem,0.5vw+0.9rem,1.375rem)] text-gold font-semibold">
                             {step.numeral}

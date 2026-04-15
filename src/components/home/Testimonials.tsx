@@ -6,6 +6,7 @@ import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import { motion, AnimatePresence } from "framer-motion";
 import { Quote, ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { easing } from "@/lib/motion";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // TESTIMONIALS - "Voices of Our Patrons"
@@ -164,7 +165,7 @@ export function Testimonials({
                                 initial="enter"
                                 animate="center"
                                 exit="exit"
-                                transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+                                transition={{ duration: 0.4, ease: easing.apple }}
                                 className="text-center"
                             >
                                 {/* Stars */}

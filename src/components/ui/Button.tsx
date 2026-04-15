@@ -72,7 +72,7 @@ export const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
                 transition={{ type: "spring", ...spring.snappy }}
                 disabled={isLoading || disabled}
                 className={cn( // Base Styles
-                    "relative inline-flex items-center justify-center",
+                    "relative inline-flex items-center justify-center rounded-sm",
                     "font-outfit uppercase tracking-[0.08em] font-medium",
                     "transition-all duration-200 ease-apple cursor-pointer",
                     "focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-museum",

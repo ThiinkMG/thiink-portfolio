@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cinzel, EB_Garamond, Cormorant_SC, Outfit } from "next/font/google";
+import { Cinzel, EB_Garamond, Cormorant_SC, Outfit, Pinyon_Script } from "next/font/google";
 import { StructuredData, organizationSchema } from "@/components/StructuredData";
 import "./globals.css";
 
@@ -31,6 +31,14 @@ const cormorantSC = Cormorant_SC({
 const outfit = Outfit({
   subsets: ["latin"],
   variable: "--font-outfit",
+  display: "swap",
+});
+
+// Accents - Curator's hand, marginalia
+const pinyonScript = Pinyon_Script({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-pinyon",
   display: "swap",
 });
 
@@ -125,7 +133,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cinzel.variable} ${ebGaramond.variable} ${cormorantSC.variable} ${outfit.variable} antialiased bg-[var(--color-museum)] text-[var(--color-marble)] overflow-x-hidden`}
+        className={`${cinzel.variable} ${ebGaramond.variable} ${cormorantSC.variable} ${outfit.variable} ${pinyonScript.variable} antialiased bg-[var(--color-museum)] text-[var(--color-marble)] overflow-x-hidden`}
       >
         {/* Structured Data for SEO */}
         <StructuredData data={organizationSchema} />

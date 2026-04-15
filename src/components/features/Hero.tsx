@@ -285,12 +285,12 @@ export function Hero({ projects = [], stats = DEFAULT_STATS, hero }: HeroProps) 
                             className="flex flex-wrap gap-4 pt-2"
                         >
                             <Link href="/work">
-                                <Button variant="primary" size="lg">
+                                <Button variant="secondary" size="lg">
                                     {heroContent.primaryCta}
                                 </Button>
                             </Link>
                             <Link href="https://www.thiinkmediagraphics.com/new-project-form">
-                                <Button variant="secondary" size="lg">
+                                <Button variant="primary" size="lg">
                                     {heroContent.secondaryCta}
                                 </Button>
                             </Link>

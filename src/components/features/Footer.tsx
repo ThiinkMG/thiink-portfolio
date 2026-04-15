@@ -217,7 +217,7 @@ export function Footer({
             {/* BOTTOM BAR */}
             <div className="py-6">
                 <div className="max-w-[1440px] mx-auto px-6 md:px-12 xl:px-20 flex flex-col md:flex-row justify-between items-center gap-4 text-[clamp(0.75rem,0.1vw+0.7rem,0.8125rem)] text-marble/30 font-outfit uppercase tracking-wider">
-                    <p>© {year} {copyright}. Forged in the digital realm.</p>
+                    <p>© 2019 - {year} {copyright} All rights reserved.</p>
                     <div className="flex gap-6">
                         <a
                             href="https://www.thiinkmediagraphics.com/privacy"

@@ -41,43 +41,38 @@
   "gallery": [
     {
       "src": "/images/work/soul-healing/hero.png",
-      "alt": "Soul Healing Website Design",
-      "caption": "Fig. 1 — Website hero design for Soul Healing Therapy & Training"
+      "alt": "Soul Healing Healing Modalities Section",
+      "caption": "Fig. 1 — Healing modalities section: Hypnotherapy, Trauma Care, Intensives & Training"
     },
     {
       "src": "/images/work/soul-healing/gallery-1.png",
-      "alt": "Soul Healing Primary Logo",
-      "caption": "Fig. 2 — Primary logo: hummingbird + heart + lotus continuous-line mark (Batch 1)"
+      "alt": "Soul Healing Homepage Hero",
+      "caption": "Fig. 2 — Homepage hero: 'The Pillars of Soul Healing' with brand value pillars"
     },
     {
       "src": "/images/work/soul-healing/gallery-2.png",
-      "alt": "Soul Healing Logo Monogram",
-      "caption": "Fig. 3 — Monogram icon mark (no wordmark)"
+      "alt": "Soul Healing About Section",
+      "caption": "Fig. 3 — About section: Natasha Daniels bio and practitioner credentials"
     },
     {
       "src": "/images/work/soul-healing/gallery-3.png",
-      "alt": "Soul Healing Logo Variant 1.1",
-      "caption": "Fig. 4 — Logo refinement: Variant 1.1 (Batch 2)"
+      "alt": "Soul Healing Website Footer",
+      "caption": "Fig. 4 — Footer design with 'Healing like Ginger Ale' brand tagline and CTAs"
     },
     {
       "src": "/images/work/soul-healing/gallery-4.png",
-      "alt": "Soul Healing Logo Variant 1.2",
-      "caption": "Fig. 5 — Logo refinement: Variant 1.2 (Batch 2)"
+      "alt": "Soul Healing Services Overview",
+      "caption": "Fig. 5 — Services page: Individual Therapy, Concierge Intensives & Corporate Training"
     },
     {
       "src": "/images/work/soul-healing/gallery-5.png",
-      "alt": "Soul Healing Logo Variant 1.3",
-      "caption": "Fig. 6 — Logo refinement: Variant 1.3 (Batch 2)"
+      "alt": "Soul Healing Therapy Pricing",
+      "caption": "Fig. 6 — Individual Therapy & Clinical Hypnotherapy with transparent session pricing"
     },
     {
       "src": "/images/work/soul-healing/gallery-6.png",
-      "alt": "Soul Healing Website Interior",
-      "caption": "Fig. 7 — Website interior section design"
-    },
-    {
-      "src": "/images/work/soul-healing/gallery-7.png",
-      "alt": "Soul Healing Website Section",
-      "caption": "Fig. 8 — Website section layout and typography"
+      "alt": "Soul Healing Trauma Intensives",
+      "caption": "Fig. 7 — Trauma Concierge Intensives: half-day and full-day immersive healing packages"
     }
   ],
   "metrics": [

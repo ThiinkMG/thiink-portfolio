@@ -173,9 +173,9 @@ export function Footer({
                         </ul>
                     </div>
 
-                    {/* COL 4: CONTACT */}
+                    {/* COL 4: Reach Out */}
                     <div className="col-span-2 lg:col-span-3 flex flex-col gap-4 mt-8 lg:mt-0">
-                        <SectionLabel className="text-gold/70">Contact</SectionLabel>
+                        <SectionLabel className="text-gold/70">Reach Out</SectionLabel>
                         <div className="flex flex-col gap-3">
                             {contact?.phone && (
                                 <a

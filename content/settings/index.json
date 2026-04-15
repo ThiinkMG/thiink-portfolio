@@ -8,8 +8,8 @@
     "newProjectForm": "https://www.thiinkmediagraphics.com/new-project-form"
   },
   "social": {
-    "instagram": "https://instagram.com/thiinkmediagraphics",
-    "linkedin": "https://linkedin.com/company/thiinkmediagraphics",
+    "instagram": "https://www.instagram.com/thiinkmg/",
+    "linkedin": "https://www.linkedin.com/public-profile/settings",
     "twitter": "",
     "youtube": ""
   },
@@ -42,37 +42,37 @@
     "serviceLinks": [
       {
         "label": "Core Identity",
-        "href": "/#services"
+        "href": "https://www.thiinkmediagraphics.com/services/core-identity"
       },
       {
         "label": "Design Forge",
-        "href": "/#services"
+        "href": "https://www.thiinkmediagraphics.com/services/design-forge"
       },
       {
         "label": "Web Artisan",
-        "href": "/#services"
+        "href": "https://www.thiinkmediagraphics.com/services/web-artisan"
       },
       {
         "label": "Print Craft",
-        "href": "/#services"
+        "href": "https://www.thiinkmediagraphics.com/services/print-craft-creations"
       }
     ],
     "exploreLinks": [
       {
         "label": "Portfolio",
-        "href": "/work"
+        "href": "https://www.thiinkmediagraphics.com/client-portfolios"
       },
       {
         "label": "Blog",
-        "href": "/blog"
+        "href": "https://www.thiinkmediagraphics.com/blog"
       },
       {
         "label": "Pricing",
-        "href": "/pricing"
+        "href": "https://www.thiinkmediagraphics.com/pricing"
       },
       {
         "label": "Contact",
-        "href": "/#contact"
+        "href": "https://www.thiinkmediagraphics.com/contact"
       }
     ]
   },

@@ -46,33 +46,43 @@
     },
     {
       "src": "/images/work/soul-healing/gallery-1.png",
-      "alt": "Soul Healing Homepage Hero",
-      "caption": "Fig. 2 — Homepage hero: 'The Pillars of Soul Healing' with brand value pillars"
+      "alt": "Soul Healing Primary Logo",
+      "caption": "Fig. 2 — Primary logo: hummingbird + heart + lotus continuous-line mark with wordmark"
     },
     {
       "src": "/images/work/soul-healing/gallery-2.png",
-      "alt": "Soul Healing About Section",
-      "caption": "Fig. 3 — About section: Natasha Daniels bio and practitioner credentials"
+      "alt": "Soul Healing Icon Mark",
+      "caption": "Fig. 3 — Icon mark: continuous-line symbol without wordmark"
     },
     {
       "src": "/images/work/soul-healing/gallery-3.png",
-      "alt": "Soul Healing Website Footer",
-      "caption": "Fig. 4 — Footer design with 'Healing like Ginger Ale' brand tagline and CTAs"
+      "alt": "Soul Healing Homepage Hero",
+      "caption": "Fig. 4 — Homepage hero: 'The Pillars of Soul Healing' with brand value pillars"
     },
     {
       "src": "/images/work/soul-healing/gallery-4.png",
-      "alt": "Soul Healing Services Overview",
-      "caption": "Fig. 5 — Services page: Individual Therapy, Concierge Intensives & Corporate Training"
+      "alt": "Soul Healing About Section",
+      "caption": "Fig. 5 — About section: Natasha Daniels bio and practitioner credentials"
     },
     {
       "src": "/images/work/soul-healing/gallery-5.png",
-      "alt": "Soul Healing Therapy Pricing",
-      "caption": "Fig. 6 — Individual Therapy & Clinical Hypnotherapy with transparent session pricing"
+      "alt": "Soul Healing Website Footer",
+      "caption": "Fig. 6 — Footer design with 'Healing like Ginger Ale' brand tagline and CTAs"
     },
     {
       "src": "/images/work/soul-healing/gallery-6.png",
+      "alt": "Soul Healing Services Overview",
+      "caption": "Fig. 7 — Services page: Individual Therapy, Concierge Intensives & Corporate Training"
+    },
+    {
+      "src": "/images/work/soul-healing/gallery-7.png",
+      "alt": "Soul Healing Therapy Pricing",
+      "caption": "Fig. 8 — Individual Therapy & Clinical Hypnotherapy with transparent session pricing"
+    },
+    {
+      "src": "/images/work/soul-healing/gallery-8.png",
       "alt": "Soul Healing Trauma Intensives",
-      "caption": "Fig. 7 — Trauma Concierge Intensives: half-day and full-day immersive healing packages"
+      "caption": "Fig. 9 — Trauma Concierge Intensives: half-day and full-day immersive healing packages"
     }
   ],
   "metrics": [

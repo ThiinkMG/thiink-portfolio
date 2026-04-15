@@ -39,7 +39,7 @@ const DEFAULT_SERVICE_LINKS: FooterLink[] = [
 ];
 
 const DEFAULT_EXPLORE_LINKS: FooterLink[] = [
-    { label: "2023 Portfolio", href: "https://testtmg.my.canva.site/thiinkmg-portfolio" },
+    { label: "Portfolio", href: "https://www.thiinkmediagraphics.com/client-portfolios" },
     { label: "Blog", href: "https://www.thiinkmediagraphics.com/blog" },
     { label: "Pricing", href: "https://www.thiinkmediagraphics.com/pricing" },
     { label: "Contact", href: "https://www.thiinkmediagraphics.com/contact" },
@@ -57,8 +57,8 @@ export function Footer({
         newProjectForm: "https://www.thiinkmediagraphics.com/new-project-form",
     },
     social = {
-        instagram: "https://instagram.com/thiinkmediagraphics",
-        linkedin: "https://linkedin.com/company/thiinkmediagraphics",
+        instagram: "https://www.instagram.com/thiinkmg/",
+        linkedin: "https://www.linkedin.com/public-profile/settings",
     },
 }: FooterProps) {
     const year = new Date().getFullYear();

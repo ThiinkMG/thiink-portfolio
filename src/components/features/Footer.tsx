@@ -71,8 +71,8 @@ export function Footer({
                 <div className="grid grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12">
                     {/* COL 1: BRAND */}
                     <div className="col-span-2 lg:col-span-3 flex flex-col gap-6">
-                        <Link
-                            href="/"
+                        <a
+                            href="https://www.thiinkmediagraphics.com/"
                             className="hover:opacity-80 transition-opacity duration-200"
                         >
                             <Image
@@ -82,7 +82,7 @@ export function Footer({
                                 height={45}
                                 className="h-10 w-auto"
                             />
-                        </Link>
+                        </a>
                         <Text className="text-marble/60 max-w-xs font-garamond leading-relaxed">
                             {tagline}
                         </Text>

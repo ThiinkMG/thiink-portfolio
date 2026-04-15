@@ -72,7 +72,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://www.thiinkmediagraphics.com",
+    url: "https://thiink-portfolio.vercel.app",
     siteName: "Thiink Media Graphics",
     title: "Thiink Media Graphics | Luxury Design Agency",
     description:
@@ -119,7 +119,7 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
 
   // ─── OTHER ─────────────────────────────────────────────────
-  metadataBase: new URL("https://www.thiinkmediagraphics.com"),
+  metadataBase: new URL("https://thiink-portfolio.vercel.app"),
   alternates: {
     canonical: "/",
   },

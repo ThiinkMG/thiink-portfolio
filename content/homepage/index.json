@@ -34,8 +34,14 @@
         "image": ""
       },
       {
+        "name": "WIX"
+      },
+      {
         "name": "DISNEY",
         "image": ""
+      },
+      {
+        "name": "ONE DREAM"
       },
       {
         "name": "HULU",
@@ -46,17 +52,11 @@
         "image": ""
       },
       {
-        "name": "MY COLLEGE FINANCE",
-        "image": ""
-      },
-      {
-        "name": "ONE DREAM"
-      },
-      {
         "name": "BBB"
       },
       {
-        "name": "WIX"
+        "name": "MY COLLEGE FINANCE",
+        "image": ""
       }
     ]
   },

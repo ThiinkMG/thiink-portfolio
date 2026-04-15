@@ -1,0 +1,91 @@
+{
+  "slug": "soul-healing",
+  "title": "Soul Healing",
+  "subtitle": "Brand Identity & Website Design",
+  "category": "Brand Identity & Web Design",
+  "client": "Natasha Daniels",
+  "year": "2026",
+  "duration": "8 weeks",
+  "heroImage": "/images/work/soul-healing/hero.png",
+  "thumbnailImage": "/images/work/soul-healing/hero.png",
+  "description": "A bold, community-driven brand identity for a therapy and clinical hypnotherapy practice — combining ancient healing symbolism with an unapologetically modern aesthetic.",
+  "situation": "Healing for the Soul Therapy & Training needed a brand identity and website that stood apart from the sterile, clinical aesthetics dominating the mental health space. Founder Natasha Daniels wanted a brand that felt loud, innovative, and community-centered — healing that has edge. The logo needed to fuse three deeply personal symbols: a lotus, a heart, and a hummingbird.",
+  "task": "Create a full brand identity system including logo design across two refinement batches, a comprehensive brand guide, and a website design and Wix build. The visual system needed to serve both individual therapy clients and corporate training audiences while embodying the brand's core metaphor: 'Healing like Ginger Ale — spicy, tangy, and self-healing.'",
+  "action": [
+    {
+      "title": "Symbolic Continuous-Line Logo",
+      "content": "The logo fuses three client-requested symbols — a hummingbird (resilience and lightness), a heart (compassion and emotional healing), and a lotus (transformation through adversity) — into a single continuous-line mark. Two design batches refined the proportions, stroke weights, and color expression across six variants until the mark felt both clinically credible and warmly human.",
+      "marginalia": "Continuous-line design conveys unity and the interconnected nature of mind-body-soul healing."
+    },
+    {
+      "title": "Brand Color Philosophy",
+      "content": "We anchored the palette in Deep Forest Green (#1A6B35) and Light Sage (#C5E1A5), evoking growth, nature, and the restorative quality of green spaces. A Warm Orange accent (#E8652A) was introduced sparingly for high-energy moments — reflecting the 'ginger ale' brand metaphor. Warm neutrals (cream, charcoal) round out a palette that reads both luxurious and grounded.",
+      "marginalia": "60% neutrals, 35% greens, 5% warm orange keeps the identity rooted yet distinctly alive."
+    },
+    {
+      "title": "Website Design & Wix Build",
+      "content": "The website was designed around a dark, cinematic hero with lush tropical imagery, transitioning into warm content sections. Full layout design was delivered across home, services, and contact pages — with a complete photography direction guide, typography system (Playfair Display / Montserrat), and all section compositions. The design was then built on Wix with a live preview delivered to the client.",
+      "marginalia": "Design references the 'Serenity' aesthetic — dark luxury backgrounds with warm gold and cream tones."
+    }
+  ],
+  "result": "Soul Healing launched with a distinctive visual identity that stands apart in the therapy space. The continuous-line logo mark, forest green palette, and cinematic website design position the practice as innovative and premium — attracting the exact audience of women seeking healing that goes beyond traditional clinical aesthetics.",
+  "deliverables": [
+    "Primary Logo — Full Color, White & Monochrome Variants",
+    "Logo Icon / Monogram Mark",
+    "Brand Identity Guide",
+    "Color Palette & Typography System",
+    "Photography Direction",
+    "Website Design & Mockup",
+    "Wix Website Build"
+  ],
+  "gallery": [
+    {
+      "src": "/images/work/soul-healing/hero.png",
+      "alt": "Soul Healing Website Design",
+      "caption": "Fig. 1 — Website hero design for Soul Healing Therapy & Training"
+    },
+    {
+      "src": "/images/work/soul-healing/gallery-1.png",
+      "alt": "Soul Healing Primary Logo",
+      "caption": "Fig. 2 — Primary logo: hummingbird + heart + lotus continuous-line mark (Batch 1)"
+    },
+    {
+      "src": "/images/work/soul-healing/gallery-2.png",
+      "alt": "Soul Healing Logo Monogram",
+      "caption": "Fig. 3 — Monogram icon mark (no wordmark)"
+    },
+    {
+      "src": "/images/work/soul-healing/gallery-3.png",
+      "alt": "Soul Healing Logo Variant 1.1",
+      "caption": "Fig. 4 — Logo refinement: Variant 1.1 (Batch 2)"
+    },
+    {
+      "src": "/images/work/soul-healing/gallery-4.png",
+      "alt": "Soul Healing Logo Variant 1.2",
+      "caption": "Fig. 5 — Logo refinement: Variant 1.2 (Batch 2)"
+    },
+    {
+      "src": "/images/work/soul-healing/gallery-5.png",
+      "alt": "Soul Healing Logo Variant 1.3",
+      "caption": "Fig. 6 — Logo refinement: Variant 1.3 (Batch 2)"
+    },
+    {
+      "src": "/images/work/soul-healing/gallery-6.png",
+      "alt": "Soul Healing Website Interior",
+      "caption": "Fig. 7 — Website interior section design"
+    },
+    {
+      "src": "/images/work/soul-healing/gallery-7.png",
+      "alt": "Soul Healing Website Section",
+      "caption": "Fig. 8 — Website section layout and typography"
+    }
+  ],
+  "metrics": [
+    { "label": "Logo Variants", "value": "6" },
+    { "label": "Design Batches", "value": "2" },
+    { "label": "Deliverables", "value": "7" },
+    { "label": "Timeline", "value": "8 wks" }
+  ],
+  "colors": ["#1A6B35", "#C5E1A5", "#E8652A", "#1A1A1A"],
+  "nextProject": "aiff"
+}

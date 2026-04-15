@@ -81,7 +81,9 @@ export default defineConfig({
             required: true,
             options: [
               "Brand Identity",
+              "Brand Identity & Web Design",
               "App Design",
+              "Web Design",
               "Event Branding",
               "Entertainment",
               "Podcast Branding",

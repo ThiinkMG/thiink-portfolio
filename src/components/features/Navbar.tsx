@@ -20,6 +20,7 @@ interface NavItem {
     label: string;
     href: string;
     external?: boolean;
+    newTab?: boolean;
 }
 
 interface NavbarProps {

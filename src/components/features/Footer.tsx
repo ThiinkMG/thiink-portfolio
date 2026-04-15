@@ -73,6 +73,8 @@ export function Footer({
                     <div className="col-span-2 lg:col-span-3 flex flex-col gap-6">
                         <a
                             href="https://www.thiinkmediagraphics.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="hover:opacity-80 transition-opacity duration-200"
                         >
                             <Image

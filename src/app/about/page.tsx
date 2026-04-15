@@ -200,16 +200,21 @@ export default function AboutPage() {
                 </section>
 
                 {/* CTA Section */}
-                <section className="py-20 md:py-32">
-                    <div className="max-w-4xl mx-auto px-6 md:px-12 lg:px-20 text-center">
+                <section className="relative py-20 md:py-32 overflow-hidden bg-stone">
+                    {/* Gold rule top */}
+                    <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
+                    {/* Depth vignette */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-museum/40 via-transparent to-museum/40" />
+
+                    <div className="relative z-10 max-w-4xl mx-auto px-6 md:px-12 lg:px-20 text-center">
                         <ScrollReveal>
-                            <SectionLabel className="text-ink/50 block mb-4">
+                            <SectionLabel className="text-gold/80 block mb-4">
                                 {aboutContent?.cta?.label || "Ready to Begin?"}
                             </SectionLabel>
-                            <H2 className="text-ink mb-6">
+                            <H2 className="text-marble mb-6">
                                 {aboutContent?.cta?.title || "Let's Create Something Timeless"}
                             </H2>
-                            <Text className="text-ink/70 max-w-2xl mx-auto mb-10">
+                            <Text className="text-marble/60 max-w-2xl mx-auto mb-10">
                                 {aboutContent?.cta?.description ||
                                     "Every great brand starts with a conversation. Tell us about your vision, and let's explore how we can bring it to life."}
                             </Text>
@@ -225,13 +230,16 @@ export default function AboutPage() {
                                     </Button>
                                 </a>
                                 <Link href="/work">
-                                    <Button variant="secondary" size="lg" className="border-ink text-ink hover:bg-ink hover:text-parchment">
+                                    <Button variant="secondary" size="lg" className="border-marble/40 text-marble hover:bg-marble hover:text-stone">
                                         {aboutContent?.cta?.secondaryButton || "View Our Work"}
                                     </Button>
                                 </Link>
                             </div>
                         </ScrollReveal>
                     </div>
+
+                    {/* Gold rule bottom */}
+                    <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/50 to-transparent" />
                 </section>
             </main>
 
